@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/repository-metadata.json",
+  "name": "mistral-studio-marketing",
+  "owner": "beastofbayarea",
+  "displayName": "Mistral Studio Marketing & Product Marketing Strategy",
+  "description": "Mistral Studio Product Marketing Strategy, Category Narrative, Positioning & Messaging Framework, Prosumer-to-Enterprise Segmentation, Sales Battlecards, Brand Assets & Market Analysis.",
+  "homepage": "https://mistral.ai",
+  "repositoryUrl": "https://github.com/beastofbayarea/mistral-studio-marketing",
+  "license": "MIT",
+  "version": "1.0.0",
+  "category": "marketing-strategy",
+  "type": "documentation-and-assets",
+  "keywords": [
+    "mistral-ai",
+    "mistral-studio",
+    "product-marketing",
+    "gtm-strategy",
+    "positioning-framework",
+    "sales-enablement",
+    "battlecards",
+    "brand-assets",
+    "ai-agents",
+    "llmops"
+  ],
+  "targetAudience": [
+    "Developers",
+    "AI Engineers",
+    "Enterprise AI Platform Leads",
+    "Product Marketing Managers",
+    "Sales Enablement & Field Teams"
+  ],
+  "maintainers": [
+    {
+      "name": "beastofbayarea",
+      "url": "https://github.com/beastofbayarea"
+    }
+  ],
+  "metadataVersion": "2026-08-17"
+}
