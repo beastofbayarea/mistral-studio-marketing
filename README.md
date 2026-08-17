@@ -41,7 +41,7 @@ mistral-studio-marketing/
 ├── official-designs-and-docs/                        # Official Brand Identity & Product Documentation
 │   ├── brand/
 │   │   ├── banners/                                 # Official product banners (mistral-studio-banner.jpg)
-│   │   ├── guidelines/                              # Mistral Logo & Brand Guidelines PDF
+│   │   ├── guidelines/                              # Mistral Logo Guidelines (mistral-logo-guidelines.pdf, README.md)
 │   │   ├── logos/                                   # High-resolution vector model icons & footer assets
 │   │   └── wallpapers/                              # Desktop wallpapers (mistral-wallpaper-01, 02)
 │   ├── docs/                                        # Whitepapers & strategic memos (European AI Whitepaper, Strategic Memo)
@@ -51,22 +51,25 @@ mistral-studio-marketing/
 │   ├── case-studies-and-reports/                    # German Tax AI Market Radar 2026 & La Banque Postale Partnership PR
 │   ├── data/                                        # Master Excel databases (GTM Fact Base, Master Positioning, ROI Framework)
 │   ├── product-images/                              # Mistral AI Studio UI mockups & platform overview diagrams
-│   ├── strategy-one-pagers/                         # Prosumer framework & keynote narrative infographics (Dark & Orange themes)
-│   ├── ux-onboarding/                               # Product journey map roadmap & self-service friction analysis
+│   ├── sales-battlecards/                           # Competitor battlecards (AWS Bedrock, MSFT Foundry, Claude, DIY)
+│   ├── sales-one-pagers/                            # Executive architecture one-pagers & workflow POC briefs (PNG)
+│   ├── strategy-one-pagers/                         # Keynote narrative infographics (Dark & Orange themes)
 │   ├── category-narrative-keynote.pptx              # Thought leadership keynote: Prototype to Governed Production
 │   ├── competitive-landscape-differentiation-framework.pptx # Competitive landscape positioning deck
 │   ├── core-sales-deck.pptx                         # Master enterprise pitch presentation
 │   ├── enterprise-prosumer-segmentation.pptx        # Builder qualification & persona handoff framework
-│   └── gtm-strategy.pptx                            # Operational GTM launch execution plan
-│
-├── sales-and-field-enablement/                      # Sales & Field Readiness Assets
-│   ├── battlecards/                                 # Master battlecard PDF + competitor cards (AWS Bedrock, MSFT Foundry, Claude)
-│   └── one-pagers/                                  # Executive architecture one-pagers & workflow POC briefs (PDF + PNG)
+│   ├── gtm-strategy.pptx                            # Operational GTM launch execution plan
+│   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
 ├── author-profile.pptx                              # Author profile background & strategy bio presentation
 ├── eu-policy-company-thesis.pptx                    # European AI policy & company thesis presentation
-├── gtm-and-launch-strategy-framework.pptx           # Outside-in GTM MECE launch framework presentation
+├── gtm-and-launch-strategy-framework-a.pptx        # Outside-in GTM MECE launch framework presentation (Part A)
+├── gtm-and-launch-strategy-framework-b.pptx        # Outside-in GTM MECE launch framework presentation (Part B)
 ├── product-marketing-strategy.pptx                  # Core Product Marketing Strategy presentation deck
+├── prosumer-segmentation-framework.pdf              # Prosumer segmentation framework PDF
+├── sales-enterprise-architecture-one-pager.pdf     # Enterprise architecture one-pager PDF
+├── sales-master-battlecards.pdf                     # Master battlecards compilation PDF
+├── self-service-journey-friction-diagnostic.png     # Self-service friction diagnostic chart
 │
 ├── CODE_OF_CONDUCT.md                               # Contributor Code of Conduct
 ├── CONTRIBUTING.md                                  # Contribution & asset naming guidelines
@@ -77,19 +80,33 @@ mistral-studio-marketing/
 
 ---
 
+## 🎨 Brand & Logo Design Guidelines
+
+The official **Mistral Logo Guidelines** are defined in [`official-designs-and-docs/brand/guidelines/mistral-logo-guidelines.pdf`](official-designs-and-docs/brand/guidelines/mistral-logo-guidelines.pdf) and documented in detail in [`official-designs-and-docs/brand/guidelines/README.md`](official-designs-and-docs/brand/guidelines/README.md).
+
+Key design standards include:
+- **Clearspace**: Maintain a minimum empty border equal to 1 unit (the height of the pixelated 'M' symbol) around the primary lockup, symbol, or wordmark.
+- **Minimum Sizing**: **100 px** minimum width for the Primary Lockup (Icon + Wordmark); **20 px** minimum width for the isolated 'M' symbol.
+- **Sunset Gradient**: Default primary expression of the symbol across light and dark backgrounds.
+- **Monochrome Execution**: On complex, photography, or colored backgrounds, the symbol must shift to solid **Black** (`#151524`) or **White**.
+- **Wordmark Restraint**: The "Mistral" wordmark must **never** appear in color; it defaults strictly to solid Black (`#151524`) or White.
+- **Strict Misuses**: No gradient on photos/colors, no low-contrast placement, no unofficial variations (e.g., adding "AI" or "_"), no skew/distortion, and no drop shadows or visual effects.
+
+---
+
 ## 🎯 Target Persona Mapping & Value Proposition
 
 | Target Persona | Key Pain Points | Mistral Studio Value Proposition | Primary Assets |
 | :--- | :--- | :--- | :--- |
-| **Developer** | Wants cheap, fast model access; friction in initial API calls. | Self-service Playground, rapid API setup, transparent rate limits. | `product-journey-roadmap.png`, `sales-one-pagers/` |
-| **AI Engineer** | Production workflows fail silently; toolchain fragmentation. | End-to-end agent orchestration, trace debugging, quality evals. | `ui-screenshots/`, `technical-to-business-value-roi-translation-framework.xlsx` |
-| **Enterprise Platform Lead / CTO** | Lack of governance, data privacy risks, vendor lock-in. | Sovereign deployment (on-prem/private cloud), audit trails, guardrails. | `docs/mistral-ai-european-competitiveness-whitepaper.pdf`, `enterprise-architecture-one-pager.pdf` |
+| **Developer** | Wants cheap, fast model access; friction in initial API calls. | Self-service Playground, rapid API setup, transparent rate limits. | `pmm-deliverables/product-journey-roadmap.png`, `pmm-deliverables/sales-one-pagers/` |
+| **AI Engineer** | Production workflows fail silently; toolchain fragmentation. | End-to-end agent orchestration, trace debugging, quality evals. | `official-designs-and-docs/ui-screenshots/`, `pmm-deliverables/data/` |
+| **Enterprise Platform Lead / CTO** | Lack of governance, data privacy risks, vendor lock-in. | Sovereign deployment (on-prem/private cloud), audit trails, guardrails. | `official-designs-and-docs/docs/mistral-ai-european-competitiveness-whitepaper.pdf`, `sales-enterprise-architecture-one-pager.pdf` |
 
 ---
 
 ## ⚔️ Sales Enablement & Competitive Battlecards
 
-The [`sales-and-field-enablement/battlecards/`](sales-and-field-enablement/battlecards/) directory provides field teams with objection handling, positioning traps, and feature differentiation vs competitor platforms:
+The [`pmm-deliverables/sales-battlecards/`](pmm-deliverables/sales-battlecards/) directory and [`sales-master-battlecards.pdf`](sales-master-battlecards.pdf) provide field teams with objection handling, positioning traps, and feature differentiation vs competitor platforms:
 
 - **vs AWS Bedrock AgentCore**: Highlights Mistral's model portability, sovereign cloud deployment, and zero lock-in vs AWS proprietary silos.
 - **vs Microsoft Foundry**: Focuses on privacy-first European data control, fine-tuning flexibility, and lower total cost of ownership (TCO).
@@ -104,3 +121,4 @@ The [`sales-and-field-enablement/battlecards/`](sales-and-field-enablement/battl
 - **Contributions**: See [`CONTRIBUTING.md`](CONTRIBUTING.md) for asset submission guidelines.
 - **Code of Conduct**: See [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 - **Security**: See [`SECURITY.md`](SECURITY.md).
+
