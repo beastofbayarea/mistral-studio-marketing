@@ -1,0 +1,13 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary office lock files
+~$*
+*.tmp
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
