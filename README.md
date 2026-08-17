@@ -15,10 +15,11 @@ Comprehensive marketing strategy, positioning & messaging frameworks, GTM delive
 
 ---
 
-## 🏷️ Repository Metadata & Topics
+## 🏷️ Repository Metadata & Author Information
 
 | Metadata Attribute | Value |
 | :--- | :--- |
+| **Author** | **Shiv, Prospective PMM, Mistral Studio** |
 | **Repository Name** | `beastofbayarea/mistral-studio-marketing` |
 | **Homepage** | [console.mistral.ai](https://console.mistral.ai/) |
 | **Primary Category** | Product Marketing Strategy & Enablement |

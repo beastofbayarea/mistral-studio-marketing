@@ -10,6 +10,7 @@
   "version": "1.0.0",
   "category": "marketing-strategy",
   "type": "documentation-and-assets",
+  "author": "Shiv, Prospective PMM, Mistral Studio",
   "keywords": [
     "mistral-ai",
     "mistral-studio",
@@ -41,7 +42,7 @@
   ],
   "maintainers": [
     {
-      "name": "beastofbayarea",
+      "name": "Shiv, Prospective PMM, Mistral Studio",
       "url": "https://github.com/beastofbayarea"
     }
   ],
