@@ -35,15 +35,23 @@ Comprehensive marketing strategy, positioning & messaging frameworks, GTM delive
 mistral-studio-marketing/
 ├── .github/
 │   └── repository-metadata.json # Repository taxonomy & metadata schema
-├── content/                    # UI mockups, journey maps, keynotes & segmentation infographics
-├── data/                       # GTM master data, fact base, and value frameworks (.xlsx)
-├── deliverables/               # Core strategy pitch decks, battlecards & messaging frameworks
 ├── official-designs-and-docs/
 │   ├── brand/                  # Brand guidelines, banners, logos, and wallpapers
 │   ├── docs/                   # Strategic memos & European AI competitiveness whitepaper
 │   └── ui-screenshots/         # Official product UI & trace debugging screenshots
-├── sales-and-field-enablement/ # Competitor battlecards & sales one-pagers
-└── ugc-and-reports/            # Market reports, PR releases, and launch infographics
+├── pmm-deliverables/
+│   ├── case-studies-and-reports/ # Market reports & partnership press releases
+│   ├── data/                   # GTM master data, fact base, and value frameworks (.xlsx)
+│   ├── product-images/         # Studio UI mockups & overview graphics
+│   ├── strategy-one-pagers/    # Prosumer framework & keynote narrative infographics
+│   └── ux-onboarding/          # Product journey maps & friction analysis maps
+├── sales-and-field-enablement/
+│   ├── battlecards/            # Master battlecards PDF & competitor cards (AWS, MSFT, Claude)
+│   └── one-pagers/             # Core sales deck one-pagers and executive summaries
+├── author-profile.pptx
+├── eu-policy-company-thesis.pptx
+├── gtm-strategy-mece-framework.pptx
+└── product-marketing-strategy.pptx
 ```
 
 ---
