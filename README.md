@@ -41,7 +41,7 @@ mistral-studio-marketing/
 │   └── ui-screenshots/         # Official product UI & trace debugging screenshots
 ├── pmm-deliverables/
 │   ├── case-studies-and-reports/ # Market reports & partnership press releases
-│   ├── data/                   # GTM master data, fact base, and value frameworks (.xlsx)
+│   ├── data/                   # GTM master data, research fact base, and ROI frameworks (.xlsx)
 │   ├── product-images/         # Studio UI mockups & overview graphics
 │   ├── strategy-one-pagers/    # Prosumer framework & keynote narrative infographics
 │   └── ux-onboarding/          # Product journey maps & friction analysis maps
@@ -50,7 +50,7 @@ mistral-studio-marketing/
 │   └── one-pagers/             # Core sales deck one-pagers and executive summaries
 ├── author-profile.pptx
 ├── eu-policy-company-thesis.pptx
-├── gtm-strategy-mece-framework.pptx
+├── gtm-and-launch-strategy-framework.pptx
 └── product-marketing-strategy.pptx
 ```
 
