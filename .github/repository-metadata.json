@@ -4,7 +4,7 @@
   "owner": "beastofbayarea",
   "displayName": "Mistral Studio Marketing & Product Marketing Strategy",
   "description": "Mistral Studio Product Marketing Strategy, Category Narrative, Positioning & Messaging Framework, Prosumer-to-Enterprise Segmentation, Sales Battlecards, Brand Assets & Market Analysis.",
-  "homepage": "https://mistral.ai",
+  "homepage": "https://console.mistral.ai/",
   "repositoryUrl": "https://github.com/beastofbayarea/mistral-studio-marketing",
   "license": "MIT",
   "version": "1.0.0",
@@ -20,7 +20,17 @@
     "battlecards",
     "brand-assets",
     "ai-agents",
-    "llmops"
+    "llmops",
+    "generative-ai",
+    "large-language-models",
+    "enterprise-ai",
+    "market-research",
+    "competitive-analysis",
+    "product-strategy",
+    "infographics",
+    "go-to-market",
+    "sales-decks",
+    "ai-observability"
   ],
   "targetAudience": [
     "Developers",

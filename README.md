@@ -3,23 +3,29 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/beastofbayarea/mistral-studio-marketing?color=orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/beastofbayarea/mistral-studio-marketing?color=orange)
 ![License](https://img.shields.io/github/license/beastofbayarea/mistral-studio-marketing?color=blue)
-![Topic](https://img.shields.io/badge/topic-product--marketing-orange)
-![Topic](https://img.shields.io/badge/topic-gtm--strategy-blue)
+![Mistral Studio](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://console.mistral.ai/)
 
 Comprehensive marketing strategy, positioning & messaging frameworks, GTM deliverables, sales battlecards, brand assets, and content collateral for **Mistral Studio**.
 
 ---
 
-## 🏷️ Metadata & Taxonomy
+## 🌐 Homepage & Live Console
+
+- **Official Product Portal**: [https://console.mistral.ai/](https://console.mistral.ai/)
+
+---
+
+## 🏷️ Repository Metadata & Topics
 
 | Metadata Attribute | Value |
 | :--- | :--- |
 | **Repository Name** | `beastofbayarea/mistral-studio-marketing` |
+| **Homepage** | [console.mistral.ai](https://console.mistral.ai/) |
 | **Primary Category** | Product Marketing Strategy & Enablement |
 | **Target Personas** | Developers, AI Engineers, Enterprise AI Platform Leads, Sales & Field Enablement |
 | **License** | [MIT License](LICENSE) |
 | **Version** | `1.0.0` |
-| **Topics** | `mistral-ai`, `mistral-studio`, `product-marketing`, `gtm-strategy`, `positioning-framework`, `sales-enablement`, `battlecards`, `brand-assets`, `ai-agents`, `llmops` |
+| **Topics (20)** | `mistral-ai`, `mistral-studio`, `product-marketing`, `gtm-strategy`, `positioning-framework`, `sales-enablement`, `battlecards`, `brand-assets`, `ai-agents`, `llmops`, `generative-ai`, `large-language-models`, `enterprise-ai`, `market-research`, `competitive-analysis`, `product-strategy`, `infographics`, `go-to-market`, `sales-decks`, `ai-observability` |
 
 ---
 
