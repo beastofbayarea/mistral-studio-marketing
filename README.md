@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/beastofbayarea/mistral-studio-marketing?color=blue)
 ![Console](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://console.mistral.ai/)
 
-Welcome to the official **Mistral Studio Marketing & Product Marketing Strategy** repository. This repository contains the complete Product Marketing Manager (PMM) toolkit, Go-To-Market (GTM) strategies, category narrative keynotes, competitive battlecards, sales enablement one-pagers, technical-to-business value frameworks, brand design guidelines, and empirical market research reports for **Mistral Studio**.
+Welcome to the official **Mistral Studio Marketing & Product Marketing Strategy** repository. This repository contains the complete Product Marketing Manager (PMM) toolkit, Go-To-Market (GTM) strategies, category narrative keynotes, competitive battlecards, sales enablement one-pagers, technical-to-business value frameworks, brand design guidelines, industry vertical playbooks (Financial Services Industry / FSI), and empirical market research reports for **Mistral Studio**.
 
 ---
 
@@ -25,9 +25,9 @@ Welcome to the official **Mistral Studio Marketing & Product Marketing Strategy*
 | **Author** | **Shiv, Prospective PMM, Mistral Studio** |
 | **Primary Category** | Enterprise Product Marketing Strategy & Field Enablement |
 | **Canonical Positioning** | *"Move from AI prototypes to governed production agents. Mistral Studio is the production AI platform for enterprises to build, iterate, deploy, and govern agentic AI systems with total control over models, data, and deployment."* |
-| **Target Personas** | Developers, AI Engineers, Enterprise AI Platform Leads, CTOs / CDOs |
+| **Target Personas** | Developers, AI Engineers, Enterprise AI Platform Leads, CTOs / CDOs, FSI Solutions Leads |
 | **License** | [MIT License](LICENSE) |
-| **Topics (20)** | `mistral-ai`, `mistral-studio`, `product-marketing`, `gtm-strategy`, `positioning-framework`, `sales-enablement`, `battlecards`, `brand-assets`, `ai-agents`, `llmops`, `generative-ai`, `large-language-models`, `enterprise-ai`, `market-research`, `competitive-analysis`, `product-strategy`, `infographics`, `go-to-market`, `sales-decks`, `ai-observability` |
+| **Topics (20)** | `mistral-ai`, `mistral-studio`, `product-marketing`, `gtm-strategy`, `positioning-framework`, `sales-enablement`, `battlecards`, `brand-assets`, `ai-agents`, `llmops`, `generative-ai`, `large-language-models`, `enterprise-ai`, `market-research`, `competitive-analysis`, `product-strategy`, `fsi-solutions`, `go-to-market`, `sales-decks`, `ai-observability` |
 
 ---
 
@@ -38,21 +38,34 @@ mistral-studio-marketing/
 ├── .github/
 │   └── repository-metadata.json                     # Repository taxonomy & metadata schema
 │
-├── official-designs-and-docs/                        # Official Brand Identity & Product Documentation
-│   ├── brand/
-│   │   ├── banners/                                 # Official product banners (mistral-studio-banner.jpg)
-│   │   ├── guidelines/                              # Mistral Logo Guidelines (mistral-logo-guidelines.pdf, README.md)
-│   │   ├── logos/                                   # High-resolution vector model icons & footer assets
-│   │   └── wallpapers/                              # Desktop wallpapers (mistral-wallpaper-01, 02)
-│   ├── docs/                                        # Whitepapers & strategic memos (European AI Whitepaper, Strategic Memo)
-│   └── ui-screenshots/                              # Official product UI screenshots (Agent Management, Observability, SDK)
+├── industries-pmm/                                  # Industry Vertical PMM Playbooks & GTM Strategy
+│   └── fsi-solutions-gtm/                           # Financial Services Industry (FSI) Solutions GTM
+│       ├── 01_Field_Playbook.md                     # FSI field execution & solution messaging playbook
+│       ├── 02_Customers_Accounts.md                 # Target account profiles & buyer persona mapping
+│       ├── 03_Product_Priorities.md                 # FSI product roadmap priorities & use case mapping
+│       ├── 04_GTM_and_Operating_Plan.md             # Go-to-market launch & operating plan
+│       ├── 05_Performance_Framework.md             # KPIs, metrics & evaluation framework
+│       └── 06_Sources_and_Assumptions.md            # Market research sources & financial assumptions
 │
-├── pmm-deliverables/                                # Product Marketing Manager Core Strategy Deliverables
-│   ├── case-studies-and-reports/                    # German Tax AI Market Radar 2026 & La Banque Postale Partnership PR
-│   ├── data/                                        # Master Excel databases (GTM Fact Base, Master Positioning, ROI Framework)
+├── official-designs-and-docs/                        # Official Brand Identity & Assets
+│   ├── bank-icons/                                  # Customer & partner financial institution logos
+│   ├── banners-wallpapers/                          # Banners & wallpapers (mistral-studio-banner.jpg, wallpapers)
+│   ├── docs/                                        # Whitepapers & strategic memos (European AI Whitepaper, Strategic Memo)
+│   ├── logos/                                       # High-resolution vector model icons & monogram logos
+│   ├── solutions-finance-images/                    # Financial industry diagrams, icons & photo assets
+│   ├── ui-screenshots/                              # Product UI screenshots & financial workflow illustrations
+│   └── mistral-logo-guidelines.pdf                  # Official Mistral logo & brand design guidelines PDF
+│
+├── resources/                                       # Shared Assets, Reports & Font Specifications
+│   ├── case-studies-and-reports/                    # German Tax AI Market Radar 2026 & La Banque Postale PR
+│   ├── fonts/                                       # Brand typography assets (Silkscreen, Tiny5)
 │   ├── product-images/                              # Mistral AI Studio UI mockups & platform overview diagrams
+│   └── front-end-tech-stack.xlsx                    # Technology stack matrix
+│
+├── studio-pmm/                                      # Mistral Studio Core PMM Strategy Deliverables
+│   ├── data/                                        # Master Excel databases (GTM Fact Base, Master Positioning, ROI Framework)
 │   ├── sales-battlecards/                           # Competitor battlecards (AWS Bedrock, MSFT Foundry, Claude, DIY)
-│   ├── sales-one-pagers/                            # Executive architecture one-pagers & workflow POC briefs (PNG)
+│   ├── sales-one-pagers/                            # Executive architecture one-pagers & workflow POC briefs
 │   ├── strategy-one-pagers/                         # Keynote narrative infographics (Dark & Orange themes)
 │   ├── category-narrative-keynote.pptx              # Thought leadership keynote: Prototype to Governed Production
 │   ├── competitive-landscape-differentiation-framework.pptx # Competitive landscape positioning deck
@@ -63,10 +76,9 @@ mistral-studio-marketing/
 │
 ├── author-profile.pptx                              # Author profile background & strategy bio presentation
 ├── eu-policy-company-thesis.pptx                    # European AI policy & company thesis presentation
-├── gtm-and-launch-strategy-framework-a.pptx        # Outside-in GTM MECE launch framework presentation (Part A)
-├── gtm-and-launch-strategy-framework-b.pptx        # Outside-in GTM MECE launch framework presentation (Part B)
+├── fsi-solutions-gtm.pptx                           # Financial Services Industry (FSI) GTM strategy deck
+├── gtm-and-launch-strategy-framework.pptx           # Outside-in GTM MECE launch framework presentation
 ├── product-marketing-strategy.pptx                  # Core Product Marketing Strategy presentation deck
-├── prosumer-segmentation-framework.pdf              # Prosumer segmentation framework PDF
 ├── sales-enterprise-architecture-one-pager.pdf     # Enterprise architecture one-pager PDF
 ├── sales-master-battlecards.pdf                     # Master battlecards compilation PDF
 ├── self-service-journey-friction-diagnostic.png     # Self-service friction diagnostic chart
@@ -82,7 +94,7 @@ mistral-studio-marketing/
 
 ## 🎨 Brand & Logo Design Guidelines
 
-The official **Mistral Logo Guidelines** are defined in [`official-designs-and-docs/brand/guidelines/mistral-logo-guidelines.pdf`](official-designs-and-docs/brand/guidelines/mistral-logo-guidelines.pdf) and documented in detail in [`official-designs-and-docs/brand/guidelines/README.md`](official-designs-and-docs/brand/guidelines/README.md).
+The official **Mistral Logo Guidelines** are available in [`official-designs-and-docs/mistral-logo-guidelines.pdf`](official-designs-and-docs/mistral-logo-guidelines.pdf).
 
 Key design standards include:
 - **Clearspace**: Maintain a minimum empty border equal to 1 unit (the height of the pixelated 'M' symbol) around the primary lockup, symbol, or wordmark.
@@ -94,19 +106,33 @@ Key design standards include:
 
 ---
 
+## 🏦 Financial Services (FSI) Industry GTM
+
+The [`industries-pmm/fsi-solutions-gtm/`](industries-pmm/fsi-solutions-gtm/) directory and [`fsi-solutions-gtm.pptx`](fsi-solutions-gtm.pptx) provide specialized solution marketing and field playbooks for banking, insurance, and asset management:
+
+- **Field Execution Playbook**: [`01_Field_Playbook.md`](industries-pmm/fsi-solutions-gtm/01_Field_Playbook.md) — FSI buyer messaging, objection handling, and enterprise sales motions.
+- **Target Customer Accounts**: [`02_Customers_Accounts.md`](industries-pmm/fsi-solutions-gtm/02_Customers_Accounts.md) — Tier-1 bank profiles, regulatory requirements, and decision-maker personas.
+- **Product Roadmap Priorities**: [`03_Product_Priorities.md`](industries-pmm/fsi-solutions-gtm/03_Product_Priorities.md) — FSI-specific platform requirements (on-prem, sovereignty, audit trails).
+- **GTM Operating Plan**: [`04_GTM_and_Operating_Plan.md`](industries-pmm/fsi-solutions-gtm/04_GTM_and_Operating_Plan.md) — Co-selling strategy, SI partners, and launch cadence.
+- **Performance Framework**: [`05_Performance_Framework.md`](industries-pmm/fsi-solutions-gtm/05_Performance_Framework.md) — Pipeline metrics, ACV targets, and win-rate tracking.
+- **Research Sources & Assumptions**: [`06_Sources_and_Assumptions.md`](industries-pmm/fsi-solutions-gtm/06_Sources_and_Assumptions.md) — Empirical financial market research base.
+
+---
+
 ## 🎯 Target Persona Mapping & Value Proposition
 
 | Target Persona | Key Pain Points | Mistral Studio Value Proposition | Primary Assets |
 | :--- | :--- | :--- | :--- |
-| **Developer** | Wants cheap, fast model access; friction in initial API calls. | Self-service Playground, rapid API setup, transparent rate limits. | `pmm-deliverables/product-journey-roadmap.png`, `pmm-deliverables/sales-one-pagers/` |
-| **AI Engineer** | Production workflows fail silently; toolchain fragmentation. | End-to-end agent orchestration, trace debugging, quality evals. | `official-designs-and-docs/ui-screenshots/`, `pmm-deliverables/data/` |
+| **Developer** | Wants cheap, fast model access; friction in initial API calls. | Self-service Playground, rapid API setup, transparent rate limits. | `studio-pmm/product-journey-roadmap.png`, `studio-pmm/sales-one-pagers/` |
+| **AI Engineer** | Production workflows fail silently; toolchain fragmentation. | End-to-end agent orchestration, trace debugging, quality evals. | `official-designs-and-docs/ui-screenshots/`, `studio-pmm/data/` |
 | **Enterprise Platform Lead / CTO** | Lack of governance, data privacy risks, vendor lock-in. | Sovereign deployment (on-prem/private cloud), audit trails, guardrails. | `official-designs-and-docs/docs/mistral-ai-european-competitiveness-whitepaper.pdf`, `sales-enterprise-architecture-one-pager.pdf` |
+| **FSI Solutions Leader / CDO** | Strict regulatory compliance (DORA, AI Act), sensitive financial data. | On-premises & sovereign cloud deployment, full data isolation, governance. | `industries-pmm/fsi-solutions-gtm/`, `fsi-solutions-gtm.pptx` |
 
 ---
 
 ## ⚔️ Sales Enablement & Competitive Battlecards
 
-The [`pmm-deliverables/sales-battlecards/`](pmm-deliverables/sales-battlecards/) directory and [`sales-master-battlecards.pdf`](sales-master-battlecards.pdf) provide field teams with objection handling, positioning traps, and feature differentiation vs competitor platforms:
+The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory and [`sales-master-battlecards.pdf`](sales-master-battlecards.pdf) provide field teams with objection handling, positioning traps, and feature differentiation vs competitor platforms:
 
 - **vs AWS Bedrock AgentCore**: Highlights Mistral's model portability, sovereign cloud deployment, and zero lock-in vs AWS proprietary silos.
 - **vs Microsoft Foundry**: Focuses on privacy-first European data control, fine-tuning flexibility, and lower total cost of ownership (TCO).
@@ -121,4 +147,3 @@ The [`pmm-deliverables/sales-battlecards/`](pmm-deliverables/sales-battlecards/)
 - **Contributions**: See [`CONTRIBUTING.md`](CONTRIBUTING.md) for asset submission guidelines.
 - **Code of Conduct**: See [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 - **Security**: See [`SECURITY.md`](SECURITY.md).
-
