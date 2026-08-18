@@ -18,12 +18,24 @@ Welcome to the official **Mistral Studio Marketing & Product Marketing Strategy*
 
 ---
 
+## 🔍 Primary Research Sources & Website Summaries
+
+> [!IMPORTANT]
+> **Primary Research Source Directive**:
+> For all research regarding Mistral AI products, platform capabilities, foundation models, industry solutions, customer case studies, and GTM positioning, **[`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) MUST be used as the primary / first research source**.
+
+- ⭐️ **Level 0 & Level 1 Primary Research Summary**: [`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) — Concise, structured summaries of all core landing pages, products (Studio, Forge, Vibe, Compute), solutions, pricing tiers, and customer case studies.
+- 📚 **Level 2 Deep Exploration Summary**: [`resources/mistral_ai_l2_site_summaries.md`](resources/mistral_ai_l2_site_summaries.md) — Comprehensive 814-page index covering API endpoint references, model cards, cookbooks, support articles, and legal disclosures.
+
+---
+
 ## 🏷️ Metadata & Taxonomy
 
 | Metadata Attribute | Value / Details |
 | :--- | :--- |
 | **Author** | **Shiv, Prospective PMM, Mistral Studio** |
 | **Primary Category** | Enterprise Product Marketing Strategy & Field Enablement |
+| **Primary Research Source** | [`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) |
 | **Canonical Positioning** | *"Move from AI prototypes to governed production agents. Mistral Studio is the production AI platform for enterprises to build, iterate, deploy, and govern agentic AI systems with total control over models, data, and deployment."* |
 | **Target Personas** | Developers, AI Engineers, Enterprise AI Platform Leads, CTOs / CDOs, FSI Solutions Leads |
 | **License** | [MIT License](LICENSE) |
@@ -56,7 +68,9 @@ mistral-studio-marketing/
 │   ├── ui-screenshots/                              # Product UI screenshots & financial workflow illustrations
 │   └── mistral-logo-guidelines.pdf                  # Official Mistral logo & brand design guidelines PDF
 │
-├── resources/                                       # Shared Assets, Reports & Font Specifications
+├── resources/                                       # Shared Assets, Reports & Site Summaries
+│   ├── mistral_ai_site_summaries.md                 # ⭐️ PRIMARY RESEARCH SOURCE: Root & Level 1 Page Summaries
+│   ├── mistral_ai_l2_site_summaries.md              # Level 2 Web Crawl Summaries Directory (814 pages)
 │   ├── case-studies-and-reports/                    # German Tax AI Market Radar 2026 & La Banque Postale PR
 │   ├── fonts/                                       # Brand typography assets (Silkscreen, Tiny5)
 │   ├── product-images/                              # Mistral AI Studio UI mockups & platform overview diagrams
