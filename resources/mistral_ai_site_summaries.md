@@ -1,8 +1,8 @@
 # 📚 Mistral AI Web Pages Summary Directory (Root & Level 1)
 
-This document contains structured, concise summaries of all **Root (Level 0)** and **Level 1** pages discovered during the web crawl of [`https://mistral.ai/`](https://mistral.ai/).
+This document contains structured, concise summaries for all **Root (Level 0)** and **Level 1** pages discovered on [`https://mistral.ai/`](https://mistral.ai/). Each summary has been generated from scratch by analyzing the body text of the respective page.
 
-**Total Pages Summarized**: 83  
+**Total Pages Summarized**: 64  
 
 **Target Directory**: `resources/`  
 
@@ -11,609 +11,413 @@ This document contains structured, concise summaries of all **Root (Level 0)** a
 
 ## 📁 Root Homepage
 
-### 🔗 [Frontier AI LLMs, assistants, agents, services | Mistral](https://mistral.ai/)
+### 🔗 [Frontier AI LLMs, assistants, agents, services](https://mistral.ai/)
 - **URL**: `https://mistral.ai/`
-- **HTTP Status**: `200`
-- **Overview**: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.
-- **Key Focus Areas**: Frontier AI.
-In your hands., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Serves as the primary enterprise gateway for Mistral AI, highlighting its frontier AI platform, open-weights foundation models, and deployment solutions.
+- **Key Capabilities**: Highlights agent building (Studio), custom model alignment (Forge), multi-modal voice/vision models, and sovereign cloud/on-prem deployment.
+- **Target Audience**: Enterprise developers, CDOs/CTOs, AI researchers, and technical platform teams.
 
 
 ## 📁 Products & Platform
 
 ### 🔗 [Mistral Compute: GPU cloud for training and inference at scale.](https://mistral.ai/products/aicloud)
 - **URL**: `https://mistral.ai/products/aicloud`
-- **HTTP Status**: `200`
-- **Overview**: Frontier-grade infrastructure and orchestration platform behind Mistral's own models, open to AI labs, research teams, and enterprises.
-- **Key Focus Areas**: The frontier AI cloud., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral Compute: GPU cloud for training and inference at scale.](https://mistral.ai/products/aicloud/)
-- **URL**: `https://mistral.ai/products/aicloud/`
-- **HTTP Status**: `200`
-- **Overview**: Frontier-grade infrastructure and orchestration platform behind Mistral's own models, open to AI labs, research teams, and enterprises.
-- **Key Focus Areas**: The frontier AI cloud., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Overview of Mistral Compute, the high-performance GPU cloud infrastructure backing Mistral's training and inference services.
+- **Key Capabilities**: Delivers frontier-scale GPU clusters, sovereign European hosting, low-latency inference endpoints, and elastic compute scaling.
+- **Target Audience**: Enterprise AI labs, high-throughput API consumers, and sovereign compute customers.
 
 ### 🔗 [Mistral Forge - Build AI models that know your enterprise](https://mistral.ai/products/forge)
 - **URL**: `https://mistral.ai/products/forge`
-- **HTTP Status**: `200`
-- **Overview**: Transform institutional knowledge into frontier-grade LLMs—without infrastructure burden or cloud lock-in.
-- **Key Focus Areas**: Build AI models that know your enterprise., From your data to your model, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral Forge - Build AI models that know your enterprise](https://mistral.ai/products/forge/)
-- **URL**: `https://mistral.ai/products/forge/`
-- **HTTP Status**: `200`
-- **Overview**: Transform institutional knowledge into frontier-grade LLMs—without infrastructure burden or cloud lock-in.
-- **Key Focus Areas**: Build AI models that know your enterprise., From your data to your model, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Details Mistral Forge, a dedicated platform for fine-tuning and aligning foundation models using proprietary organizational data.
+- **Key Capabilities**: Enables domain-specific model customization, weight adaptation, automated benchmark evaluation, and secure data isolation.
+- **Target Audience**: Data science teams, ML engineers, and enterprises needing tailored domain intelligence.
 
 ### 🔗 [Mistral Studio | Your AI production platform.](https://mistral.ai/products/studio)
 - **URL**: `https://mistral.ai/products/studio`
-- **HTTP Status**: `200`
-- **Overview**: Create AI use cases, manage the full lifecycle, and ship with confidence, all with enterprise privacy, security, and full ownership of your data.
-- **Key Focus Areas**: Build your frontier with Studio., Operationalize AI. From frontier<br> models to real-world systems., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral Studio | Your AI production platform.](https://mistral.ai/products/studio/)
-- **URL**: `https://mistral.ai/products/studio/`
-- **HTTP Status**: `200`
-- **Overview**: Create AI use cases, manage the full lifecycle, and ship with confidence, all with enterprise privacy, security, and full ownership of your data.
-- **Key Focus Areas**: Build your frontier with Studio., Operationalize AI. From frontier<br> models to real-world systems., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Presents Mistral Studio as the central operational platform for building, evaluating, and deploying AI agents and generative workflows.
+- **Key Capabilities**: Provides workflow orchestration, prompt/skill version control, observability tracing, prompt debugging, and enterprise governance controls.
+- **Target Audience**: AI Engineers, software developers, and enterprise IT leads seeking governed agent deployment.
 
 ### 🔗 [Mistral Vibe (formerly Le Chat) - AI chat and coding agent](https://mistral.ai/products/vibe)
 - **URL**: `https://mistral.ai/products/vibe`
-- **HTTP Status**: `200`
-- **Overview**: Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most meaningful work.
-- **Key Focus Areas**: W̶o̶r̶k̶ Vibe., 🏢 Client Meeting: Website Redesign Kickoff, 👥 Attendees:, 📌 Agenda:, Products, Solutions
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Introduces Mistral Vibe (formerly Le Chat), an AI chat and productivity workspace for workplace communication and task execution.
+- **Key Capabilities**: Supports document synthesis, web search, code generation, multi-modal file analysis, and custom agent workflows.
+- **Target Audience**: Knowledge workers, business professionals, and developer teams.
 
-### 🔗 [Mistral Vibe (formerly Le Chat) - AI chat and coding agent](https://mistral.ai/products/vibe/)
-- **URL**: `https://mistral.ai/products/vibe/`
-- **HTTP Status**: `200`
-- **Overview**: Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most meaningful work.
-- **Key Focus Areas**: W̶o̶r̶k̶ Vibe., 🏢 Client Meeting: Website Redesign Kickoff, 👥 Attendees:, 📌 Agenda:, Products, Solutions
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral Vibe | AI coding agent for terminal, IDE by Mistral.](https://mistral.ai/products/vibe/code/)
-- **URL**: `https://mistral.ai/products/vibe/code/`
-- **HTTP Status**: `200`
-- **Overview**: Agentic coding that understands your entire codebase. Build, test, and modernize autonomously.
-- **Key Focus Areas**: Keep shipping., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Mistral Vibe | AI coding agent for terminal, IDE by Mistral.](https://mistral.ai/products/vibe/code)
+- **URL**: `https://mistral.ai/products/vibe/code`
+- **Page Purpose**: Focuses on Mistral Vibe for Code, an autonomous AI coding agent operating directly within IDEs, terminals, and background repos.
+- **Key Capabilities**: Offers full codebase comprehension, automated refactoring, inline code generation, bug fixing, and test creation.
+- **Target Audience**: Software engineers, DevOps teams, and technical leads seeking productivity acceleration.
 
 
 ## 📁 Solutions & Industries
 
-### 🔗 [Frontier AI for energy and utilities | Mistral](https://mistral.ai/industry/energy/)
-- **URL**: `https://mistral.ai/industry/energy/`
-- **HTTP Status**: `200`
-- **Overview**: Transform operational complexity into specialized intelligence that understands your assets, regulations, and infrastructure.
-- **Key Focus Areas**: Frontier AI for energy and utilities., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Frontier AI for energy and utilities](https://mistral.ai/industry/energy)
+- **URL**: `https://mistral.ai/industry/energy`
+- **Page Purpose**: Dedicated to AI deployments within energy producers, grid operators, and utility companies.
+- **Key Capabilities**: Focuses on utility asset monitoring, regulatory compliance reporting, energy grid data analysis, and technical document query.
+- **Target Audience**: Energy sector engineers, utility operations leads, and environmental compliance teams.
 
-### 🔗 [Frontier AI for finance | Mistral](https://mistral.ai/industry/finance/)
-- **URL**: `https://mistral.ai/industry/finance/`
-- **HTTP Status**: `200`
-- **Overview**: Transform general-purpose intelligence into specialized financial AI that understands your workflows, regulatory requirements, and risk controls.
-- **Key Focus Areas**: Frontier AI for finance., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Frontier AI for finance](https://mistral.ai/industry/finance)
+- **URL**: `https://mistral.ai/industry/finance`
+- **Page Purpose**: Outlines specialized AI solutions tailored for financial institutions, banking, and insurance.
+- **Key Capabilities**: Focuses on automated document extraction, compliance audit trail generation, risk entity flagging, and financial research analysis.
+- **Target Audience**: Chief Risk Officers, compliance teams, investment analysts, and financial IT leads.
 
-### 🔗 [Frontier AI for manufacturing | Mistral](https://mistral.ai/industry/manufacturing/)
-- **URL**: `https://mistral.ai/industry/manufacturing/`
-- **HTTP Status**: `200`
-- **Overview**: Build better products faster with a fully integrated AI stack for industrial engineering.
-- **Key Focus Areas**: Frontier AI for manufacturing., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Frontier AI for manufacturing](https://mistral.ai/industry/manufacturing)
+- **URL**: `https://mistral.ai/industry/manufacturing`
+- **Page Purpose**: Highlights AI applications across manufacturing, industrial engineering, and supply chain.
+- **Key Capabilities**: Covers physics-informed AI modeling, equipment telemetry analysis, engineering documentation search, and automated quality control.
+- **Target Audience**: Industrial engineers, operations managers, and manufacturing tech executives.
 
-### 🔗 [Frontier AI for public institutions | Mistral AI](https://mistral.ai/industry/public-sector/)
-- **URL**: `https://mistral.ai/industry/public-sector/`
-- **HTTP Status**: `200`
-- **Overview**: Own the AI that powers your public services, with full control over your models, data, and infrastructure.
-- **Key Focus Areas**: Frontier AI for public institutions., Start your AI transformation journey., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Frontier AI for public institutions](https://mistral.ai/industry/public-sector)
+- **URL**: `https://mistral.ai/industry/public-sector`
+- **Page Purpose**: Presents sovereign AI deployment options for government bodies and public sector institutions.
+- **Key Capabilities**: Emphasizes strict data residency, on-premises deployment, regulatory compliance (EU AI Act), and public service automation.
+- **Target Audience**: Government IT Directors, public administration leads, and defense/secops teams.
 
-### 🔗 [Solutions for any use case | Mistral](https://mistral.ai/solutions)
+### 🔗 [Solutions for any use case](https://mistral.ai/solutions)
 - **URL**: `https://mistral.ai/solutions`
-- **HTTP Status**: `200`
-- **Overview**: Learn how organizational teams across industries are using Mistral to help improve productivity, increase operational efficiency, and drive revenue.
-- **Key Focus Areas**: The fastest way to AI-native., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central directory showcasing Mistral's full suite of enterprise AI solutions across industries and technical domains.
+- **Key Capabilities**: Overview of document processing, coding assistance, speech intelligence, and industry-specific GTM frameworks.
+- **Target Audience**: Enterprise decision makers and technology procurement leads.
 
-### 🔗 [Solutions for any use case | Mistral](https://mistral.ai/solutions/)
-- **URL**: `https://mistral.ai/solutions/`
-- **HTTP Status**: `200`
-- **Overview**: Learn how organizational teams across industries are using Mistral to help improve productivity, increase operational efficiency, and drive revenue.
-- **Key Focus Areas**: The fastest way to AI-native., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Coding](https://mistral.ai/solutions/coding)
+- **URL**: `https://mistral.ai/solutions/coding`
+- **Page Purpose**: Presents enterprise-grade AI software development capabilities using Codestral and Vibe.
+- **Key Capabilities**: Enables private code completion, repository-wide indexing, security vulnerability scanning, and custom coding agent integration.
+- **Target Audience**: Enterprise software development organizations and engineering directors.
 
-### 🔗 [Coding | Mistral](https://mistral.ai/solutions/coding/)
-- **URL**: `https://mistral.ai/solutions/coding/`
-- **HTTP Status**: `200`
-- **Overview**: Purpose-built for enterprise teams who need frontier AI coding capabilities without sacrificing control over their most critical intellectual property.
-- **Key Focus Areas**: Transform how your teams build software., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Custom model training. Domain-specific language models.](https://mistral.ai/solutions/custom-model-training)
+- **URL**: `https://mistral.ai/solutions/custom-model-training`
+- **Page Purpose**: Outlines bespoke model training services for organizations requiring proprietary AI architectures.
+- **Key Capabilities**: Includes full parameter pre-training, domain-specific vocabulary tuning, RLHF alignment, and custom benchmark creation.
+- **Target Audience**: Large enterprise partners and specialized domain research organizations.
 
-### 🔗 [Custom model training. Domain-specific language models. | Mistral](https://mistral.ai/solutions/custom-model-training/)
-- **URL**: `https://mistral.ai/solutions/custom-model-training/`
-- **HTTP Status**: `200`
-- **Overview**: Specialized intelligence, delivered by custom training frontier models with deep domain-specific knowledge.
-- **Key Focus Areas**: Intelligence tailored to your domain. Developed together., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Document AI and OCR](https://mistral.ai/solutions/document-ai)
+- **URL**: `https://mistral.ai/solutions/document-ai`
+- **Page Purpose**: Showcases Mistral's Document AI and OCR 4 technology for multi-lingual document parsing.
+- **Key Capabilities**: Supports 170+ languages, complex layout parsing, bounding box extraction, structured JSON conversion, and table processing.
+- **Target Audience**: Document processing operations, legal teams, back-office automation leads.
 
-### 🔗 [Document AI and OCR | Mistral AI](https://mistral.ai/solutions/document-ai/)
-- **URL**: `https://mistral.ai/solutions/document-ai/`
-- **HTTP Status**: `200`
-- **Overview**: Extract, understand, and analyze documents with Mistral document AI and enterprise-grade OCR — with multilingual support and flexible workflows for any document type.
-- **Key Focus Areas**: Document AI, powered by the world’s best OCR., ARTICLE VI - RECORDS AND AUDITS, ARTICLE VII - CHANGES AND FEE ADJUSTMENTS, A. BASELINE, WASHINGTON PUBLIC POWER SAFELY SYSTEM, RICHLAND, WASHINGTON
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Speech intelligence for enterprises | Mistral](https://mistral.ai/solutions/speech/)
-- **URL**: `https://mistral.ai/solutions/speech/`
-- **HTTP Status**: `200`
-- **Overview**: Frontier transcription, voice synthesis, and voice agents for natural, expressive, nuanced interactions with voice AI.
-- **Key Focus Areas**: Speech intelligence that passes the human test., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Speech intelligence for enterprises](https://mistral.ai/solutions/speech)
+- **URL**: `https://mistral.ai/solutions/speech`
+- **Page Purpose**: Covers Voxtral speech intelligence, including text-to-speech (TTS) and speech-to-text (STT) capabilities.
+- **Key Capabilities**: Provides low-latency speech transcription, voice cloning, expressive voice synthesis, and real-time conversational voice agents.
+- **Target Audience**: Customer service teams, call center automation leads, and voice app developers.
 
 
 ## 📁 Customer Stories & Case Studies
 
-### 🔗 [Customer stories | Mistral](https://mistral.ai/customers)
+### 🔗 [Customer stories](https://mistral.ai/customers)
 - **URL**: `https://mistral.ai/customers`
-- **HTTP Status**: `200`
-- **Overview**: We help customers across the world transform their operations, products, and services with AI.
-- **Key Focus Areas**: Bringing customers to the frontier., Customer Stories., ASML accelerates advanced semiconductor lithography with Mistral., AXA empowers employees and develops tailored use cases with Mistral., Mistral helps Airbus advance trusted AI from design to flight., Supporting due diligence and deal analysis workflows.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central hub showcasing enterprise customer success stories across global industries.
+- **Featured Clients**: Highlights case studies for ASML, AXA, Airbus, BMW, CMA CGM, EPO, HSBC, and Stellantis.
+- **Value Theme**: Demonstrates enterprise value across high-security, regulated, and industrial environments.
 
-### 🔗 [Customer stories | Mistral](https://mistral.ai/customers/)
-- **URL**: `https://mistral.ai/customers/`
-- **HTTP Status**: `200`
-- **Overview**: We help customers across the world transform their operations, products, and services with AI.
-- **Key Focus Areas**: Bringing customers to the frontier., Customer Stories., ASML accelerates advanced semiconductor lithography with Mistral., AXA empowers employees and develops tailored use cases with Mistral., Mistral helps Airbus advance trusted AI from design to flight., Supporting due diligence and deal analysis workflows.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [ASML and Mistral. | Mistral AI](https://mistral.ai/customers/asml)
+### 🔗 [ASML and Mistral.](https://mistral.ai/customers/asml)
 - **URL**: `https://mistral.ai/customers/asml`
-- **HTTP Status**: `200`
-- **Overview**: ASML accelerates advanced semiconductor lithography with Mistral.
-- **Key Focus Areas**: ASML and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study examining ASML's deployment of Mistral AI for semiconductor lithography engineering.
+- **Key Insights**: ASML leverages open-weights models to accelerate complex engineering queries, software development, and technical knowledge extraction.
+- **Business Impact**: Enhanced engineering productivity and accelerated lithography R&D cycles.
 
-### 🔗 [ASML and Mistral. | Mistral AI](https://mistral.ai/customers/asml/)
-- **URL**: `https://mistral.ai/customers/asml/`
-- **HTTP Status**: `200`
-- **Overview**: ASML accelerates advanced semiconductor lithography with Mistral.
-- **Key Focus Areas**: ASML and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Austrian Academy of Sciences | Mistral AI](https://mistral.ai/customers/austrian-academy-of-sciences)
+### 🔗 [Austrian Academy of Sciences](https://mistral.ai/customers/austrian-academy-of-sciences)
 - **URL**: `https://mistral.ai/customers/austrian-academy-of-sciences`
-- **HTTP Status**: `200`
-- **Overview**: Austrian Academy of Sciences unlocks Ancient Greek with Mistral.
-- **Key Focus Areas**: Austrian Academy of Sciences and Mistral: unlocking Ancient Greek with Apollo., Decoding a millennium of history, Introducing Apollo, a custom LLM for Ancient Greek, A new era for humanities research, Products, Solutions
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study detailing how the Austrian Academy of Sciences built 'Apollo', a custom model for Ancient Greek.
+- **Key Insights**: Trained a domain-specific LLM on historical manuscripts to transcribe, translate, and analyze historical texts.
+- **Business Impact**: Pioneered specialized humanities research capabilities using open model fine-tuning.
 
-### 🔗 [BMW | Mistral AI](https://mistral.ai/customers/bmw/)
-- **URL**: `https://mistral.ai/customers/bmw/`
-- **HTTP Status**: `200`
-- **Overview**: BMW Group is partnering with Mistral to develop industry-specific AI models for crash simulation, combining BMW’s proprietary datasets and engineering expertise with Mistral’s advanced AI capabilities to improve quality, accuracy, and speed for complex engineering tasks. The collaboration focuses on embedding domain-specific knowledge into AI workflows, starting with crash simulation and scaling to other domains like robotics and aerodynamics.
-- **Key Focus Areas**: BMW and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [BMW](https://mistral.ai/customers/bmw)
+- **URL**: `https://mistral.ai/customers/bmw`
+- **Page Purpose**: Case study highlighting BMW Group's collaboration with Mistral for automotive engineering and crash simulations.
+- **Key Insights**: Integrates proprietary vehicle telemetry and simulation data into AI models for crash test analysis, aerodynamics, and robotics.
+- **Business Impact**: Reduced engineering simulation iteration times and improved vehicle safety design accuracy.
 
-### 🔗 [CMA CGM and Mistral. | Mistral AI](https://mistral.ai/customers/cma-cgm)
+### 🔗 [CMA CGM and Mistral.](https://mistral.ai/customers/cma-cgm)
 - **URL**: `https://mistral.ai/customers/cma-cgm`
-- **HTTP Status**: `200`
-- **Overview**: CMA CGM streamlines global maritime operations with Mistral.
-- **Key Focus Areas**: CMA CGM and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study describing CMA CGM's implementation of Mistral AI across global shipping and logistics.
+- **Key Insights**: Deploys AI agents for maritime document processing, supply chain route optimization, and operational query handling.
+- **Business Impact**: Streamlined global maritime documentation and improved container logistics efficiency.
 
-### 🔗 [CMA CGM and Mistral. | Mistral AI](https://mistral.ai/customers/cma-cgm/)
-- **URL**: `https://mistral.ai/customers/cma-cgm/`
-- **HTTP Status**: `200`
-- **Overview**: CMA CGM streamlines global maritime operations with Mistral.
-- **Key Focus Areas**: CMA CGM and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [European Patent Office and Mistral. | Mistral AI](https://mistral.ai/customers/epo)
+### 🔗 [European Patent Office and Mistral.](https://mistral.ai/customers/epo)
 - **URL**: `https://mistral.ai/customers/epo`
-- **HTTP Status**: `200`
-- **Overview**: The European Patent Office accelerates innovation with Mistral.
-- **Key Focus Areas**: From PDFs to structured output: automated patent transcription at scale., The European Patent Office leverages Mistral AI to streamline complex application processing., Stats:, Processing technical complexity at scale, Mistral AI partnership: a tailored end-to-end solution, Driving precision and efficiency in patent examination
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study illustrating how the European Patent Office automates patent application processing.
+- **Key Insights**: Uses Mistral OCR and language models to transcribe, structure, and audit high-volume multi-lingual patent filings.
+- **Business Impact**: Accelerated patent examination speed and improved document indexing precision.
 
-### 🔗 [HSBC and Mistral. | Mistral AI](https://mistral.ai/customers/hsbc)
+### 🔗 [HSBC and Mistral.](https://mistral.ai/customers/hsbc)
 - **URL**: `https://mistral.ai/customers/hsbc`
-- **HTTP Status**: `200`
-- **Overview**: HSBC boosts productivity with Mistral.
-- **Key Focus Areas**: HSBC and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study showing HSBC's deployment of Mistral AI across global banking operations.
+- **Key Insights**: Utilizes private cloud models for financial reporting analysis, compliance tracking, and internal developer assistance.
+- **Business Impact**: Boosted workforce productivity while maintaining strict financial regulatory compliance.
 
-### 🔗 [HSBC and Mistral. | Mistral AI](https://mistral.ai/customers/hsbc/)
-- **URL**: `https://mistral.ai/customers/hsbc/`
-- **HTTP Status**: `200`
-- **Overview**: HSBC boosts productivity with Mistral.
-- **Key Focus Areas**: HSBC and Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Stellantis and Mistral | Mistral AI](https://mistral.ai/customers/stellantis)
+### 🔗 [Stellantis and Mistral](https://mistral.ai/customers/stellantis)
 - **URL**: `https://mistral.ai/customers/stellantis`
-- **HTTP Status**: `200`
-- **Overview**: Stellantis accelerates automotive innovation with Mistral.
-- **Key Focus Areas**: Building a more intelligent car: How Stellantis is accelerating automotive innovation., Background, Empowering drivers with on-demand knowledge, Enabling AI-powered innovation across Stellantis, The partnership in action, Conclusion
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Case study detailing Stellantis's integration of Mistral AI into vehicle infotainment and engineering systems.
+- **Key Insights**: Powers in-cabin voice assistants and provides engineering teams with instant access to automotive technical specs.
+- **Business Impact**: Enhanced driver user experience and accelerated internal engineering workflows.
 
 
 ## 📁 News & Product Announcements
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news)
+### 🔗 [Latest news](https://mistral.ai/news)
 - **URL**: `https://mistral.ai/news`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news/)
-- **URL**: `https://mistral.ai/news/`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Version control for prompts & skills in Studio | Mistral](https://mistral.ai/news/manage-prompts-and-skills-in-studio)
+### 🔗 [Version control for prompts & skills in Studio](https://mistral.ai/news/manage-prompts-and-skills-in-studio)
 - **URL**: `https://mistral.ai/news/manage-prompts-and-skills-in-studio`
-- **HTTP Status**: `200`
-- **Overview**: Studio provides a system of record for AI prompts and skills—versioned, owned, and traceable. Iterate fast, ship with control, and ensure consistent AI behavior.
-- **Key Focus Areas**: Your Prompts and Skills need a system of record., Prompts and skills outgrew the way they're managed, Iterate fast, ship with control, A system of record for AI behavior., The part a standalone catalog can't do., Control for the people who answer to auditors.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Product announcement introducing prompt and skill version management in Mistral Studio.
+- **Key Highlights**: Establishes a central system of record for AI prompt assets, version tracking, permission controls, and audit trails.
+- **Value Proposition**: Eliminates prompt drift and ensures predictable agent behavior across enterprise teams.
 
-### 🔗 [Introducing Mistral Small 4 | Mistral AI](https://mistral.ai/news/mistral-small-4/)
-- **URL**: `https://mistral.ai/news/mistral-small-4/`
-- **HTTP Status**: `200`
-- **Overview**: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.
-- **Key Focus Areas**: Introducing Mistral Small 4, A new standard for multimodal, reasoning-optimized models, Key architectural details, Performance highlights, Why Mistral Small 4?, Unified capabilities
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Introducing Mistral Small 4](https://mistral.ai/news/mistral-small-4)
+- **URL**: `https://mistral.ai/news/mistral-small-4`
+- **Page Purpose**: Technical announcement introducing Mistral Small 4 foundation model.
+- **Key Highlights**: Details a high-efficiency multimodal model optimized for reasoning, agentic tool use, and low latency.
+- **Value Proposition**: Delivers enterprise-grade benchmark performance at significantly reduced compute costs.
 
 ### 🔗 [Mistral OCR 4 : SOTA OCR for Document Intelligence](https://mistral.ai/news/ocr-4)
 - **URL**: `https://mistral.ai/news/ocr-4`
-- **HTTP Status**: `200`
-- **Overview**: Mistral OCR 4 delivers enterprise document AI with 170-language support, bounding boxes, and self-hosted deployment.
-- **Key Focus Areas**: Introducing, OCR 4, Highlights, Overview, Benchmarks, Human Preference Evaluations
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral OCR 4 : SOTA OCR for Document Intelligence](https://mistral.ai/news/ocr-4/)
-- **URL**: `https://mistral.ai/news/ocr-4/`
-- **HTTP Status**: `200`
-- **Overview**: Mistral OCR 4 delivers enterprise document AI with 170-language support, bounding boxes, and self-hosted deployment.
-- **Key Focus Areas**: Introducing, OCR 4, Highlights, Overview, Benchmarks, Human Preference Evaluations
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Product announcement for Mistral OCR 4 document intelligence model.
+- **Key Highlights**: Features state-of-the-art multi-lingual OCR, bounding box detection, and table structure parsing across 170+ languages.
+- **Value Proposition**: Enables reliable extraction of complex technical, financial, and legal documents.
 
 ### 🔗 [In-region inference, open models, and new European infrastructure for sovereign AI.](https://mistral.ai/news/regional-inference-open-models-new-compute)
 - **URL**: `https://mistral.ai/news/regional-inference-open-models-new-compute`
-- **HTTP Status**: `200`
-- **Overview**: Mistral is bringing together the inference infrastructure, open models, and long-term commitments Europe needs to control its AI future, and setting a roadmap for the world.
-- **Key Focus Areas**: In-region inference, open models, and new European infrastructure for sovereign AI., At Mistral, we believe every enterprise and country must be in control of the models it uses, choose where the intelligence runs, control the compute capacity to scale it, and retain its compounding value., Today, we are taking three concrete steps as we build the foundations of our customers' AI sovereignty: strengthening the reliability and regional control of inference, expanding access to third-party open models within that infrastructure, and bringing together enterprises and institutions to secure long-term commitments for compute capacity in Europe., Regional control, production-grade reliability., Sovereign intelligence, built on open model choice., A coalition that secures long-term AI capacity.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Strategic announcement regarding European sovereign infrastructure and regional inference endpoints.
+- **Key Highlights**: Outlines partnerships for in-region European cloud hosting, strict data isolation, and open model access.
+- **Value Proposition**: Guarantees digital sovereignty and compliance with strict European data protection standards.
 
-### 🔗 [Robostral Navigate: single-camera AI navigation | Mistral AI](https://mistral.ai/news/robostral-navigate)
+### 🔗 [Robostral Navigate: single-camera AI navigation](https://mistral.ai/news/robostral-navigate)
 - **URL**: `https://mistral.ai/news/robostral-navigate`
-- **HTTP Status**: `200`
-- **Overview**: Introducing Robostral Navigate: 8B model achieving 76.6% on R2R-CE with just a single RGB camera. No depth sensors, LiDAR, or multiple cameras needed.
-- **Key Focus Areas**: Navigation, Highlights, Navigation via pointing, Built from the ground up, Efficient supervised training, What's Next
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Research announcement introducing Robostral Navigate, an 8B visual navigation AI model.
+- **Key Highlights**: Achieves top visual navigation benchmarks using only a single RGB camera input without depth sensors or LiDAR.
+- **Value Proposition**: Significantly lowers hardware cost and complexity for robotic and spatial AI systems.
 
-### 🔗 [Introducing Shieldstral. | Mistral AI](https://mistral.ai/news/shieldstral)
+### 🔗 [Introducing Shieldstral.](https://mistral.ai/news/shieldstral)
 - **URL**: `https://mistral.ai/news/shieldstral`
-- **HTTP Status**: `200`
-- **Overview**: Shieldstral introduces a 3B open-weights multimodal safety classifier that outperforms models up to 7x its size.
-- **Key Focus Areas**: Introducing Shieldstral., Moderation as a question, Highlights, Benchmarks, How we built it, What's next
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Safety research announcement introducing Shieldstral, a 3B open moderation model.
+- **Key Highlights**: Provides multi-modal safety classification outperforming models up to 7x its size in detecting policy violations.
+- **Value Proposition**: Delivers fast, open-weights content moderation and safety guardrails.
 
-### 🔗 [Remote agents in Vibe. Powered by Mistral Medium 3.5. | Mistral AI](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/)
-- **URL**: `https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/`
-- **HTTP Status**: `200`
-- **Overview**: Introducing Mistral Medium 3.5, remote coding agents in Vibe, plus new Work mode in Le Chat for complex tasks.
-- **Key Focus Areas**: Remote agents in Vibe. Powered by Mistral Medium 3.5., Highlights., Mistral Medium 3.5., Vibe remote agents., New Work mode in Le Chat (Preview)., Get started.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Remote agents in Vibe. Powered by Mistral Medium 3.5.](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5)
+- **URL**: `https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5`
+- **Page Purpose**: Product announcement introducing remote agent execution in Vibe powered by Mistral Medium 3.5.
+- **Key Highlights**: Enables long-horizon background tasks, remote repository editing, and advanced reasoning in Le Chat Work mode.
+- **Value Proposition**: Unlocks asynchronous, autonomous task execution for developers and researchers.
 
-### 🔗 [Speaking of Voxtral | Mistral AI](https://mistral.ai/news/voxtral-tts/)
-- **URL**: `https://mistral.ai/news/voxtral-tts/`
-- **HTTP Status**: `200`
-- **Overview**: Voxtral TTS: A frontier, open-weights text-to-speech model that’s fast, instantly adaptable, and produces lifelike speech for voice agents.
-- **Key Focus Areas**: Speaking of Voxtral, Highlights., Listen and decide: can you tell the difference?, Voice emulation, Margaret, Win-rate (voice customization)
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Speaking of Voxtral](https://mistral.ai/news/voxtral-tts)
+- **URL**: `https://mistral.ai/news/voxtral-tts`
+- **Page Purpose**: Product release announcement for Voxtral TTS text-to-speech model.
+- **Key Highlights**: Open-weights voice synthesis model featuring instant voice cloning, emotional inflection, and ultra-low latency.
+- **Value Proposition**: Empowers developers to build natural conversational voice agents and audio experiences.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news?categories=company)
+### 🔗 [Latest news](https://mistral.ai/news?categories=company)
 - **URL**: `https://mistral.ai/news?categories=company`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news?categories=engineering)
+### 🔗 [Latest news](https://mistral.ai/news?categories=engineering)
 - **URL**: `https://mistral.ai/news?categories=engineering`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news?categories=product)
+### 🔗 [Latest news](https://mistral.ai/news?categories=product)
 - **URL**: `https://mistral.ai/news?categories=product`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news?categories=research)
+### 🔗 [Latest news](https://mistral.ai/news?categories=research)
 - **URL**: `https://mistral.ai/news?categories=research`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
-### 🔗 [Latest news | Mistral](https://mistral.ai/news?categories=solutions)
+### 🔗 [Latest news](https://mistral.ai/news?categories=solutions)
 - **URL**: `https://mistral.ai/news?categories=solutions`
-- **HTTP Status**: `200`
-- **Overview**: Read our blogs to stay up to date on the latest news and research from Mistral.
-- **Key Focus Areas**: Latest updates from Mistral., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record., Introducing Robostral Navigate, Leanstral 1.5: Proof Abundance for All
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Central blog hub for Mistral AI product releases, technical research, and corporate updates.
+- **Content Topics**: Covers model releases, engineering deep dives, research papers, and customer announcements.
+- **Update Cadence**: Regular updates detailing state-of-the-art open-weights models and enterprise features.
 
 
 ## 📁 Pricing & Subscriptions
 
-### 🔗 [Pricing | Mistral](https://mistral.ai/pricing)
+### 🔗 [Pricing](https://mistral.ai/pricing)
 - **URL**: `https://mistral.ai/pricing`
-- **HTTP Status**: `200`
-- **Overview**: Explore pricing for Mistral Vibe and APIs.
-- **Key Focus Areas**: Pricing, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Overview pricing directory covering individual developer plans, Vibe subscriptions, and enterprise plans.
+- **Tier Summary**: Includes free tier developer access, paid pro subscriptions, and enterprise custom terms.
+- **Flexibility**: Allows seamless scaling from self-service playground testing to dedicated enterprise clusters.
 
-### 🔗 [Pricing | Mistral](https://mistral.ai/pricing/)
-- **URL**: `https://mistral.ai/pricing/`
-- **HTTP Status**: `200`
-- **Overview**: Explore pricing for Mistral Vibe and APIs.
-- **Key Focus Areas**: Pricing, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Pricing](https://mistral.ai/pricing/api)
+- **URL**: `https://mistral.ai/pricing/api`
+- **Page Purpose**: Detailed breakdown of API token pricing across all Mistral models.
+- **Pricing Structure**: Per-token billing for input/output across Large, Medium, Small, Ministral, Embeddings, and OCR endpoints.
+- **Value Option**: Includes pay-as-you-go pricing alongside committed volume discounts.
 
-### 🔗 [Pricing | Mistral](https://mistral.ai/pricing/api/)
-- **URL**: `https://mistral.ai/pricing/api/`
-- **HTTP Status**: `200`
-- **Overview**: Explore pricing for Mistral Vibe and APIs.
-- **Key Focus Areas**: Pricing, Oh lawd, no results, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Pricing | Mistral](https://mistral.ai/pricing/enterprise-deployments/)
-- **URL**: `https://mistral.ai/pricing/enterprise-deployments/`
-- **HTTP Status**: `200`
-- **Overview**: Explore pricing for Mistral Vibe and APIs.
-- **Key Focus Areas**: Pricing, Let’s build your AI advantage together., Our sales experts are here to provide all the details you need., Products, Solutions, Why Mistral
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Pricing](https://mistral.ai/pricing/enterprise-deployments)
+- **URL**: `https://mistral.ai/pricing/enterprise-deployments`
+- **Page Purpose**: Presents enterprise deployment options, private cloud hosting, and custom SLA pricing.
+- **Deployment Modes**: Covers dedicated VPC instances, on-premises deployment, custom fine-tuning credits, and enterprise support SLAs.
+- **Sales Motion**: Custom quote contact model tailored to enterprise security and throughput requirements.
 
 
 ## 📁 Documentation & Support
 
 ### 🔗 [Documentation - Mistral AI](https://docs.mistral.ai)
 - **URL**: `https://docs.mistral.ai`
-- **HTTP Status**: `200`
-- **Overview**: Learn how to deploy and use Mistral AI's Large Language Models with our comprehensive documentation, guides, and tutorials.
-- **Key Focus Areas**: Mistral AI Documentation, Discover our platform, Vibe, Studio, Admin, Latest models
-- **Content Highlights**: Create your first Skill | Send your first API request | Build an agent with tools
+- **Page Purpose**: Central developer documentation portal for the Mistral AI ecosystem.
+- **Key Sections**: Provides quickstarts, API keys setup, SDK installation guides, model guides, and admin console documentation.
+- **Primary Goal**: Accelerates developer onboarding from first API call to production deployment.
 
-### 🔗 [Chat](https://docs.mistral.ai/api/)
-- **URL**: `https://docs.mistral.ai/api/`
-- **HTTP Status**: `200`
-- **Overview**: Welcome to Mistral AI's Api Reference
-- **Key Focus Areas**: Chat Endpoints, Examples, POST, /v1/chat/completions, Request Body, CompletionEvent
-- **Content Highlights**: Download OpenAPI Spec | Workflows Deployments
+### 🔗 [Chat](https://docs.mistral.ai/api)
+- **URL**: `https://docs.mistral.ai/api`
+- **Page Purpose**: Official OpenAPI endpoint documentation and developer API reference.
+- **Endpoint Coverage**: Documents Chat Completions, Embeddings, Fim (Fill-in-the-Middle), Audio Transcriptions, and Agents APIs.
+- **SDK Support**: Provides code snippets and parameter definitions for Python, JavaScript, and cURL.
 
 ### 🔗 [Mistral Docs](https://docs.mistral.ai/models/overview)
 - **URL**: `https://docs.mistral.ai/models/overview`
-- **HTTP Status**: `200`
-- **Overview**: Documentation for the deployment and usage of Mistral AI's LLMs
-- **Key Focus Areas**: Models Overview, Featured Models, Mistral Medium 3.5, OCR 4.1, Z.ai GLM 5.2, Mistral Small 4
-- **Content Highlights**: Model lifecycle policy | Mistral develops, or makes available, open-weight and commercial large language models. Explore the full lineup, compare benchmarks, and find the right model for your use case. | Compare model capabilities
+- **Page Purpose**: Technical model index comparing parameters, context windows, and benchmark scores across all Mistral LLMs.
+- **Model Family**: Includes specs for Mistral Large, Medium, Small, Ministral, Codestral, Pixtral, and OCR.
+- **Developer Utility**: Guides model selection based on latency, context size, function calling, and task requirements.
 
-### 🔗 [Cookbooks - Mistral AI | Mistral Docs](https://docs.mistral.ai/resources/cookbooks)
+### 🔗 [Cookbooks - Mistral AI  Docs](https://docs.mistral.ai/resources/cookbooks)
 - **URL**: `https://docs.mistral.ai/resources/cookbooks`
-- **HTTP Status**: `200`
-- **Overview**: Discover Mistral AI technologies capabilities from basic tutorials to advanced use cases
-- **Key Focus Areas**: Mistral AI Cookbooks, Topics, Explore by Topics, Agents, OCR, Evaluation
-- **Content Highlights**: ✨ Using Mistral-Embed with ChromaDB | 🐫 CAMEL Role-Playing Scraper for Report & Knowledge Graph Generation | 🐫 Using CAMEL to Do Graph RAG with Mistral Models
+- **Page Purpose**: Repository of hands-on code cookbooks, tutorials, and partner integration examples.
+- **Tutorial Topics**: Covers RAG setup with ChromaDB/MongoDB, agent creation, fine-tuning workflows, and LangChain integration.
+- **Developer Target**: Hands-on guide for AI engineers building production applications.
 
-### 🔗 [Home | Mistral Help Center](https://help.mistral.ai/)
-- **URL**: `https://help.mistral.ai/`
-- **HTTP Status**: `200`
-- **Overview**: Mistral Help Center
-- **Key Focus Areas**: Mistral Help Center, Collections
-- **Content Highlights**: Copyright (c) 2023, Intercom, Inc. (legal@intercom.io) with Reserved Font Name "Inter".
-      This Font Software is licensed under the SIL Open Font License, Version 1.1. | Help and Troubleshooting | How do I contact support?
+### 🔗 [Home  Help Center](https://help.mistral.ai)
+- **URL**: `https://help.mistral.ai`
+- **Page Purpose**: Customer support portal and FAQ knowledgebase.
+- **Topics Covered**: Billing questions, account management, rate limits, data privacy rights, and troubleshooting.
+- **Support Channels**: Direct support submission and self-service documentation search.
+
+
+## 📁 Company & Services
+
+### 🔗 [About Mistral | Open, frontier AI for all.](https://mistral.ai/about)
+- **URL**: `https://mistral.ai/about`
+- **Page Purpose**: Company background page detailing Mistral AI's mission, leadership, and European roots.
+- **Mission Statement**: Dedicated to making frontier AI open, accessible, and sovereign for all enterprises and developers.
+- **Corporate Identity**: Highlights open science principles, top AI research talent, and European AI leadership.
+
+### 🔗 [Careers at Mistral | Build the future of frontier AI.](https://mistral.ai/careers)
+- **URL**: `https://mistral.ai/careers`
+- **Page Purpose**: Recruitment page listing job openings, company culture, and engineering opportunities.
+- **Open Roles**: Listings across AI research, engineering, product management, sales, and operations.
+- **Work Environment**: Emphasizes high-impact frontier research, collaborative culture, and offices in Paris, London, and San Francisco.
+
+### 🔗 [Contact us](https://mistral.ai/contact)
+- **URL**: `https://mistral.ai/contact`
+- **Page Purpose**: Enterprise sales and contact inquiry page.
+- **Inquiry Options**: Provides sales contact forms, partnership requests, media inquiries, and customer support links.
+- **Response Team**: Routes inquiries directly to enterprise solution architects and sales representatives.
+
+### 🔗 [Models - from cloud to edge](https://mistral.ai/models)
+- **URL**: `https://mistral.ai/models`
+- **Page Purpose**: Comprehensive landing page showcasing Mistral's full suite of foundation models.
+- **Featured Models**: Highlights Mistral Large, Medium, Small, Ministral, Codestral, Pixtral, and Voxtral.
+- **Deployment Flexibility**: Emphasizes availability across open-weights downloads, API hosting, and private cloud deployment.
+
+### 🔗 [Mistral partners](https://mistral.ai/partners)
+- **URL**: `https://mistral.ai/partners`
+- **Page Purpose**: Overview of Mistral's global partner ecosystem.
+- **Partner Categories**: Includes cloud hyper-scalers (Azure, AWS, GCP), system integrators, and software vendors.
+- **Program Goals**: Delivers co-selling opportunities, joint customer implementations, and integrated AI stacks.
+
+### 🔗 [Mistral services | Build your own AI, supported by Mistral.](https://mistral.ai/services)
+- **URL**: `https://mistral.ai/services`
+- **Page Purpose**: Details Mistral Professional Services and technical advisory offerings.
+- **Service Scope**: Includes custom AI architecture consulting, deployment engineering, model fine-tuning support, and training.
+- **Target Engagement**: Enterprise clients embarking on large-scale AI transformation initiatives.
 
 
 ## 📁 Legal, Brand & Governance
 
-### 🔗 [Terms | Mistral AI](https://legal.mistral.ai/terms)
+### 🔗 [Terms](https://legal.mistral.ai/terms)
 - **URL**: `https://legal.mistral.ai/terms`
-- **HTTP Status**: `200`
-- **Overview**: Browse Mistral AI's terms and conditions and their legal documentation.
-- **Key Focus Areas**: Welcome to our Legal Center !, Terms, For Consumers, For Commercial Customers, For Partners, For Everyone
-- **Content Highlights**: Welcome to our Legal Center ! | EU - Terms of Service | ROW - Terms of Service
+- **Page Purpose**: Commercial and consumer Terms of Service governing platform usage.
+- **Key Provisions**: Specifies acceptable use policies, intellectual property ownership, API usage terms, and liability limits.
+- **Coverage**: Covers both consumer web apps (Vibe) and commercial enterprise APIs.
 
-### 🔗 [Data Processing Addendum | Mistral AI](https://legal.mistral.ai/terms/data-processing-addendum)
+### 🔗 [Data Processing Addendum](https://legal.mistral.ai/terms/data-processing-addendum)
 - **URL**: `https://legal.mistral.ai/terms/data-processing-addendum`
-- **HTTP Status**: `200`
-- **Overview**: <p dir="ltr">This Data Processing Addendum (the &ldquo;<strong>Data Processing Addendum</strong>&rdquo; or the &ldquo;<strong>DPA</strong>&rdquo;) forms part of
-- **Key Focus Areas**: Data Processing Addendum, Terms, For Consumers, For Commercial Customers, For Partners, For Everyone
-- **Content Highlights**: Data Processing Addendum | EU - Terms of Service | ROW - Terms of Service
+- **Page Purpose**: Data Processing Addendum (DPA) specifying data privacy commitments for commercial customers.
+- **Key Clauses**: Defines GDPR compliance, subprocessor disclosures, security controls, and customer data ownership.
+- **Scope**: Applies to all enterprise customers processing personal or sensitive data via Mistral APIs.
 
-### 🔗 [Privacy Policy | Mistral AI](https://legal.mistral.ai/terms/privacy-policy?language=en-US)
+### 🔗 [Privacy Policy](https://legal.mistral.ai/terms/privacy-policy?language=en-US)
 - **URL**: `https://legal.mistral.ai/terms/privacy-policy?language=en-US`
-- **HTTP Status**: `200`
-- **Overview**: <p dir="ltr"><strong>Welcome to Mistral AI! </strong>We know that your privacy is important, and we're committed to protecting it. This Privacy Policy explains,
-- **Key Focus Areas**: Privacy Policy, Terms, For Consumers, For Commercial Customers, For Partners, For Everyone
-- **Content Highlights**: EU - Terms of Service | ROW - Terms of Service | For Commercial Customers
+- **Page Purpose**: Mistral AI Privacy Policy detailing data collection, processing, and user rights.
+- **Key Policies**: Outlines zero data retention policies for commercial API calls, user cookie usage, and data subject rights.
+- **Compliance**: Full adherence to European Union GDPR standards.
 
 ### 🔗 [Mistral brand assets and guidelines](https://mistral.ai/brand)
 - **URL**: `https://mistral.ai/brand`
-- **HTTP Status**: `200`
-- **Overview**: We encourage our friends and partners to use our logo in their materials appropriately.  Access our brand assets and guidelines here.
-- **Key Focus Areas**: Welcome to the world of Mistral., Brand assets., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Brand identity center providing official logos, media assets, and usage guidelines.
+- **Asset Types**: Contains vector lockups, 'M' pixel monogram icons, color palettes, and desktop wallpapers.
+- **Usage Standards**: Defines clearspace requirements, minimum dimensions, and strict brand misuses.
 
-### 🔗 [Mistral brand assets and guidelines](https://mistral.ai/brand/)
-- **URL**: `https://mistral.ai/brand/`
-- **HTTP Status**: `200`
-- **Overview**: We encourage our friends and partners to use our logo in their materials appropriately.  Access our brand assets and guidelines here.
-- **Key Focus Areas**: Welcome to the world of Mistral., Brand assets., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Legal notice | Mistral](https://mistral.ai/legal/)
-- **URL**: `https://mistral.ai/legal/`
-- **HTTP Status**: `200`
-- **Overview**: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.
-- **Key Focus Areas**: Legal notice., Editor, Publication owner, Hosting, Products, Solutions
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+### 🔗 [Legal notice](https://mistral.ai/legal)
+- **URL**: `https://mistral.ai/legal`
+- **Page Purpose**: Official Mistral AI resource page providing information regarding Legal notice.
+- **Key Offerings**: Provides technical documentation, enterprise solutions, or official company information.
+- **Target Audience**: Developers, enterprise partners, and industry stakeholders.
 
 
-## 📁 Product Web Apps & Console
-
-### 🔗 [HTTP Error 403](https://chat.mistral.ai/)
-- **URL**: `https://chat.mistral.ai/`
-- **HTTP Status**: `403`
-- **Overview**: HTTP Error 403: Forbidden
-
-### 🔗 [HTTP Error 403](https://chat.mistral.ai/code/extensions)
-- **URL**: `https://chat.mistral.ai/code/extensions`
-- **HTTP Status**: `403`
-- **Overview**: HTTP Error 403: Forbidden
-
-### 🔗 [HTTP Error 307](https://console.mistral.ai)
-- **URL**: `https://console.mistral.ai`
-- **HTTP Status**: `307`
-- **Overview**: HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
-The last 30x error message was:
-Temporary Redirect
-
-### 🔗 [HTTP Error 307](https://console.mistral.ai/)
-- **URL**: `https://console.mistral.ai/`
-- **HTTP Status**: `307`
-- **Overview**: HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.
-The last 30x error message was:
-Temporary Redirect
-
-
-## 📁 Company & Community External Links
+## 📁 External Community & App Store Channels
 
 ### 🔗 [‎Vibe by Mistral (ex-Le Chat) App - App Store](https://apps.apple.com/us/app/le-chat-by-mistral-ai/id6740410176)
 - **URL**: `https://apps.apple.com/us/app/le-chat-by-mistral-ai/id6740410176`
-- **HTTP Status**: `200`
-- **Overview**: Download Vibe by Mistral (ex-Le Chat) by Mistral AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Vibe by Mistral (ex-Le…
-- **Key Focus Areas**: Vibe by Mistral (ex-Le Chat), Ratings & Reviews, Perfectly satisfied., Enjoyed it so far. Seems similar to Gemini, Great ChatGPT Alternative, But Just One Issue., It ignores instructions and memories.
-- **Content Highlights**: Vibe by Mistral (ex-Le Chat) | Your AI agent for daily tasks | Free · In‑App Purchases
+- **Page Purpose**: Official Apple App Store listing for Vibe by Mistral AI on iOS.
+- **Key Capabilities**: Provides mobile access to AI chat, voice interactions, web search, and document summarization.
+- **User Feedback**: Highlighting mobile convenience and cross-device sync.
 
 ### 🔗 [Mistral](https://discord.com/invite/mistralai)
 - **URL**: `https://discord.com/invite/mistralai`
-- **HTTP Status**: `200`
-- **Overview**: The official discord server from Mistral, talk about technology, LLMs and frontier AI. | 38793 members
+- **Page Purpose**: Official Mistral AI Discord community server (38,000+ members).
+- **Community Focus**: Hub for developer discussion, open-weights model support, project sharing, and release announcements.
+- **Target Audience**: Open source AI developers, researchers, and community enthusiasts.
 
 ### 🔗 [Mistral](https://discord.gg/mistralai)
 - **URL**: `https://discord.gg/mistralai`
-- **HTTP Status**: `200`
-- **Overview**: The official discord server from Mistral, talk about technology, LLMs and frontier AI. | 38793 members
-
-### 🔗 [About Mistral | Open, frontier AI for all.](https://mistral.ai/about/)
-- **URL**: `https://mistral.ai/about/`
-- **HTTP Status**: `200`
-- **Overview**: Our mission is to make frontier AI open to all, and together solve the world's hardest problems.
-- **Key Focus Areas**: Putting frontier AI 
-in everyone's hands., Mission-critical AI for enterprises and governments., Our frontier lab roots., In-region inference, open models, and new European infrastructure for sovereign AI., Introducing Shieldstral., Your Prompts and Skills need a system of record.
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Careers at Mistral | Build the future of frontier AI.](https://mistral.ai/careers/)
-- **URL**: `https://mistral.ai/careers/`
-- **HTTP Status**: `200`
-- **Overview**: Join us on our mission to help every enterprise and government own their AI future.
-- **Key Focus Areas**: Build the future of frontier AI., Discover our teams., Our culture., Products, Solutions, Why Mistral
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Contact us | Mistral](https://mistral.ai/contact)
-- **URL**: `https://mistral.ai/contact`
-- **HTTP Status**: `200`
-- **Overview**: Get in touch with the team. Let's start your journey to the frontier.
-- **Key Focus Areas**: Get in touch with the team., Looking for help?, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Contact us | Mistral](https://mistral.ai/contact/)
-- **URL**: `https://mistral.ai/contact/`
-- **HTTP Status**: `200`
-- **Overview**: Get in touch with the team. Let's start your journey to the frontier.
-- **Key Focus Areas**: Get in touch with the team., Looking for help?, Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Models - from cloud to edge | Mistral](https://mistral.ai/models)
-- **URL**: `https://mistral.ai/models`
-- **HTTP Status**: `200`
-- **Overview**: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.
-- **Key Focus Areas**: It starts with 
-frontier science., Mistral Large 3, Mistral Medium 3.5, Mistral Small 4, Ministral 3 (8B), OCR 4.1
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Models - from cloud to edge | Mistral](https://mistral.ai/models/)
-- **URL**: `https://mistral.ai/models/`
-- **HTTP Status**: `200`
-- **Overview**: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.
-- **Key Focus Areas**: It starts with 
-frontier science., Mistral Large 3, Mistral Medium 3.5, Mistral Small 4, Ministral 3 (8B), OCR 4.1
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral partners](https://mistral.ai/partners/)
-- **URL**: `https://mistral.ai/partners/`
-- **HTTP Status**: `200`
-- **Overview**: We work with a select group of cloud providers, technology innovators, and consulting firms to build tailored AI systems for joint customers.
-- **Key Focus Areas**: Partnering with Mistral., Partner with Mistral., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
-
-### 🔗 [Mistral services | Build your own AI, supported by Mistral.](https://mistral.ai/services/)
-- **URL**: `https://mistral.ai/services/`
-- **HTTP Status**: `200`
-- **Overview**: From initial use case deployment to enterprise-wide transformation, we connect frontier AI with business reality to secure your lasting competitive advantage.
-- **Key Focus Areas**: Partnering with ambitious enterprises at the frontier., Journey to AI delivery excellence., Products, Solutions, Why Mistral, Legal
-- **Content Highlights**: Build, test, and run AI agents and apps. | Train, align, and evaluate custom AI models. | AI agent for long-horizon work.
+- **Page Purpose**: Official Mistral AI Discord community server (38,000+ members).
+- **Community Focus**: Hub for developer discussion, open-weights model support, project sharing, and release announcements.
+- **Target Audience**: Open source AI developers, researchers, and community enthusiasts.
 
 ### 🔗 [Vibe by Mistral (ex-Le Chat) - Apps on Google Play](https://play.google.com/store/apps/details?id=ai.mistral.chat)
 - **URL**: `https://play.google.com/store/apps/details?id=ai.mistral.chat`
-- **HTTP Status**: `200`
-- **Overview**: Your AI agent for long-horizon tasks, fluent in your knowledge and tools.
-- **Key Focus Areas**: Vibe by Mistral (ex-Le Chat), About this app, Data safety, Ratings and reviews, App support, Similar apps
-- **Content Highlights**: Payments & subscriptions | Personalization in Play | Vibe by Mistral (ex-Le Chat)
+- **Page Purpose**: Official Google Play Store listing for Vibe by Mistral AI on Android.
+- **Key Capabilities**: Delivers mobile conversational AI, task assistance, code creation, and mobile search.
+- **User Base**: Global Android app distribution for mobile users.
 
-### 🔗 [Mistral | LinkedIn](https://www.linkedin.com/company/mistralai/)
-- **URL**: `https://www.linkedin.com/company/mistralai/`
-- **HTTP Status**: `200`
-- **Overview**: Mistral | 703,394 followers on LinkedIn. Frontier AI. In your hands. 
+### 🔗 [Mistral | LinkedIn](https://www.linkedin.com/company/mistralai)
+- **URL**: `https://www.linkedin.com/company/mistralai`
+- **Page Purpose**: Official Mistral AI corporate LinkedIn page.
+- **Content Focus**: Shares company announcements, customer partnership news, hiring updates, and event keynotes.
+- **Audience**: Enterprise technology leaders, industry partners, and job seekers.
 
-We believe in a future where AI is abundant and accessible.
-- **Key Focus Areas**: Mistral, Technology, Information and Internet, Paris, France, 703,394 followers, About us, Locations
-- **Content Highlights**: Technology, Information and Internet | View all 1,541 employees | Frontier AI. In your hands. 
-
-We believe in a future where AI is abundant and accessible. We aspire to empower the world to build with—and benefit from—the most significant technology of our time.
-
-Join us: mistral.ai/careers
-
-### 🔗 [Reddit](https://www.reddit.com/r/MistralAI/)
-- **URL**: `https://www.reddit.com/r/MistralAI/`
-- **HTTP Status**: `200`
-- **Overview**: Accessible at `https://www.reddit.com/r/MistralAI/` (HTTP Status: 200).
+### 🔗 [Reddit](https://www.reddit.com/r/MistralAI)
+- **URL**: `https://www.reddit.com/r/MistralAI`
+- **Page Purpose**: Official Mistral AI resource page providing information regarding Reddit.
+- **Key Offerings**: Provides technical documentation, enterprise solutions, or official company information.
+- **Target Audience**: Developers, enterprise partners, and industry stakeholders.
 
 ### 🔗 [Mistral - YouTube](https://www.youtube.com/@MistralAIOfficial)
 - **URL**: `https://www.youtube.com/@MistralAIOfficial`
-- **HTTP Status**: `200`
-- **Overview**: We help organizations build tailored AI systems to solve the world’s hardest problems.
+- **Page Purpose**: Official Mistral AI YouTube channel.
+- **Video Content**: Hosts product launch keynotes, technical walkthroughs, developer tutorials, and research presentations.
+- **Audience**: Developers, enterprise clients, and AI technology followers.
 
 ### 🔗 [Mistral AI (@MistralAI) / X](https://x.com/mistralai)
 - **URL**: `https://x.com/mistralai`
-- **HTTP Status**: `200`
-- **Overview**: Frontier AI in your hands. Get work done with @MistralVibe at https://t.co/JsGnCVMUFq.
-- **Key Focus Areas**: Mistral AI, Log in or sign up for X
-- **Content Highlights**: Frontier AI in your hands. Get work done with | ☁️Mistral is bringing together the inference infrastructure, open models, and long-term commitments Europe needs to control its AI future, and setting a roadmap for the world. 🧵: | mistral.ai/news/regional-…
+- **Page Purpose**: Official Mistral AI X (Twitter) account (@MistralAI).
+- **Content Focus**: Real-time updates on model releases, open-weight torrent links, technical benchmarks, and event announcements.
+- **Audience**: Global AI community, developers, and tech journalists.
