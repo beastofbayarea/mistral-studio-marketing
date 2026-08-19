@@ -4,9 +4,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/beastofbayarea/mistral-studio-marketing?color=orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/beastofbayarea/mistral-studio-marketing?color=orange)
 ![License](https://img.shields.io/github/license/beastofbayarea/mistral-studio-marketing?color=blue)
-![Console](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://console.mistral.ai/)
+![Console](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://mistral.ai/industry/finance/)
 
-**Official Product Console**: [https://console.mistral.ai/](https://console.mistral.ai/)
+**Official Product Console**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
 
 ---
 
@@ -267,8 +267,8 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ## 🌐 Quick Links
 
-- \u2705 **Official Product Console**: [https://console.mistral.ai/](https://console.mistral.ai/)
-- \u2705 **Mistral AI Website**: [https://mistral.ai/](https://mistral.ai/)
+- \u2705 **Official Product Console**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
+- \u2705 **Mistral AI Website**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
 - \u2705 **Primary Research Source**: [resources/mistral_ai_site_summaries.md](resources/mistral_ai_site_summaries.md)
 - \u2705 **FSI Field Playbook**: [industries-pmm/fsi-data/01_Field_Playbook.md](industries-pmm/fsi-data/01_Field_Playbook.md)
 - \u2705 **Brand Guidelines**: [official-designs-and-docs/mistral-logo-guidelines.pdf](official-designs-and-docs/mistral-logo-guidelines.pdf)
