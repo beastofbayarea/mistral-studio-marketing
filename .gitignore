@@ -11,3 +11,11 @@ Desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Video files
+*.mp4
+*.mov
+*.avi
+*.webm
+*.mkv
+
