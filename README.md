@@ -10,7 +10,7 @@
 
 ---
 
-## \ud83c\udf0e Overview
+## 🌎 Overview
 
 This repository serves as the **comprehensive Product Marketing Manager (PMM) toolkit** for **Mistral Studio**, containing complete Go-To-Market (GTM) strategies, category narrative frameworks, competitive battlecards, sales enablement materials, technical-to-business value translations, brand design guidelines, and empirical market research.
 
@@ -18,13 +18,13 @@ This repository serves as the **comprehensive Product Marketing Manager (PMM) to
 
 ---
 
-## \ud83d\udd25 Canonical Positioning Statement
+## 🔥 Canonical Positioning Statement
 
 > **"Move from AI prototypes to governed production agents. Mistral Studio is the production AI platform for enterprises to build, iterate, deploy, and govern agentic AI systems with total control over models, data, and deployment."**
 
 ---
 
-## \ud83d\udc80 Primary Research Sources
+## 🨀 Primary Research Sources
 
 > [!IMPORTANT]
 > **Primary Research Source Directive**: For all research regarding Mistral AI products, platform capabilities, foundation models, industry solutions, customer case studies, and GTM positioning, **[`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) MUST be used as the primary research source.**
@@ -38,7 +38,7 @@ This repository serves as the **comprehensive Product Marketing Manager (PMM) to
 
 ---
 
-## \ud83d\udcc1 Repository Structure
+## 📁 Repository Structure
 
 ```
 mistral-studio-marketing/
@@ -122,7 +122,7 @@ mistral-studio-marketing/
 
 ---
 
-## \ud83c\udfa8 Brand & Logo Design Guidelines
+## 🎨 Brand & Logo Design Guidelines
 
 The official **Mistral Logo Guidelines** are available in [`official-designs-and-docs/mistral-logo-guidelines.pdf`](official-designs-and-docs/mistral-logo-guidelines.pdf).
 
@@ -138,15 +138,15 @@ The official **Mistral Logo Guidelines** are available in [`official-designs-and
 | **Wordmark Restraint** | Color usage | Must **never** appear in color; defaults strictly to solid Black (`#151524`) or White |
 
 ### Strict Misuses (Prohibited)
-- \ud83d\udc35 No gradient on photos/colors
-- \ud83d\udc35 No low-contrast placement
-- \ud83d\udc35 No unofficial variations (e.g., adding "AI" or "_")
-- \ud83d\udc35 No skew/distortion
-- \ud83d\udc35 No drop shadows or visual effects
+- 🐯 No gradient on photos/colors
+- 🐯 No low-contrast placement
+- 🐯 No unofficial variations (e.g., adding "AI" or "_")
+- 🐯 No skew/distortion
+- 🐯 No drop shadows or visual effects
 
 ---
 
-## \ud83c\udfe6 Financial Services Industry (FSI) GTM
+## 🏦 Financial Services Industry (FSI) GTM
 
 The FSI solutions provide specialized solution marketing and field playbooks for banking, insurance, and asset management.
 
@@ -171,7 +171,7 @@ The FSI solutions provide specialized solution marketing and field playbooks for
 
 ---
 
-## \ud83d\udcc4 Target Persona Mapping & Value Proposition
+## 📄 Target Persona Mapping & Value Proposition
 
 | Target Persona | Key Pain Points | Mistral Studio Value Proposition | Primary Assets |
 |----------------|-----------------|----------------------------------|----------------|
@@ -197,7 +197,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83d\udcda Core Strategy Presentations
+## 📊 Core Strategy Presentations
 
 ### Presentation Decks
 
@@ -216,7 +216,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83d\udcc8 Data & Framework Assets
+## 📈 Data & Framework Assets
 
 ### Master Databases (Excel)
 
@@ -229,7 +229,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83c\udf93\ufe0f Visual Assets & Design Resources
+## 🎭 Visual Assets & Design Resources
 
 ### Brand Assets
 - **Bank Icons**: 12 financial institution logos in black and white variants
@@ -246,7 +246,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83d\udcc4 License & Community Guidelines
+## 📄 License & Community Guidelines
 
 | Document | Purpose | Link |
 |----------|---------|------|
@@ -257,7 +257,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83d\udc65 Author & Maintainer
+## 👥 Author & Maintainer
 
 - **Author & Strategy Lead**: **Shiv, Prospective PMM, Mistral Studio**
 - **GitHub Profile**: [beastofbayarea](https://github.com/beastofbayarea)
@@ -265,7 +265,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83c\udf10 Quick Links
+## 🌐 Quick Links
 
 - \u2705 **Official Product Console**: [https://console.mistral.ai/](https://console.mistral.ai/)
 - \u2705 **Mistral AI Website**: [https://mistral.ai/](https://mistral.ai/)
@@ -275,7 +275,7 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ---
 
-## \ud83c\udf41 Repository Statistics
+## 🌑 Repository Statistics
 
 - **Total Files**: 100+ assets across all directories
 - **Presentation Decks**: 10+ PowerPoint presentations
