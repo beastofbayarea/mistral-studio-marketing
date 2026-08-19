@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "category": "marketing-strategy",
   "type": "documentation-and-assets",
-  "author": "Shiv, Prospective PMM, Mistral Studio",
+  "author": "Shiv, Prospective PMM, Mistral Studio; Vibe Code, AI Engineering Agent",
   "keywords": [
     "mistral-ai",
     "mistral-studio",
@@ -44,6 +44,11 @@
     {
       "name": "Shiv, Prospective PMM, Mistral Studio",
       "url": "https://github.com/beastofbayarea"
+    },
+    {
+      "name": "Vibe Code",
+      "url": "https://github.com/mistralai/vibe-code",
+      "role": "AI Engineering Agent"
     }
   ],
   "metadataVersion": "2026-08-17"

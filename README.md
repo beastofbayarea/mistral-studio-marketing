@@ -182,7 +182,7 @@ The FSI solutions provide specialized solution marketing and field playbooks for
 
 ---
 
-## \u2694\ufe0f Sales Enablement & Competitive Battlecards
+## ⚔️ Sales Enablement & Competitive Battlecards
 
 The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory and [`sales-master-battlecards.pdf`](sales-master-battlecards.pdf) provide field teams with objection handling, positioning traps, and feature differentiation.
 
