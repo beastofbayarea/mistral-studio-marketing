@@ -23,7 +23,7 @@ Style: CTA,Segoe UI Semibold,46,&H00FFFFFF,&H00FFFFFF,&H00004FFF,&H00004FFF,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:58.00,TopBar,,0,0,0,,{\an4\pos(145,75)}ASML × MISTRAL AI  |  NEW WORKFLOW DEMO
+Dialogue: 0,0:00:00.00,0:00:53.20,TopBar,,0,0,0,,{\an4\pos(145,75)}ASML × MISTRAL AI  |  NEW WORKFLOW DEMO
 Dialogue: 0,0:00:00.35,0:00:03.65,Hero,,0,0,0,,{\fad(350,350)\an5\pos(960,350)}ASML × MISTRAL AI
 Dialogue: 0,0:00:00.72,0:00:03.65,HeroSub,,0,0,0,,{\fad(350,350)\an5\pos(960,475)}New workflow: evidence-backed engineering intelligence
 
@@ -33,21 +33,21 @@ Dialogue: 0,0:00:08.00,0:00:15.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)
 Dialogue: 0,0:00:08.00,0:00:15.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Logs • service history\Nengineering documentation
 Dialogue: 0,0:00:16.00,0:00:23.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}03  •  CORRELATE
 Dialogue: 0,0:00:16.00,0:00:23.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Mistral retrieves, compares,\Nand ranks evidence
-Dialogue: 0,0:00:24.00,0:00:31.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}04  •  EXPLAIN
-Dialogue: 0,0:00:24.00,0:00:31.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}A traceable causal chain\Nconnects change to impact
-Dialogue: 0,0:00:32.00,0:00:39.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}05  •  IDENTIFY
-Dialogue: 0,0:00:32.00,0:00:39.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Evidence converges\Non a likely root cause
-Dialogue: 0,0:00:32.20,0:00:39.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(88,205)}EVIDENCE CHAIN
-Dialogue: 0,0:00:32.45,0:00:39.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(88,282)}Software update\N↓\NConfiguration change\N↓\NCommunication retries\N↓\NSubsystem anomaly
-Dialogue: 0,0:00:40.00,0:00:47.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}06  •  VERIFY
-Dialogue: 0,0:00:40.00,0:00:47.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Every claim remains linked\Nto its source evidence
-Dialogue: 0,0:00:40.20,0:00:47.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(1045,205)}TRACEABLE EVIDENCE
-Dialogue: 0,0:00:40.45,0:00:47.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(1045,282)}Service history\NEngineering guide\NPast incidents
-Dialogue: 0,0:00:40.65,0:00:47.75,PanelDetail,,0,0,0,,{\fad(180,220)\an7\pos(1045,485)}Sources preserved for engineering review
-Dialogue: 0,0:00:48.00,0:00:52.10,Kicker,,0,0,0,,{\fad(180,180)\an7\pos(104,798)}07  •  APPROVE
-Dialogue: 0,0:00:48.00,0:00:52.10,Chapter,,0,0,0,,{\fad(180,180)\an7\pos(104,858)}Engineer retains control\Nof corrective action
+Dialogue: 0,0:00:24.00,0:00:27.10,Kicker,,0,0,0,,{\fad(180,180)\an7\pos(104,798)}04  •  EXPLAIN
+Dialogue: 0,0:00:24.00,0:00:27.10,Chapter,,0,0,0,,{\fad(180,180)\an7\pos(104,858)}A traceable causal chain\Nconnects change to impact
+Dialogue: 0,0:00:27.20,0:00:35.10,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}05  •  IDENTIFY
+Dialogue: 0,0:00:27.20,0:00:35.10,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Evidence converges\Non a likely root cause
+Dialogue: 0,0:00:27.40,0:00:34.95,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(88,205)}EVIDENCE CHAIN
+Dialogue: 0,0:00:27.65,0:00:34.95,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(88,282)}Software update\N↓\NConfiguration change\N↓\NCommunication retries\N↓\NSubsystem anomaly
+Dialogue: 0,0:00:35.20,0:00:43.10,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}06  •  VERIFY
+Dialogue: 0,0:00:35.20,0:00:43.10,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Every claim remains linked\Nto its source evidence
+Dialogue: 0,0:00:35.40,0:00:42.95,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(1045,205)}TRACEABLE EVIDENCE
+Dialogue: 0,0:00:35.65,0:00:42.95,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(1045,282)}Service history\NEngineering guide\NPast incidents
+Dialogue: 0,0:00:35.85,0:00:42.95,PanelDetail,,0,0,0,,{\fad(180,220)\an7\pos(1045,485)}Sources preserved for engineering review
+Dialogue: 0,0:00:43.20,0:00:47.40,Kicker,,0,0,0,,{\fad(180,180)\an7\pos(104,798)}07  •  APPROVE
+Dialogue: 0,0:00:43.20,0:00:47.40,Chapter,,0,0,0,,{\fad(180,180)\an7\pos(104,858)}Engineer retains control\Nof corrective action
 
-Dialogue: 0,0:00:52.20,0:00:57.65,Final,,0,0,0,,{\fad(280,420)\an5\pos(960,300)}NEXT STEP: PILOT THIS WORKFLOW
-Dialogue: 0,0:00:52.50,0:00:57.65,FinalSub,,0,0,0,,{\fad(280,420)\an5\pos(960,430)}Start with one high-value ASML diagnostic use case
-Dialogue: 0,0:00:52.85,0:00:57.65,CTA,,0,0,0,,{\fad(280,420)\an5\pos(960,560)}SCOPE THE PILOT
-Dialogue: 0,0:00:53.10,0:00:57.65,PanelDetail,,0,0,0,,{\fad(280,420)\an5\pos(960,675)}Align sources • success criteria • human approval gates
+Dialogue: 0,0:00:47.50,0:00:53.00,Final,,0,0,0,,{\fad(280,420)\an5\pos(960,300)}NEXT STEP: PILOT THIS WORKFLOW
+Dialogue: 0,0:00:47.80,0:00:53.00,FinalSub,,0,0,0,,{\fad(280,420)\an5\pos(960,430)}Start with one high-value ASML diagnostic use case
+Dialogue: 0,0:00:48.15,0:00:53.00,CTA,,0,0,0,,{\fad(280,420)\an5\pos(960,560)}SCOPE THE PILOT
+Dialogue: 0,0:00:48.40,0:00:53.00,PanelDetail,,0,0,0,,{\fad(280,420)\an5\pos(960,675)}Align sources • success criteria • human approval gates
