@@ -104,6 +104,13 @@ mistral-studio-marketing/
 │   ├── gtm-strategy.pptx                            # Operational GTM launch execution plan
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
+├── scripts/                                         # Reusable artifact build scripts
+│   └── build-improved-demo.ps1                      # ASML × Mistral demo video edit and web export
+│
+├── video-edit/                                      # Version-controlled video edit assets
+│   ├── improved-demo.ass                            # Branded narrative and evidence overlays
+│   └── README.md                                    # Build workflow and output details
+│
 ├── Root Level Files
 │   ├── author-profile.pptx                              # Author profile background & strategy bio presentation
 │   ├── eu-policy-company-thesis.pptx                    # European AI policy & company thesis presentation

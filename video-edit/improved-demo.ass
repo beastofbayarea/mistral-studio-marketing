@@ -1,0 +1,51 @@
+[Script Info]
+Title: ASML x Mistral AI improved demo narrative
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+PlayResX: 1920
+PlayResY: 1080
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TopBar,Segoe UI Semibold,28,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,4,0,0,0,1
+Style: Hero,Segoe UI Semibold,68,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,-1,0,1,0,0,5,0,0,0,1
+Style: HeroSub,Segoe UI,31,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Kicker,Segoe UI Semibold,23,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,4,0,0,0,1
+Style: Chapter,Segoe UI Semibold,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,4,0,0,0,1
+Style: PanelTitle,Segoe UI Semibold,34,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,7,0,0,0,1
+Style: PanelText,Segoe UI Semibold,32,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: PanelDetail,Segoe UI,25,&H00D8D8DF,&H00D8D8DF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Final,Segoe UI Semibold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: FinalSub,Segoe UI,29,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:56.00,TopBar,,0,0,0,,{\an4\pos(112,51)}ASML × MISTRAL AI  |  ENGINEERING INTELLIGENCE
+Dialogue: 0,0:00:00.35,0:00:03.65,Hero,,0,0,0,,{\fad(350,350)\an5\pos(960,394)}ASML × MISTRAL AI
+Dialogue: 0,0:00:00.72,0:00:03.65,HeroSub,,0,0,0,,{\fad(350,350)\an5\pos(960,485)}Evidence-backed engineering intelligence
+
+Dialogue: 0,0:00:00.15,0:00:07.90,Kicker,,0,0,0,,{\fad(200,220)\an4\pos(104,925)}01  •  DETECT
+Dialogue: 0,0:00:00.15,0:00:07.90,Chapter,,0,0,0,,{\fad(200,220)\an4\pos(104,991)}A subsystem anomaly interrupts production
+Dialogue: 0,0:00:08.00,0:00:15.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,925)}02  •  GATHER
+Dialogue: 0,0:00:08.00,0:00:15.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,991)}Logs • service history • engineering documentation
+Dialogue: 0,0:00:16.00,0:00:23.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,925)}03  •  CORRELATE
+Dialogue: 0,0:00:16.00,0:00:23.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,991)}Mistral retrieves, compares, and ranks evidence
+Dialogue: 0,0:00:24.00,0:00:31.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,925)}04  •  EXPLAIN
+Dialogue: 0,0:00:24.00,0:00:31.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,991)}A traceable causal chain connects change to impact
+Dialogue: 0,0:00:32.00,0:00:39.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,925)}05  •  IDENTIFY
+Dialogue: 0,0:00:32.00,0:00:39.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,991)}The evidence converges on a likely root cause
+Dialogue: 0,0:00:32.20,0:00:39.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(88,205)}EVIDENCE CHAIN
+Dialogue: 0,0:00:32.45,0:00:39.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(88,282)}Software update\N↓\NConfiguration change\N↓\NCommunication retries\N↓\NSubsystem anomaly
+Dialogue: 0,0:00:40.00,0:00:47.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,925)}06  •  VERIFY
+Dialogue: 0,0:00:40.00,0:00:47.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,991)}Every claim remains linked to its source evidence
+Dialogue: 0,0:00:40.20,0:00:47.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(1045,205)}TRACEABLE EVIDENCE
+Dialogue: 0,0:00:40.45,0:00:47.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(1045,282)}Service history\NEngineering guide\NPast incidents
+Dialogue: 0,0:00:40.65,0:00:47.75,PanelDetail,,0,0,0,,{\fad(180,220)\an7\pos(1045,485)}Sources preserved for engineering review
+Dialogue: 0,0:00:48.00,0:00:52.10,Kicker,,0,0,0,,{\fad(180,180)\an4\pos(104,925)}07  •  APPROVE
+Dialogue: 0,0:00:48.00,0:00:52.10,Chapter,,0,0,0,,{\fad(180,180)\an4\pos(104,991)}The engineer retains control of corrective action
+
+Dialogue: 0,0:00:52.25,0:00:55.72,Final,,0,0,0,,{\fad(280,420)\an5\pos(960,404)}ROOT CAUSE CONFIRMED
+Dialogue: 0,0:00:52.55,0:00:55.72,HeroSub,,0,0,0,,{\fad(280,420)\an5\pos(960,493)}Corrective action approved by the engineer
+Dialogue: 0,0:00:52.85,0:00:55.72,FinalSub,,0,0,0,,{\fad(280,420)\an5\pos(960,579)}From anomaly to traceable action.
