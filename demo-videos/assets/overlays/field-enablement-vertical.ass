@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Brand,Silkscreen,30,&H00FFFFFF,&H000000FF,&H00151524,&H00151524,0,0,0,0,100,100,2,0,1,2,0,7,142,150,66,1
+Style: Headline,Segoe UI Semibold,76,&H00FFFFFF,&H000000FF,&H00151524,&H00151524,-1,0,0,0,100,100,0,0,1,4,1,8,62,150,190,1
+Style: Accent,Segoe UI Semibold,76,&H000070FF,&H000000FF,&H00151524,&H00151524,-1,0,0,0,100,100,0,0,1,4,1,8,62,150,190,1
+Style: Footnote,Silkscreen,22,&H00D7D7DE,&H000000FF,&H00151524,&H00151524,0,0,0,0,100,100,2,0,1,2,0,2,60,170,208,1
+Style: CTAKicker,Silkscreen,26,&H000070FF,&H000000FF,&H00151524,&H00151524,0,0,0,0,100,100,3,0,1,2,0,8,70,170,430,1
+Style: CTA,Segoe UI Semibold,82,&H00FFFFFF,&H000000FF,&H00151524,&H00151524,-1,0,0,0,100,100,0,0,1,4,1,8,62,150,570,1
+Style: CTASub,Segoe UI,42,&H00E6E6EB,&H000000FF,&H00151524,&H00151524,0,0,0,0,100,100,0,0,1,3,0,8,80,170,875,1
+Style: Button,Segoe UI Semibold,40,&H00151524,&H000000FF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,1,0,3,18,0,5,150,250,1120,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.52,Brand,,0,0,0,,ASML  ×  MISTRAL
+Dialogue: 1,0:00:05.18,0:00:11.18,Headline,,0,0,0,,ONE SIGNAL.\NMANY SOURCES.
+Dialogue: 1,0:00:11.18,0:00:16.34,Headline,,0,0,0,,CONNECT EVERY SOURCE.\NCONTROL THE INVESTIGATION.
+Dialogue: 1,0:00:16.34,0:00:22.78,Headline,,0,0,0,,COMPARE. CHALLENGE.\NBUILD THE BRIEF.
+Dialogue: 1,0:00:22.78,0:00:27.34,Headline,,0,0,0,,LOW CONFIDENCE?\NASK FOR EVIDENCE.
+Dialogue: 1,0:00:27.34,0:00:32.38,Headline,,0,0,0,,THE ENGINEER\NSTAYS IN CONTROL.
+Dialogue: 1,0:00:32.38,0:00:36.97,Headline,,0,0,0,,APPROVED. TRACEABLE.\NACTIONABLE.
+Dialogue: 1,0:00:36.97,0:00:42.52,Headline,,0,0,0,,FASTER INVESTIGATION.\NSTRONGER EVIDENCE.
+Dialogue: 1,0:00:00.00,0:00:42.52,Footnote,,0,0,0,,REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
+Dialogue: 1,0:00:42.52,0:00:47.70,CTAKicker,,0,0,0,,ASML × MISTRAL  ·  NEXT STEP
+Dialogue: 1,0:00:42.52,0:00:47.70,CTA,,0,0,0,,TURN ONE CRITICAL WORKFLOW\NINTO A MEASURABLE PILOT.
+Dialogue: 1,0:00:42.52,0:00:47.70,CTASub,,0,0,0,,Focused working session.\NSources · decisions · approvals · success measures.
+Dialogue: 1,0:00:43.15,0:00:47.70,Button,,0,0,0,,DEFINE THE PILOT  →

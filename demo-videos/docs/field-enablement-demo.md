@@ -5,8 +5,11 @@
 - Runtime: 47.7 seconds
 - Format: 1920 × 1080, 30 fps, H.264 High Profile, AAC stereo
 - Master: `outputs\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`
+- Vertical master: `outputs\asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4`
 - Build: `scripts\build-field-enablement-demo.ps1`
+- Vertical build: `scripts\build-field-enablement-vertical.ps1`
 - Overlay source: `assets\overlays\field-enablement-demo.ass`
+- Vertical overlay source: `assets\overlays\field-enablement-vertical.ass`
 - Narration source: `assets\narration\field-enablement-narration.json`
 
 This is a fast field-enablement conversation starter that can also run as a short-form account ad. It presents a representative synthetic-data scenario, not a claim that the depicted workflow is currently deployed at ASML.
@@ -88,3 +91,11 @@ A restrained industrial texture and low rhythmic pulse support the faster edit. 
 ```
 
 Generated video and sentence-audio caches are not committed. The build definition, timing, narration, overlays, fonts, and documentation are version controlled.
+
+## Vertical social cut
+
+The 1080 × 1920 adaptation preserves the 47.7-second narration and edit timing. The first 5.18 seconds use a full-bleed center crop for immediate mobile impact. From 5.18–42.52, the complete widescreen composition is retained in a bordered central panel over a darkened motion background, keeping detailed manufacturing and product-interface footage legible without letterboxing. Large mobile-safe headlines occupy the upper safe area, the right interaction rail remains clear, and the final 5.18 seconds use a dedicated vertically centered pilot CTA.
+
+```powershell
+.\demo-videos\scripts\build-field-enablement-vertical.ps1
+```
