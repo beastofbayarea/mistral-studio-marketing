@@ -1,5 +1,5 @@
 [Script Info]
-Title: ASML x Mistral field enablement demo
+Title: ASML x Mistral 55-second field enablement ad
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
@@ -22,24 +22,25 @@ Style: Pixel,Arial,20,&H000070FF,&H000070FF,&H00000000,&H00000000,0,0,0,0,100,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.20,0:00:06.80,Pixel,,0,0,0,,{\an7\pos(58,158)\p1\fad(220,250)}m 0 0 l 18 0 l 18 18 l 0 18
-Dialogue: 1,0:00:00.25,0:00:06.80,Eyebrow,,0,0,0,,{\an7\pos(92,150)\fad(220,250)}ASML × MISTRAL
-Dialogue: 1,0:00:00.40,0:00:06.75,Hero,,0,0,0,,{\an7\pos(58,302)\fad(280,300)}From anomaly to\Nengineer-approved\Naction.
-Dialogue: 1,0:00:00.75,0:00:06.80,Micro,,0,0,0,,{\an7\pos(58,925)\1c&H00E8E8EB&\fad(250,250)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
+Dialogue: 0,0:00:00.10,0:00:03.85,Pixel,,0,0,0,,{\an7\pos(58,158)\p1\fad(120,180)}m 0 0 l 18 0 l 18 18 l 0 18
+Dialogue: 1,0:00:00.12,0:00:03.85,Eyebrow,,0,0,0,,{\an7\pos(92,150)\fad(120,180)}ASML × MISTRAL
+Dialogue: 1,0:00:00.22,0:00:03.82,Signal,,0,0,0,,{\an7\pos(58,276)\1c&H000070FF&\fad(140,180)}ANOMALY DETECTED
+Dialogue: 1,0:00:00.40,0:00:03.82,Hero,,0,0,0,,{\an7\pos(58,368)\fad(170,180)}Every anomaly\Nstarts a clock.
+Dialogue: 1,0:00:00.62,0:00:03.85,Micro,,0,0,0,,{\an7\pos(58,925)\1c&H00E8E8EB&\fad(180,180)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
 
-Dialogue: 1,0:00:07.10,0:00:14.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}01  START INVESTIGATION
-Dialogue: 1,0:00:15.10,0:00:22.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}02  RETRIEVE EVIDENCE
-Dialogue: 1,0:00:23.10,0:00:34.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}03  BUILD THE EVIDENCE SET
-Dialogue: 1,0:00:35.10,0:00:42.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}04  COMPARE AND EXPLAIN
-Dialogue: 1,0:00:43.10,0:00:49.70,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H0000B0FF&\fad(180,180)}ADDITIONAL EVIDENCE REQUIRED
-Dialogue: 1,0:00:50.10,0:00:55.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}05  ENGINEER REVIEW
-Dialogue: 1,0:00:56.10,0:01:01.70,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H008CD955&\fad(180,180)}ACTION APPROVED
-Dialogue: 1,0:01:02.10,0:01:08.70,Step,,0,0,0,,{\an7\pos(86,106)\fad(180,180)}06  TRACEABLE EXECUTION
+Dialogue: 1,0:00:04.05,0:00:09.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}SIGNALS ARE SCATTERED
+Dialogue: 1,0:00:10.05,0:00:15.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}ONE CONTROLLED INVESTIGATION
+Dialogue: 1,0:00:16.05,0:00:23.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}SOURCE-GROUNDED EVIDENCE
+Dialogue: 1,0:00:24.05,0:00:27.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}COMPARE AND EXPLAIN
+Dialogue: 1,0:00:28.05,0:00:30.85,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H0000B0FF&\fad(100,130)}ADDITIONAL EVIDENCE REQUIRED
+Dialogue: 1,0:00:31.05,0:00:34.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(100,130)}ENGINEER IN CONTROL
+Dialogue: 1,0:00:35.05,0:00:41.85,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H008CD955&\fad(100,140)}ACTION APPROVED
+Dialogue: 1,0:00:42.05,0:00:48.75,Step,,0,0,0,,{\an7\pos(86,106)\fad(110,160)}VISIBLE AND TRACEABLE
 
-Dialogue: 0,0:01:09.00,0:01:15.00,Pixel,,0,0,0,,{\an7\pos(96,279)\p1\fad(220,400)}m 0 0 l 20 0 l 20 20 l 0 20
-Dialogue: 1,0:01:09.05,0:01:15.00,CTALabel,,0,0,0,,{\an7\pos(132,272)\fad(220,400)}NEXT STEP
-Dialogue: 1,0:01:09.10,0:01:15.00,CTAMain,,0,0,0,,{\an7\pos(96,357)\fad(240,400)}Map one high-value ASML\Ndiagnostic workflow.
-Dialogue: 1,0:01:09.25,0:01:15.00,CTASub,,0,0,0,,{\an7\pos(96,585)\fad(260,400)}30-minute working session
-Dialogue: 1,0:01:09.35,0:01:15.00,Micro,,0,0,0,,{\an7\pos(96,651)\1c&H00E8E8EB&\fad(280,400)}SOURCES  ·  DECISIONS  ·  APPROVAL POINTS  ·  PILOT MEASURES
-Dialogue: 0,0:01:09.45,0:01:15.00,Pixel,,0,0,0,,{\an7\pos(96,735)\1c&H00F4F4F4&\p1\fad(300,400)}m 0 0 l 390 0 l 390 78 l 0 78
-Dialogue: 2,0:01:09.50,0:01:15.00,CTAButton,,0,0,0,,{\an5\pos(291,774)\fad(320,400)}DEFINE THE PILOT  →
+Dialogue: 0,0:00:49.00,0:00:55.00,Pixel,,0,0,0,,{\an7\pos(96,245)\p1\fad(160,350)}m 0 0 l 20 0 l 20 20 l 0 20
+Dialogue: 1,0:00:49.02,0:00:55.00,CTALabel,,0,0,0,,{\an7\pos(132,238)\fad(160,350)}ASML × MISTRAL  ·  NEXT STEP
+Dialogue: 1,0:00:49.08,0:00:55.00,CTAMain,,0,0,0,,{\an7\pos(96,338)\fs60\fad(180,350)}Turn one critical workflow\Ninto a measurable pilot.
+Dialogue: 1,0:00:49.20,0:00:55.00,CTASub,,0,0,0,,{\an7\pos(96,540)\fad(190,350)}Focused working session
+Dialogue: 1,0:00:49.30,0:00:55.00,Micro,,0,0,0,,{\an7\pos(96,605)\1c&H00E8E8EB&\fad(200,350)}SOURCES  ·  DECISIONS  ·  APPROVALS  ·  SUCCESS MEASURES
+Dialogue: 0,0:00:49.40,0:00:55.00,Pixel,,0,0,0,,{\an7\pos(96,690)\1c&H00F4F4F4&\p1\fad(220,350)}m 0 0 l 390 0 l 390 78 l 0 78
+Dialogue: 2,0:00:49.45,0:00:55.00,CTAButton,,0,0,0,,{\an5\pos(291,729)\fad(230,350)}DEFINE THE PILOT  →

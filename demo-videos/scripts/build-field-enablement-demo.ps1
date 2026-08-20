@@ -11,7 +11,7 @@ $ErrorActionPreference = 'Stop'
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-field-enablement-demo-75s-1080p.mp4'
+    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-field-enablement-ad-55s-1080p.mp4'
 }
 
 $absoluteOutputPath = Initialize-DemoOutputPath -OutputPath $OutputPath
@@ -47,11 +47,15 @@ for ($index = 0; $index -lt $narrationConfig.sentences.Count; $index++) {
     $sentencePath = Join-Path $sentenceDirectory ("sentence-{0:D2}.mp3" -f ($index + 1))
 
     if ($RegenerateNarration -or -not (Test-Path -LiteralPath $sentencePath -PathType Leaf)) {
+        $sentenceRate = if ($sentence.rate) { $sentence.rate } else { $narrationConfig.rate }
+        $sentencePitch = if ($sentence.pitch) { $sentence.pitch } else { $narrationConfig.pitch }
+        $sentenceVolume = if ($sentence.volume) { $sentence.volume } else { $narrationConfig.volume }
+
         & $pythonCommand.Source -m edge_tts `
             --voice $narrationConfig.voice `
-            --rate $narrationConfig.rate `
-            --pitch $narrationConfig.pitch `
-            --volume $narrationConfig.volume `
+            --rate $sentenceRate `
+            --pitch $sentencePitch `
+            --volume $sentenceVolume `
             --text $sentence.text `
             --write-media $sentencePath
 
@@ -83,11 +87,12 @@ $duration = [double]$narrationConfig.durationSeconds
 $durationText = $duration.ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
 $audioFilters += (($narrationLabels -join '') + "amix=inputs=$($narrationLabels.Count):duration=longest:normalize=0[narrationRaw]")
 $audioFilters += '[narrationRaw]highpass=f=75,lowpass=f=11500,acompressor=threshold=0.07:ratio=1.8:attack=8:release=90:makeup=1.25[voice]'
-$audioFilters += "aevalsrc='0.013*sin(2*PI*55*t)+0.004*sin(2*PI*110*t)':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=650,afade=t=in:st=0:d=2,afade=t=out:st=72:d=3[drone]"
-$audioFilters += "anoisesrc=color=pink:amplitude=0.007:d=${durationText}:r=48000,aformat=channel_layouts=stereo,highpass=f=100,lowpass=f=850,volume=0.18,afade=t=in:st=0:d=2,afade=t=out:st=72:d=3[texture]"
-$audioFilters += '[drone][texture]amix=inputs=2:duration=longest:normalize=0,volume=0.42[bed]'
-$audioFilters += 'sine=frequency=430:sample_rate=48000:duration=0.32,afade=t=out:st=0:d=0.32,adelay=43800|43800,volume=0.07,aformat=channel_layouts=stereo[uncertainty]'
-$audioFilters += 'sine=frequency=820:sample_rate=48000:duration=0.22,afade=t=out:st=0:d=0.22,adelay=56300|56300,volume=0.06,aformat=channel_layouts=stereo[approved]'
+$audioFilters += "aevalsrc='0.013*sin(2*PI*55*t)+0.004*sin(2*PI*110*t)':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=650,afade=t=in:st=0:d=1.2,afade=t=out:st=52:d=3[drone]"
+$audioFilters += "anoisesrc=color=pink:amplitude=0.007:d=${durationText}:r=48000,aformat=channel_layouts=stereo,highpass=f=100,lowpass=f=850,volume=0.18,afade=t=in:st=0:d=1.2,afade=t=out:st=52:d=3[texture]"
+$audioFilters += "aevalsrc='0.014*sin(2*PI*64*t)*exp(-18*mod(t\,0.5))':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=180,afade=t=in:st=0:d=1.2,afade=t=out:st=52:d=3[pulse]"
+$audioFilters += '[drone][texture][pulse]amix=inputs=3:duration=longest:normalize=0,volume=0.42[bed]'
+$audioFilters += 'sine=frequency=430:sample_rate=48000:duration=0.32,afade=t=out:st=0:d=0.32,adelay=28000|28000,volume=0.07,aformat=channel_layouts=stereo[uncertainty]'
+$audioFilters += 'sine=frequency=820:sample_rate=48000:duration=0.22,afade=t=out:st=0:d=0.22,adelay=35000|35000,volume=0.06,aformat=channel_layouts=stereo[approved]'
 $audioFilters += "[bed][voice][uncertainty][approved]amix=inputs=4:duration=longest:normalize=0,alimiter=limit=0.95,apad=pad_dur=0.2,atrim=duration=$durationText[a]"
 
 $audioArguments += @(
@@ -141,26 +146,25 @@ $assFilterPath = ConvertTo-FfmpegSubtitlePath -Path $overlayPath.Path
 $fontsFilterPath = ConvertTo-FfmpegSubtitlePath -Path $fontDirectory.Path
 
 $filterGraph = @"
-[0:v]trim=duration=7,setpts=PTS-STARTPTS,scale=920:1080:force_original_aspect_ratio=increase,crop=920:1080,eq=contrast=1.04:saturation=0.92,drawgrid=w=230:h=180:t=1:c=0xB7E3FF@0.12,pad=1920:1080:1000:0:color=0x151524,drawbox=x=960:y=0:w=40:h=1080:color=0xFF7000:t=fill,fps=30,setsar=1,format=yuv420p[s0];
-[1:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.06:saturation=0.92:brightness=-0.03,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s1];
-[2:v]trim=duration=4,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.08:saturation=0.82,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.28:t=2,fps=30,setsar=1,format=yuv420p[s2];
-[3:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.05:saturation=0.88,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.10,fps=30,setsar=1,format=yuv420p[s3];
-[4:v]trim=duration=4,setpts=PTS-STARTPTS,crop=1030:580:125:55,scale=1480:832:flags=lanczos,unsharp=5:5:0.28:5:5:0,pad=1920:1080:400:124:color=0x151524,drawbox=x=380:y=104:w=1520:h=872:color=0xB7E3FF@0.28:t=2,fps=30,setsar=1,format=yuv420p[s4];
-[5:v]trim=duration=6,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.04:saturation=0.86,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.10,fps=30,setsar=1,format=yuv420p[s5];
-[6:v]trim=duration=6,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.07:saturation=0.86:brightness=-0.03,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s6];
-[7:v]trim=duration=8,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.05:saturation=0.78:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.16,fps=30,setsar=1,format=yuv420p[s7];
-[8:v]trim=duration=4,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.08:saturation=0.82,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xFFB000@0.42:t=3,fps=30,setsar=1,format=yuv420p[s8];
-[9:v]trim=duration=3,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.94:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xFFB000@0.10,fps=30,setsar=1,format=yuv420p[s9];
-[10:v]trim=duration=6,setpts=PTS-STARTPTS,crop=1280:620:0:0,scale=1920:930:flags=lanczos,pad=1920:1080:0:75:color=0x151524,eq=contrast=1.04:saturation=0.88,drawbox=x=28:y=28:w=1864:h=1024:color=0xB7E3FF@0.20:t=1,fps=30,setsar=1,format=yuv420p[s10];
-[11:v]trim=duration=4,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.08:saturation=0.82,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0x55D98C@0.44:t=3,fps=30,setsar=1,format=yuv420p[s11];
-[12:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.06:saturation=0.90,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s12];
-[13:v]trim=duration=3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.08:saturation=0.82,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.28:t=2,fps=30,setsar=1,format=yuv420p[s13];
-[14:v]trim=duration=2,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.06:saturation=0.90,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s14];
-[15:v]trim=duration=6,setpts=PTS-STARTPTS,scale=660:1080:force_original_aspect_ratio=increase,crop=660:1080,eq=contrast=1.06:saturation=1.08,drawgrid=w=220:h=180:t=1:c=0xB7E3FF@0.13,pad=1920:1080:1260:0:color=0x151524,drawbox=x=1240:y=0:w=20:h=1080:color=0xFF7000:t=fill,fps=30,setsar=1,format=yuv420p[s15];
-[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15]concat=n=16:v=1:a=0,subtitles=filename='$assFilterPath':fontsdir='$fontsFilterPath'[story];
-[16:v]scale=52:52:flags=lanczos,format=rgba[brandmark];
-[story][brandmark]overlay=30:26:format=auto:enable='between(t,7,68.95)',fade=t=in:st=0:d=0.25,fade=t=out:st=74.45:d=0.55[v];
-[17:a]atrim=duration=75,asetpts=PTS-STARTPTS[a]
+[0:v]trim=duration=4,setpts=PTS-STARTPTS,scale=920:1080:force_original_aspect_ratio=increase,crop=920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.03,drawgrid=w=230:h=180:t=1:c=0xB7E3FF@0.13,pad=1920:1080:1000:0:color=0x151524,drawbox=x=960:y=0:w=40:h=1080:color=0xFF7000:t=fill,fps=30,setsar=1,format=yuv420p[s0];
+[1:v]trim=duration=3,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.94:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s1];
+[2:v]trim=duration=3,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.07:saturation=0.90,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s2];
+[3:v]trim=duration=3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s3];
+[4:v]trim=duration=3,setpts=PTS-STARTPTS,crop=1030:580:125:55,scale=1480:832:flags=lanczos,unsharp=5:5:0.28:5:5:0,pad=1920:1080:400:124:color=0x151524,drawbox=x=380:y=104:w=1520:h=872:color=0xB7E3FF@0.32:t=2,fps=30,setsar=1,format=yuv420p[s4];
+[5:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.06:saturation=0.86:brightness=-0.03,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s5];
+[6:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s6];
+[7:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.80:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.17,fps=30,setsar=1,format=yuv420p[s7];
+[8:v]trim=duration=3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xFFB000@0.50:t=3,fps=30,setsar=1,format=yuv420p[s8];
+[9:v]trim=duration=4,setpts=PTS-STARTPTS,crop=1280:620:0:0,scale=1920:930:flags=lanczos,pad=1920:1080:0:75:color=0x151524,eq=contrast=1.06:saturation=0.90:brightness=-0.02,drawbox=x=28:y=28:w=1864:h=1024:color=0xB7E3FF@0.22:t=1,fps=30,setsar=1,format=yuv420p[s9];
+[10:v]trim=duration=3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0x55D98C@0.52:t=3,fps=30,setsar=1,format=yuv420p[s10];
+[11:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s11];
+[12:v]trim=duration=3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s12];
+[13:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s13];
+[14:v]trim=duration=6,setpts=PTS-STARTPTS,scale=660:1080:force_original_aspect_ratio=increase,crop=660:1080,eq=contrast=1.08:saturation=1.08,drawgrid=w=220:h=180:t=1:c=0xB7E3FF@0.14,pad=1920:1080:1260:0:color=0x151524,drawbox=x=1240:y=0:w=20:h=1080:color=0xFF7000:t=fill,fps=30,setsar=1,format=yuv420p[s14];
+[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14]concat=n=15:v=1:a=0,subtitles=filename='$assFilterPath':fontsdir='$fontsFilterPath'[story];
+[15:v]scale=52:52:flags=lanczos,format=rgba[brandmark];
+[story][brandmark]overlay=30:26:format=auto:enable='between(t,4,48.95)',fade=t=in:st=0:d=0.18,fade=t=out:st=54.45:d=0.55[v];
+[16:a]atrim=duration=55,asetpts=PTS-STARTPTS[a]
 "@
 
 $filterGraph = $filterGraph -replace "`r?`n", ''
@@ -168,21 +172,20 @@ $filterGraph = $filterGraph -replace "`r?`n", ''
 $videoArguments = @(
     '-hide_banner',
     '-y',
-    '-ss', '116', '-t', '7', '-i', $computationalVideo.Path,
-    '-ss', '56', '-t', '4', '-i', $lightGenerationVideo.Path,
-    '-ss', '145', '-t', '4', '-i', $workflowVideo.Path,
-    '-ss', '57', '-t', '4', '-i', $waferStageVideo.Path,
-    '-ss', '43', '-t', '4', '-i', $connectorVideo.Path,
-    '-ss', '17', '-t', '6', '-i', $computationalVideo.Path,
-    '-ss', '123', '-t', '6', '-i', $reticleStageVideo.Path,
-    '-ss', '56', '-t', '8', '-i', $computationalVideo.Path,
-    '-ss', '164', '-t', '4', '-i', $workflowVideo.Path,
-    '-ss', '111', '-t', '3', '-i', $lightGenerationVideo.Path,
-    '-ss', '53', '-t', '6', '-i', $engineerVideo.Path,
-    '-ss', '166', '-t', '4', '-i', $workflowVideo.Path,
+    '-ss', '116', '-t', '4', '-i', $computationalVideo.Path,
+    '-ss', '56', '-t', '3', '-i', $lightGenerationVideo.Path,
+    '-ss', '57', '-t', '3', '-i', $waferStageVideo.Path,
+    '-ss', '145', '-t', '3', '-i', $workflowVideo.Path,
+    '-ss', '43', '-t', '3', '-i', $connectorVideo.Path,
+    '-ss', '17', '-t', '4', '-i', $computationalVideo.Path,
+    '-ss', '123', '-t', '4', '-i', $reticleStageVideo.Path,
+    '-ss', '56', '-t', '4', '-i', $computationalVideo.Path,
+    '-ss', '164', '-t', '3', '-i', $workflowVideo.Path,
+    '-ss', '53', '-t', '4', '-i', $engineerVideo.Path,
+    '-ss', '166', '-t', '3', '-i', $workflowVideo.Path,
     '-ss', '8', '-t', '4', '-i', $unveilingVideo.Path,
     '-ss', '152', '-t', '3', '-i', $workflowVideo.Path,
-    '-ss', '62', '-t', '2', '-i', $waferStageVideo.Path,
+    '-ss', '62', '-t', '4', '-i', $waferStageVideo.Path,
     '-ss', '116', '-t', '6', '-i', $computationalVideo.Path,
     '-loop', '1', '-framerate', '30', '-i', $logoPath.Path,
     '-i', $narrationMixPath,
@@ -201,7 +204,7 @@ $videoArguments = @(
     '-b:a', '192k',
     '-ar', '48000',
     '-movflags', '+faststart',
-    '-t', '75',
+    '-t', '55',
     $absoluteOutputPath
 )
 

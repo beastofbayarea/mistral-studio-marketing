@@ -20,9 +20,9 @@ demo-videos/
 
 Video files are intentionally ignored by Git. The folder structure, scripts, overlays, and documentation remain version controlled.
 
-## Field enablement master
+## Field enablement ad master
 
-The recommended client-facing cut is a 75-second ASML diagnostic-workflow story. It moves from anomaly to grounded evidence, uncertainty handling, engineer approval, traceability, and a concrete pilot invitation. The visual system draws from Mistral's manufacturing page: dark navy split layouts, orange rails, pale-blue technical grids, pixel labels, and restrained product framing. The final timeline is presenter-free and limits Mistral Studio footage to 19 seconds of short proof points; 56 seconds remain focused on manufacturing equipment, optics, wafer handling, and cleanroom activity. Burned-in source captions are removed, while a bright, enthusiastic twelve-cue narration runs continuously through the full story.
+The recommended client-facing cut is a 55-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. It moves quickly from anomaly to grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses 40 seconds of manufacturing imagery and only 15 seconds of framed Mistral Studio proof points. Burned-in source captions are excluded. An expressive nine-cue Ava narration uses sentence-level pace, pitch, emphasis, and pause direction instead of one repeated delivery setting.
 
 Build it from the repository root:
 
@@ -30,7 +30,7 @@ Build it from the repository root:
 .\demo-videos\scripts\build-field-enablement-demo.ps1
 ```
 
-The default export is `outputs\asml-mistral-field-enablement-demo-75s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
+The default export is `outputs\asml-mistral-field-enablement-ad-55s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
 
 ```powershell
 .\demo-videos\scripts\build-field-enablement-demo.ps1 -RegenerateNarration
