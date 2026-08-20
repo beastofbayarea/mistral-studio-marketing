@@ -10,6 +10,7 @@ YCbCr Matrix: TV.709
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Hero,Segoe UI Light,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-1,0,1,0,0,7,0,0,0,1
+Style: Impact,Segoe UI Semibold,150,&H00FFFFFF,&H00FFFFFF,&H00151524,&H00000000,-1,0,0,0,100,100,-1,0,1,6,0,5,0,0,0,1
 Style: Eyebrow,Silkscreen,28,&H00FFE3B7,&H00FFE3B7,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,7,0,0,0,1
 Style: Step,Silkscreen,32,&H00FFFFFF,&H00FFFFFF,&H00000000,&H33242115,0,0,0,0,100,100,1,0,3,18,0,7,0,0,0,1
 Style: Signal,Segoe UI Semibold,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H33242115,-1,0,0,0,100,100,0,0,3,18,0,7,0,0,0,1
@@ -22,13 +23,15 @@ Style: Pixel,Arial,20,&H000070FF,&H000070FF,&H00000000,&H00000000,0,0,0,0,100,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.10,0:00:03.85,Pixel,,0,0,0,,{\an7\pos(58,158)\p1\fad(120,180)}m 0 0 l 18 0 l 18 18 l 0 18
-Dialogue: 1,0:00:00.12,0:00:03.85,Eyebrow,,0,0,0,,{\an7\pos(92,150)\fad(120,180)}ASML × MISTRAL
-Dialogue: 1,0:00:00.22,0:00:03.82,Signal,,0,0,0,,{\an7\pos(58,276)\1c&H000070FF&\fad(140,180)}ANOMALY DETECTED
-Dialogue: 1,0:00:00.40,0:00:03.82,Hero,,0,0,0,,{\an7\pos(58,368)\fad(170,180)}Every anomaly\Nstarts a clock.
-Dialogue: 1,0:00:00.62,0:00:03.85,Micro,,0,0,0,,{\an7\pos(58,925)\1c&H00E8E8EB&\fad(180,180)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
+Dialogue: 0,0:00:00.05,0:00:03.92,Pixel,,0,0,0,,{\an7\pos(58,58)\p1\fad(60,100)}m 0 0 l 18 0 l 18 18 l 0 18
+Dialogue: 1,0:00:00.07,0:00:03.92,Eyebrow,,0,0,0,,{\an7\pos(92,50)\fad(60,100)}ASML × MISTRAL
+Dialogue: 1,0:00:00.08,0:00:00.95,Impact,,0,0,0,,{\an5\pos(960,540)\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}ANOMALY
+Dialogue: 1,0:00:01.00,0:00:01.92,Impact,,0,0,0,,{\an5\pos(960,540)\1c&H000070FF&\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}DETECTED
+Dialogue: 1,0:00:02.00,0:00:02.92,Impact,,0,0,0,,{\an5\pos(960,540)\fs132\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}EVIDENCE SCATTERED
+Dialogue: 1,0:00:03.00,0:00:03.94,Impact,,0,0,0,,{\an5\pos(960,540)\fs136\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,90)}EVERY SECOND COUNTS.
+Dialogue: 1,0:00:00.12,0:00:03.92,Micro,,0,0,0,,{\an7\pos(58,995)\1c&H00E8E8EB&\fad(80,100)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
 
-Dialogue: 1,0:00:04.05,0:00:09.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}SIGNALS ARE SCATTERED
+Dialogue: 1,0:00:04.05,0:00:09.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}THE CLOCK IS RUNNING
 Dialogue: 1,0:00:10.05,0:00:15.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}ONE CONTROLLED INVESTIGATION
 Dialogue: 1,0:00:16.05,0:00:23.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}SOURCE-GROUNDED EVIDENCE
 Dialogue: 1,0:00:24.05,0:00:27.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}COMPARE AND EXPLAIN

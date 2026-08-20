@@ -28,9 +28,12 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 | Edit time | Source file | Source in | Purpose |
 |---:|---|---:|---|
-| 00:00–00:04 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:56 | Branded opening hook |
-| 00:04–00:07 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 00:56 | EUV light generation |
-| 00:07–00:10 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 00:57 | Wafer-stage movement |
+| 00:00–00:01 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:56 | Anomaly impact shot |
+| 00:01–00:02 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 00:56 | Detection impact shot |
+| 00:02–00:03 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 00:57 | Scattered-evidence impact shot |
+| 00:03–00:04 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:08 | Every-second-counts impact shot |
+| 00:04–00:07 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 00:57 | EUV light generation |
+| 00:07–00:10 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 00:58 | Wafer-stage movement |
 | 00:10–00:13 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Controlled workflow proof point |
 | 00:13–00:16 | `source-footage\mistral-studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Source connectivity |
 | 00:16–00:20 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 00:17 | Lithography equipment detail |
@@ -39,17 +42,18 @@ This is a fast field-enablement conversation starter that can also run as a shor
 | 00:28–00:31 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Additional-evidence state |
 | 00:31–00:35 | `source-footage\industry\asml-mature-products-and-service-720p.mp4` | 00:53 | Operational engineer review |
 | 00:35–00:38 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:46 | Approval state |
-| 00:38–00:42 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:08 | Approved-action momentum |
+| 00:38–00:42 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:09 | Approved-action momentum |
 | 00:42–00:45 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Traceability proof point |
-| 00:45–00:49 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 01:02 | Manufacturing outcome |
+| 00:45–00:49 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:00 | Abstract computational outcome; replaces presenter footage |
 | 00:49–00:55 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:56 | Vertically centered pilot CTA |
 
 ## Creative system
 
-- The first four seconds deliver the problem, urgency, and account lockup before any explanation.
-- Fifteen shots average 3.7 seconds, using hard editorial cuts for ad-like momentum.
+- The first four seconds use four full-screen one-second shots, rapid push-ins, kinetic typography, and synchronized impact beats.
+- Eighteen shots use hard editorial cuts for ad-like momentum, while the explanatory section settles into three- and four-second proof points.
 - Manufacturing footage occupies 40 seconds; Mistral Studio appears in five three-second proof points totaling 15 seconds.
-- Presenter and talking-head ranges are excluded. Human presence is limited to operational cleanroom activity.
+- Presenter and talking-head ranges are excluded without exception. Human presence is limited to operators performing cleanroom work, never addressing camera.
+- The complete 55-second master is audited at 0.5-second intervals after every source-range change.
 - Burned-in source subtitles are excluded through subtitle-free ranges and top-safe product crops.
 - Overlays stay short and at the top of frame, leaving the manufacturing and product imagery unobstructed.
 - Mistral navy, orange rails, technical grids, pixel markers, amber uncertainty, and green approval create one consistent visual language.
@@ -59,7 +63,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 The narration uses the expressive `en-US-AvaNeural` voice. Each of the nine sentences has its own rate, pitch, volume, punctuation, and pause treatment, creating distinct urgent, explanatory, cautionary, and outcome beats instead of one repeated cadence. The voice runs from 0.2 to 54.0 seconds, with a deliberate breath before the CTA.
 
-A restrained industrial texture and low rhythmic pulse support the faster edit. Short tonal cues mark additional evidence and approved action. Light compression preserves vocal expression, and the measured final encode is −16.01 LUFS with a −1.52 dBTP peak.
+A restrained industrial texture and low rhythmic pulse support the faster edit. Four low-frequency impacts synchronize with the opening montage, while short tonal cues mark additional evidence and approved action. Light compression preserves vocal expression, and the measured final encode is −16.01 LUFS with a −1.50 dBTP peak.
 
 ## Rebuild and revision
 
