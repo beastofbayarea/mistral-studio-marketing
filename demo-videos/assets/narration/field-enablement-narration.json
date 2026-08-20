@@ -1,0 +1,40 @@
+{
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "-5%",
+  "pitch": "-2Hz",
+  "durationSeconds": 75,
+  "sentences": [
+    {
+      "startMilliseconds": 400,
+      "text": "When a system anomaly appears, the evidence needed to act is rarely in one place."
+    },
+    {
+      "startMilliseconds": 7300,
+      "text": "This representative Mistral workflow brings the investigation into one controlled process."
+    },
+    {
+      "startMilliseconds": 15300,
+      "text": "It retrieves the relevant diagnostics, service history, engineering documentation, and previous cases, while preserving a link to every source."
+    },
+    {
+      "startMilliseconds": 35100,
+      "text": "It compares related incidents, identifies supporting and conflicting evidence, and builds a concise diagnostic brief."
+    },
+    {
+      "startMilliseconds": 43800,
+      "text": "When confidence is limited, it flags the uncertainty instead of guessing."
+    },
+    {
+      "startMilliseconds": 50100,
+      "text": "An engineer reviews the evidence, challenges the recommendation, and approves the next action."
+    },
+    {
+      "startMilliseconds": 60900,
+      "text": "Every step, decision, retry, and approval remains visible and traceable in Mistral Studio."
+    },
+    {
+      "startMilliseconds": 68900,
+      "text": "Let's map one high-value ASML diagnostic workflow and define the pilot."
+    }
+  ]
+}

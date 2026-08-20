@@ -12,6 +12,7 @@ function Get-DemoVideoPaths {
         RepoRoot        = Split-Path -Parent $demoRoot
         IndustryFootage = Join-Path $demoRoot 'source-footage\industry'
         Masters         = Join-Path $demoRoot 'source-footage\masters'
+        Narration       = Join-Path $demoRoot 'assets\narration'
         ProductFootage  = Join-Path $demoRoot 'source-footage\mistral-studio'
         Outputs         = Join-Path $demoRoot 'outputs'
         Overlays        = Join-Path $demoRoot 'assets\overlays'

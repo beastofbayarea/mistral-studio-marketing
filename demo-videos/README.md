@@ -7,6 +7,7 @@ This is the self-contained production workspace for the ASML client demo. Source
 ```text
 demo-videos/
 ├── assets/
+│   ├── narration/                 # Voice, timing, and approved narration configuration
 │   └── overlays/                  # Version-controlled subtitle and graphic overlays
 ├── docs/                          # Storyboard, narration, and production guidance
 ├── outputs/                       # Generated review and delivery exports
@@ -19,7 +20,25 @@ demo-videos/
 
 Video files are intentionally ignored by Git. The folder structure, scripts, overlays, and documentation remain version controlled.
 
-## Primary workflow demo
+## Field enablement master
+
+The recommended client-facing cut is a 75-second ASML diagnostic-workflow story. It moves from anomaly to grounded evidence, uncertainty handling, engineer approval, traceability, and a concrete pilot invitation. The visual system draws from Mistral's manufacturing page: dark navy split layouts, orange rails, pale-blue technical grids, pixel labels, and restrained product framing.
+
+Build it from the repository root:
+
+```powershell
+.\demo-videos\scripts\build-field-enablement-demo.ps1
+```
+
+The default export is `outputs\asml-mistral-field-enablement-demo-75s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
+
+```powershell
+.\demo-videos\scripts\build-field-enablement-demo.ps1 -RegenerateNarration
+```
+
+The full edit map, narration, source timecodes, and design rationale are in `docs\field-enablement-demo.md`.
+
+## Earlier workflow demo
 
 The 48-second structure is Detect, Investigate, Explain, Approve, and Pilot. It combines:
 
@@ -61,8 +80,8 @@ Install FFmpeg once:
 winget install --id Gyan.FFmpeg --exact
 ```
 
-The two builds share `scripts\video-build-common.ps1` for folder discovery, output preparation, FFmpeg discovery, and subtitle-path conversion. Optional neural-voice experiments use the pinned dependency in `scripts\neural-voice-requirements.txt`.
+All builds share `scripts\video-build-common.ps1` for folder discovery, output preparation, FFmpeg discovery, and subtitle-path conversion. The field-enablement build uses the pinned neural-voice dependency in `scripts\neural-voice-requirements.txt` and generates each narration sentence separately for controlled pacing.
 
 ## Creative reference
 
-The current storyboard, approved narration, and production principles are in `docs\rethought-demo-script.md`. The primary edit uses presentation-scale lower thirds, real Mistral Studio product footage, explicit engineer approval, and a vertically centered ASML-specific pilot call to action.
+The current field-enablement storyboard and approved narration are in `docs\field-enablement-demo.md`. The earlier 48-second concept remains documented in `docs\rethought-demo-script.md`.

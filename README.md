@@ -105,6 +105,7 @@ mistral-studio-marketing/
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
 ├── demo-videos/                                     # Self-contained ASML × Mistral video production workspace
+│   ├── assets/narration/                            # Approved voice script and sentence timing
 │   ├── assets/overlays/                             # Branded subtitle and graphic overlays
 │   ├── docs/                                        # Storyboard, narration, and production principles
 │   ├── outputs/                                     # Generated review and delivery exports (ignored by Git)
