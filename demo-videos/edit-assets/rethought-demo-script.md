@@ -9,8 +9,8 @@ Earn agreement to map and pilot one high-value ASML diagnostic workflow. The sto
 | Time | Act | Visual | On-screen message |
 | --- | --- | --- | --- |
 | 0–7s | Detect | Representative production anomaly | A production anomaly. The evidence is rarely in one place. |
-| 7–21s | Investigate | Incident sources converge, followed by Mistral Studio workflow UI | Bring the relevant evidence into one investigation. |
-| 21–35s | Explain | Causal-chain footage, followed by the workflow execution trace | Compare similar incidents. Build a source-linked diagnosis. |
+| 7–21s | Investigate | Incident sources converge, followed by a real Mistral Studio workflow run from `Build your first Mistral Workflow 720P.mp4` | Bring the relevant evidence into one investigation. |
+| 21–35s | Explain | Causal-chain footage, followed by a real Studio agent tool-review sequence from `Update a skill with versioning in Studio 720P.mp4` | Compare similar incidents. Build a source-linked diagnosis. |
 | 35–41s | Approve | Engineer review and validation footage | Engineer reviews and approves the next action. |
 | 41–48s | Pilot | Clean Mistral end card | Next: 30-minute workflow mapping session. |
 
@@ -32,9 +32,10 @@ Let's pilot it on one high-value diagnostic use case.
 
 ## Production principles
 
-- Generate each narration sentence separately with the `en-GB-RyanNeural` voice, then assemble the lines with controlled pauses.
-- Vary sentence pacing and pitch subtly; do not synthesize the full script as one continuous request.
+- Preserve the approved sentence-level narration and ambient bed from the 48-second rethought master.
 - Keep overlays to one decision or outcome per scene.
 - Use a maximum of two lines for presentation-scale scene titles.
+- Crop the downloaded product captures to the browser viewport so their decorative video borders never compete with the Studio interface.
+- Discard the downloaded clips' audio; the client narrative and music bed remain the only soundtrack.
 - Treat the incident as representative; do not imply access to confidential ASML operational data.
 - Keep the CTA vertically centered and visible for at least six seconds.

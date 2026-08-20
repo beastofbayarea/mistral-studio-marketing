@@ -44,15 +44,9 @@ Custom source and output paths are supported:
 .\demo-videos\scripts\build-improved-demo.ps1 -InputPath 'C:\path\source.mp4' -OutputPath 'C:\path\improved.mp4'
 ```
 
-## Rethought four-act master
+## Updated four-act master
 
-The from-scratch concept uses a new 48-second structure: Detect, Investigate, Explain, and Approve. It combines selected incident footage with real Mistral Studio workflow and execution-trace visuals, generates a single continuous voiceover locally, and closes with a vertically centered pilot invitation.
-
-Install the pinned neural narration dependency once:
-
-```powershell
-python -m pip install --user --upgrade -r .\demo-videos\edit-assets\neural-voice-requirements.txt
-```
+The 48-second structure is Detect, Investigate, Explain, Approve, and Pilot. The update rebuilds the ASML scenes from `ASMLxMistral_Final_Trim_NoCap_4K.mp4`, keeps the approved narration and ambient bed from `ASMLxMistral_Rethought_Workflow_1080p.mp4`, and replaces the former static Studio images with real product usage from the downloaded Mistral videos.
 
 Build it with:
 
@@ -60,4 +54,4 @@ Build it with:
 .\demo-videos\scripts\build-rethought-demo.ps1
 ```
 
-The default output is `demo-videos\ASMLxMistral_Rethought_Workflow_1080p.mp4`. Narration is produced sentence-by-sentence with the warm British-English `en-GB-RyanNeural` voice, with individually controlled pacing, pitch, and pauses. The source script is documented in `edit-assets\rethought-demo-script.md`, and the presentation-scale overlay system is defined in `edit-assets\rethought-demo.ass`.
+The default output is `demo-videos\ASMLxMistral_Updated_Studio_Workflow_1080p.mp4`. The browser viewports are cropped out of the source videos' decorative frames, sharpened for the 1080p export, and placed beneath presentation-scale lower thirds. The source script is documented in `edit-assets\rethought-demo-script.md`, and the overlay system is defined in `edit-assets\rethought-demo.ass`.

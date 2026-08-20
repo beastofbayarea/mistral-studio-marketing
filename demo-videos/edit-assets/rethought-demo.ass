@@ -32,17 +32,13 @@ Dialogue: 0,0:00:04.00,0:00:06.85,SceneTitle,,0,0,0,,{\fad(180,200)\an7\pos(100,
 
 Dialogue: 0,0:00:07.10,0:00:13.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(100,755)}02  •  INVESTIGATE
 Dialogue: 0,0:00:07.10,0:00:13.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(100,820)}Logs • service history\Nengineering documentation
-Dialogue: 0,0:00:14.15,0:00:20.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(78,205)}02  •  INVESTIGATE
-Dialogue: 0,0:00:14.15,0:00:20.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(78,275)}ONE WORKFLOW
-Dialogue: 0,0:00:14.45,0:00:20.85,SceneBody,,0,0,0,,{\fad(180,220)\an7\pos(78,385)}Bring the relevant\Nevidence into one\Ninvestigation
-Dialogue: 0,0:00:14.75,0:00:20.85,Detail,,0,0,0,,{\fad(180,220)\an7\pos(78,650)}Grounded in enterprise sources
+Dialogue: 0,0:00:14.15,0:00:20.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(100,755)}02  •  INVESTIGATE
+Dialogue: 0,0:00:14.15,0:00:20.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(100,820)}BRING THE EVIDENCE\NINTO ONE WORKFLOW
 
 Dialogue: 0,0:00:21.10,0:00:28.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(100,755)}03  •  EXPLAIN
 Dialogue: 0,0:00:21.10,0:00:28.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(100,820)}Compare similar incidents.\NBuild a source-linked diagnosis.
-Dialogue: 0,0:00:29.15,0:00:34.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(78,205)}03  •  EXPLAIN
-Dialogue: 0,0:00:29.15,0:00:34.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(78,275)}TRACE EVERY STEP
-Dialogue: 0,0:00:29.45,0:00:34.85,SceneBody,,0,0,0,,{\fad(180,220)\an7\pos(78,385)}Inspect the reasoning.\NChallenge the diagnosis.\NFollow every source.
-Dialogue: 0,0:00:29.75,0:00:34.85,Detail,,0,0,0,,{\fad(180,220)\an7\pos(78,650)}Evidence preserved for engineering review
+Dialogue: 0,0:00:29.15,0:00:34.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(100,755)}03  •  EXPLAIN
+Dialogue: 0,0:00:29.15,0:00:34.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(100,820)}TRACE EVERY STEP.\NCHALLENGE THE DIAGNOSIS.
 
 Dialogue: 0,0:00:35.10,0:00:40.85,Act,,0,0,0,,{\fad(180,220)\an7\pos(100,755)}04  •  APPROVE
 Dialogue: 0,0:00:35.10,0:00:40.85,SceneTitle,,0,0,0,,{\fad(180,220)\an7\pos(100,820)}Engineer reviews and approves\Nthe next action
