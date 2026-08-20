@@ -15,16 +15,16 @@ This is a field-enablement conversation starter for an existing ASML relationshi
 
 | Time | Beat | Visual | Narration |
 |---:|---|---|---|
-| 00:00–00:07 | Outcome first | Split card with ASML computational-lithography footage | When a system anomaly appears, the evidence needed to act is rarely in one place. |
-| 00:07–00:15 | Start investigation | EUV light-generation detail, followed by a four-second framed Studio workflow | This representative Mistral workflow brings the investigation into one controlled process. |
-| 00:15–00:23 | Retrieve evidence | Wafer-stage movement, followed by a four-second framed connector interface | It retrieves the relevant diagnostics, service history, engineering documentation, and previous cases, while preserving a link to every source. |
-| 00:23–00:35 | Build evidence set | Wafer handling, chip applications, and High-NA reticle-stage footage | — |
-| 00:35–00:43 | Compare and explain | Computational-lithography model visualization | It compares related incidents, identifies supporting and conflicting evidence, and builds a concise diagnostic brief. |
-| 00:43–00:50 | Handle uncertainty | Four-second framed workflow state, followed by EUV plasma footage | When confidence is limited, it flags the uncertainty instead of guessing. |
-| 00:50–00:56 | Engineer review | Cleanroom maintenance activity with no presenter shot | An engineer reviews the evidence, challenges the recommendation, and approves the next action. |
-| 00:56–01:02 | Approve action | Four-second framed Studio approval state, followed by High-NA equipment | — |
-| 01:02–01:09 | Preserve traceability | Three-second framed workflow run between High-NA stage shots | Every step, decision, retry, and approval remains visible and traceable in Mistral Studio. |
-| 01:09–01:15 | Define the pilot | Vertically centered split end card | Let's map one high-value ASML diagnostic workflow and define the pilot. |
+| 00:00–00:07 | Outcome first | Split card with ASML computational-lithography footage | An anomaly appears. Now the investigation has to move—fast, with the right evidence in reach! |
+| 00:07–00:15 | Start investigation | EUV light-generation detail, followed by a four-second framed Studio workflow | That signal can begin anywhere: optics, stages, sensors, equipment, or service logs. Mistral Studio brings it together in one controlled investigation—from the very first step. |
+| 00:15–00:23 | Retrieve evidence | Wafer-stage movement, followed by a four-second framed connector interface | Diagnostics, maintenance history, engineering documentation, and prior cases connect in seconds. |
+| 00:23–00:35 | Build evidence set | Computational-lithography equipment and High-NA reticle-stage footage | Every source stays linked, so engineers can verify every claim immediately. Then the workflow turns that evidence into a concise, actionable diagnostic brief. |
+| 00:35–00:43 | Compare and explain | Computational-lithography model visualization | It spots supporting signals, surfaces conflicts, and shows exactly what is still missing. |
+| 00:43–00:50 | Handle uncertainty | Four-second framed workflow state, followed by EUV light detail | Not enough confidence? It pauses and asks for more evidence—no guessing. |
+| 00:50–00:56 | Engineer review | Cleanroom maintenance activity with no presenter shot | Now the engineer takes control: review the reasoning, challenge it, and add operational judgment. |
+| 00:56–01:02 | Approve action | Four-second framed Studio approval state, followed by High-NA equipment | Only the approved action moves forward, with uncertainty visible at every step. |
+| 01:02–01:09 | Preserve traceability | Three-second framed workflow run between High-NA stage shots | Sources, retries, decisions, approvals—everything stays visible and traceable in Studio. |
+| 01:09–01:15 | Define the pilot | Vertically centered split end card | And here’s the opportunity: map one high-value ASML workflow, align the evidence and approvals, and launch a measurable pilot—with clear success measures from day one! |
 
 ## Source edit map
 
@@ -35,16 +35,16 @@ This is a field-enablement conversation starter for an existing ASML relationshi
 | 00:11–00:15 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Workflow execution proof point |
 | 00:15–00:19 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 00:57 | Wafer-stage movement |
 | 00:19–00:23 | `source-footage\mistral-studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Evidence-source connectivity |
-| 00:23–00:29 | `source-footage\industry\asml-mature-products-and-service-720p.mp4` | 01:58 | Wafer handling and chip applications |
+| 00:23–00:29 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 00:17 | Lithography equipment detail |
 | 00:29–00:35 | `source-footage\industry\asml-high-na-euv-reticle-stage-720p.mp4` | 02:03 | High-NA reticle stage |
 | 00:35–00:43 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 00:56 | Comparison and analysis |
 | 00:43–00:47 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Uncertainty state |
-| 00:47–00:50 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 01:44 | EUV plasma detail |
-| 00:50–00:56 | `source-footage\industry\asml-mature-products-and-service-720p.mp4` | 04:19 | Cleanroom maintenance and engineer review |
+| 00:47–00:50 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 01:51 | EUV optics detail |
+| 00:50–00:56 | `source-footage\industry\asml-mature-products-and-service-720p.mp4` | 00:53 | Cleanroom maintenance and engineer review |
 | 00:56–01:00 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:46 | Approval state |
-| 01:00–01:04 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:45 | High-NA equipment |
+| 01:00–01:04 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:08 | High-NA equipment |
 | 01:04–01:07 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Traceable execution proof point |
-| 01:07–01:09 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 01:00 | Sub-nanometer stage movement |
+| 01:07–01:09 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 01:02 | Wafer-stage movement |
 | 01:09–01:15 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:56 | End-card manufacturing context |
 
 ## Visual system
@@ -56,12 +56,13 @@ This is a field-enablement conversation starter for an existing ASML relationshi
 - Product footage receives only a small top-left step label, preserving the interface as the proof.
 - Product footage is limited to five framed proof points totaling 19 seconds; manufacturing footage occupies the remaining 56 seconds.
 - Presenter and talking-head ranges are excluded. Human presence is limited to operational cleanroom activity.
+- Burned-in source subtitles are excluded through subtitle-free time ranges and top-safe crops. Only product-interface text and the edit's intentional overlays remain.
 - Uncertainty is amber, approval is green, and neutral progress framing is pale blue.
 - The end card places the full content group at the vertical center of the navy panel.
 
 ## Sound design
 
-The narration uses `en-US-AndrewMultilingualNeural` at a slightly slower rate and lower pitch. Every sentence is generated separately so pauses and emphasis follow the edit instead of a single synthetic cadence. The mix applies speech-focused compression, a restrained original industrial bed, and brief tonal cues for uncertainty and approval. A measured two-pass mastering stage targets −16 LUFS, a −1.5 dBTP ceiling, and a controlled presentation-friendly loudness range before the final AAC encode.
+The narration uses the brighter `en-US-JennyNeural` voice at `+8%` rate, `+5Hz` pitch, and `+6%` volume. Twelve action-oriented sentences use short clauses, questions, and emphatic punctuation to create an enthusiastic field-demo performance. Measured cue durations leave only 0.02 seconds between the first eleven cues; the final CTA narration ends at 74.71 seconds. The mix uses light speech compression to preserve expression, a restrained original industrial bed, and brief tonal cues for uncertainty and approval. A measured two-pass mastering stage targets −16 LUFS and a −1.5 dBTP ceiling before the final AAC encode.
 
 ## Rebuild and revision
 

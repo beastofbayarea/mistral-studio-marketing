@@ -22,7 +22,7 @@ Video files are intentionally ignored by Git. The folder structure, scripts, ove
 
 ## Field enablement master
 
-The recommended client-facing cut is a 75-second ASML diagnostic-workflow story. It moves from anomaly to grounded evidence, uncertainty handling, engineer approval, traceability, and a concrete pilot invitation. The visual system draws from Mistral's manufacturing page: dark navy split layouts, orange rails, pale-blue technical grids, pixel labels, and restrained product framing. The final timeline is presenter-free and limits Mistral Studio footage to 19 seconds of short proof points; 56 seconds remain focused on manufacturing equipment, optics, wafer handling, and cleanroom activity.
+The recommended client-facing cut is a 75-second ASML diagnostic-workflow story. It moves from anomaly to grounded evidence, uncertainty handling, engineer approval, traceability, and a concrete pilot invitation. The visual system draws from Mistral's manufacturing page: dark navy split layouts, orange rails, pale-blue technical grids, pixel labels, and restrained product framing. The final timeline is presenter-free and limits Mistral Studio footage to 19 seconds of short proof points; 56 seconds remain focused on manufacturing equipment, optics, wafer handling, and cleanroom activity. Burned-in source captions are removed, while a bright, enthusiastic twelve-cue narration runs continuously through the full story.
 
 Build it from the repository root:
 

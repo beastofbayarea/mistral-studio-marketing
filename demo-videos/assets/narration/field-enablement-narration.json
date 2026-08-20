@@ -1,40 +1,57 @@
 {
-  "voice": "en-US-AndrewMultilingualNeural",
-  "rate": "-5%",
-  "pitch": "-2Hz",
+  "voice": "en-US-JennyNeural",
+  "rate": "+8%",
+  "pitch": "+5Hz",
+  "volume": "+6%",
   "durationSeconds": 75,
   "sentences": [
     {
-      "startMilliseconds": 400,
-      "text": "When a system anomaly appears, the evidence needed to act is rarely in one place."
+      "startMilliseconds": 200,
+      "text": "An anomaly appears. Now the investigation has to move—fast, with the right evidence in reach!"
     },
     {
-      "startMilliseconds": 7300,
-      "text": "This representative Mistral workflow brings the investigation into one controlled process."
+      "startMilliseconds": 7200,
+      "text": "That signal can begin anywhere: optics, stages, sensors, equipment, or service logs."
     },
     {
-      "startMilliseconds": 15300,
-      "text": "It retrieves the relevant diagnostics, service history, engineering documentation, and previous cases, while preserving a link to every source."
+      "startMilliseconds": 13630,
+      "text": "Mistral Studio brings it together in one controlled investigation—from the very first step."
     },
     {
-      "startMilliseconds": 35100,
-      "text": "It compares related incidents, identifies supporting and conflicting evidence, and builds a concise diagnostic brief."
+      "startMilliseconds": 19270,
+      "text": "Diagnostics, maintenance history, engineering documentation, and prior cases connect in seconds."
     },
     {
-      "startMilliseconds": 43800,
-      "text": "When confidence is limited, it flags the uncertainty instead of guessing."
+      "startMilliseconds": 25890,
+      "text": "Every source stays linked, so engineers can verify every claim immediately."
     },
     {
-      "startMilliseconds": 50100,
-      "text": "An engineer reviews the evidence, challenges the recommendation, and approves the next action."
+      "startMilliseconds": 30780,
+      "text": "Then the workflow turns that evidence into a concise, actionable diagnostic brief."
     },
     {
-      "startMilliseconds": 60900,
-      "text": "Every step, decision, retry, and approval remains visible and traceable in Mistral Studio."
+      "startMilliseconds": 35960,
+      "text": "It spots supporting signals, surfaces conflicts, and shows exactly what is still missing."
     },
     {
-      "startMilliseconds": 68900,
-      "text": "Let's map one high-value ASML diagnostic workflow and define the pilot."
+      "startMilliseconds": 41620,
+      "text": "Not enough confidence? It pauses and asks for more evidence—no guessing."
+    },
+    {
+      "startMilliseconds": 47210,
+      "text": "Now the engineer takes control: review the reasoning, challenge it, and add operational judgment."
+    },
+    {
+      "startMilliseconds": 53130,
+      "text": "Only the approved action moves forward, with uncertainty visible at every step."
+    },
+    {
+      "startMilliseconds": 58000,
+      "text": "Sources, retries, decisions, approvals—everything stays visible and traceable in Studio."
+    },
+    {
+      "startMilliseconds": 64610,
+      "text": "And here’s the opportunity: map one high-value ASML workflow, align the evidence and approvals, and launch a measurable pilot—with clear success measures from day one!"
     }
   ]
 }
