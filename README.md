@@ -105,10 +105,13 @@ mistral-studio-marketing/
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
 ├── scripts/                                         # Reusable artifact build scripts
-│   └── build-improved-demo.ps1                      # ASML × Mistral demo video edit and web export
+│   ├── build-improved-demo.ps1                      # ASML × Mistral demo video edit and web export
+│   └── build-rethought-demo.ps1                     # Four-act client workflow demo with fresh narration
 │
 ├── video-edit/                                      # Version-controlled video edit assets
 │   ├── improved-demo.ass                            # Branded narrative and evidence overlays
+│   ├── rethought-demo.ass                           # Four-act presentation-scale overlay system
+│   ├── rethought-demo-script.md                     # Storyboard, narration, and production principles
 │   └── README.md                                    # Build workflow and output details
 │
 ├── Root Level Files

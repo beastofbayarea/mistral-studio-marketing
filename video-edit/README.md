@@ -35,3 +35,15 @@ Custom source and output paths are supported:
 ```powershell
 .\scripts\build-improved-demo.ps1 -InputPath 'C:\path\source.mp4' -OutputPath 'C:\path\improved.mp4'
 ```
+
+## Rethought four-act master
+
+The from-scratch concept uses a new 48-second structure: Detect, Investigate, Explain, and Approve. It combines selected incident footage with real Mistral Studio workflow and execution-trace visuals, generates a single continuous voiceover locally, and closes with a vertically centered pilot invitation.
+
+Build it with:
+
+```powershell
+.\scripts\build-rethought-demo.ps1
+```
+
+The default output is `ASMLxMistral_Rethought_Workflow_1080p.mp4`. The source script is documented in `rethought-demo-script.md`, and the presentation-scale overlay system is defined in `rethought-demo.ass`.
