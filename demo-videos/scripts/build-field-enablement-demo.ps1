@@ -29,6 +29,7 @@ $waferTransportVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFoota
 $opticsVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'zeiss-optics-chip-manufacturing-720p.mp4') -ErrorAction Stop
 $workflowVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-introducing-workflows-720p.mp4') -ErrorAction Stop
 $connectorVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-custom-connectors-720p.mp4') -ErrorAction Stop
+$versionedSkillVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-update-versioned-skill-720p.mp4') -ErrorAction Stop
 $overlayPath = Resolve-Path -LiteralPath (Join-Path $paths.Overlays 'field-enablement-demo.ass') -ErrorAction Stop
 $logoPath = Resolve-Path -LiteralPath (Join-Path $paths.RepoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
 $fontDirectory = Resolve-Path -LiteralPath (Join-Path $paths.RepoRoot 'resources\fonts\silkscreen') -ErrorAction Stop
@@ -161,23 +162,24 @@ $filterGraph = @"
 [6:v]trim=duration=2,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s6];
 [7:v]trim=duration=2.35,setpts=PTS-STARTPTS,crop=1030:580:125:55,scale=1480:832:flags=lanczos,unsharp=5:5:0.28:5:5:0,pad=1920:1080:400:124:color=0x151524,drawbox=x=380:y=104:w=1520:h=872:color=0xB7E3FF@0.32:t=2,fps=30,setsar=1,format=yuv420p[s7];
 [8:v]trim=duration=2.81,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s8];
-[9:v]trim=duration=2.2,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.80:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.17,fps=30,setsar=1,format=yuv420p[s9];
+[9:v]trim=duration=2.2,setpts=PTS-STARTPTS,crop=1180:620:50:25,scale=1480:778:flags=lanczos,eq=contrast=1.05:saturation=0.92,pad=1920:1080:400:151:color=0x151524,drawbox=x=380:y=131:w=1520:h=818:color=0xB7E3FF@0.38:t=2,fps=30,setsar=1,format=yuv420p[s9];
 [10:v]trim=duration=2.1,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s10];
 [11:v]trim=duration=2.14,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s11];
 [12:v]trim=duration=2.3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xFFB000@0.50:t=3,fps=30,setsar=1,format=yuv420p[s12];
 [13:v]trim=duration=2.26,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.10:saturation=0.90:brightness=-0.05,drawgrid=w=240:h=180:t=1:c=0xFFB000@0.14,fps=30,setsar=1,format=yuv420p[s13];
 [14:v]trim=duration=4,setpts=PTS-STARTPTS,crop=1280:620:0:0,scale=1920:930:flags=lanczos,pad=1920:1080:0:75:color=0x151524,eq=contrast=1.06:saturation=0.90:brightness=-0.02,drawbox=x=28:y=28:w=1864:h=1024:color=0xB7E3FF@0.22:t=1,fps=30,setsar=1,format=yuv420p[s14];
-[15:v]trim=duration=1.04,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s15];
+[15:v]trim=duration=1.04,setpts=PTS-STARTPTS,crop=1180:620:50:25,scale=1480:778:flags=lanczos,eq=contrast=1.05:saturation=0.92,pad=1920:1080:400:151:color=0x151524,drawbox=x=380:y=131:w=1520:h=818:color=0xB7E3FF@0.38:t=2,fps=30,setsar=1,format=yuv420p[s15];
 [16:v]trim=duration=2.3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0x55D98C@0.52:t=3,fps=30,setsar=1,format=yuv420p[s16];
-[17:v]trim=duration=2.29,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.84:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s17];
-[18:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.12,fps=30,setsar=1,format=yuv420p[s18];
-[19:v]trim=duration=1.85,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.08:saturation=0.80:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s19];
-[20:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s20];
-[21:v]trim=duration=0.04,setpts=PTS-STARTPTS,fps=30,tpad=stop_mode=clone:stop_duration=5.14,scale=660:372:force_original_aspect_ratio=decrease,pad=660:1080:0:354:color=0x000000,eq=contrast=1.08:saturation=1.08,drawgrid=w=220:h=180:t=1:c=0xB7E3FF@0.14,pad=1920:1080:1260:0:color=0x151524,drawbox=x=1240:y=0:w=20:h=1080:color=0xFF7000:t=fill,setsar=1,format=yuv420p[s21];
-[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21]concat=n=22:v=1:a=0,subtitles=filename='$assFilterPath':fontsdir='$fontsFilterPath'[story];
-[22:v]scale=52:52:flags=lanczos,format=rgba[brandmark];
+[17:v]trim=duration=1,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0x55D98C@0.52:t=3,fps=30,setsar=1,format=yuv420p[s17];
+[18:v]trim=duration=1.29,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.84:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s18];
+[19:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.12,fps=30,setsar=1,format=yuv420p[s19];
+[20:v]trim=duration=1.85,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.08:saturation=0.80:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s20];
+[21:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s21];
+[22:v]trim=duration=0.04,setpts=PTS-STARTPTS,fps=30,tpad=stop_mode=clone:stop_duration=5.14,scale=660:372:force_original_aspect_ratio=decrease,pad=660:1080:0:354:color=0x000000,eq=contrast=1.08:saturation=1.08,drawgrid=w=220:h=180:t=1:c=0xB7E3FF@0.14,pad=1920:1080:1260:0:color=0x151524,drawbox=x=1240:y=0:w=20:h=1080:color=0xFF7000:t=fill,setsar=1,format=yuv420p[s22];
+[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22]concat=n=23:v=1:a=0,subtitles=filename='$assFilterPath':fontsdir='$fontsFilterPath'[story];
+[23:v]scale=52:52:flags=lanczos,format=rgba[brandmark];
 [story][brandmark]overlay=30:26:format=auto:enable='between(t,5.18,42.47)',fade=t=in:st=0:d=0.18,fade=t=out:st=47.15:d=0.55[v];
-[23:a]atrim=duration=$durationText,asetpts=PTS-STARTPTS[a]
+[24:a]atrim=duration=$durationText,asetpts=PTS-STARTPTS[a]
 "@
 
 $filterGraph = $filterGraph -replace "`r?`n", ''
@@ -194,15 +196,16 @@ $videoArguments = @(
     '-ss', '36.5', '-t', '2', '-i', $metrologyVideo.Path,
     '-ss', '43', '-t', '2.35', '-i', $connectorVideo.Path,
     '-ss', '145', '-t', '2.81', '-i', $workflowVideo.Path,
-    '-ss', '110', '-t', '2.2', '-i', $computationalVideo.Path,
+    '-ss', '23', '-t', '2.2', '-i', $versionedSkillVideo.Path,
     '-ss', '44.8', '-t', '2.1', '-i', $metrologyVideo.Path,
     '-ss', '152', '-t', '2.14', '-i', $workflowVideo.Path,
     '-ss', '164', '-t', '2.3', '-i', $workflowVideo.Path,
     '-ss', '164', '-t', '2.26', '-i', $metrologyVideo.Path,
     '-ss', '127', '-t', '4', '-i', $engineerVideo.Path,
-    '-ss', '17', '-t', '1.04', '-i', $computationalVideo.Path,
+    '-ss', '52', '-t', '1.04', '-i', $versionedSkillVideo.Path,
     '-ss', '166', '-t', '2.3', '-i', $workflowVideo.Path,
-    '-ss', '160.5', '-t', '2.29', '-i', $waferTransportVideo.Path,
+    '-ss', '168.3', '-t', '1', '-i', $workflowVideo.Path,
+    '-ss', '160.5', '-t', '1.29', '-i', $waferTransportVideo.Path,
     '-ss', '145', '-t', '1.85', '-i', $waferTransportVideo.Path,
     '-ss', '185.8', '-t', '1.85', '-i', $metrologyVideo.Path,
     '-ss', '165', '-t', '1.85', '-i', $waferTransportVideo.Path,

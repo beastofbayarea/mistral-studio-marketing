@@ -38,15 +38,16 @@ This is a fast field-enablement conversation starter that can also run as a shor
 | 00:09.18–00:11.18 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:36.5 | Metrology signal source |
 | 00:11.18–00:13.53 | `source-footage\mistral-studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Source connectivity |
 | 00:13.53–00:16.34 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Controlled investigation |
-| 00:16.34–00:18.54 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:50 | Computational comparison and optimization view |
+| 00:16.34–00:18.54 | `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:23 | Save-version interaction for historical comparison |
 | 00:18.54–00:20.64 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:44.8 | Conflicting inspection signals |
 | 00:20.64–00:22.78 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Diagnostic brief |
 | 00:22.78–00:25.08 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Low-confidence state |
 | 00:25.08–00:27.34 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 02:44 | Additional metrology evidence |
 | 00:27.34–00:31.34 | `source-footage\industry\fraunhofer-300mm-semiconductor-cleanroom-tour-2024-720p.mp4` | 02:07 | Hands-on process review without a presenter shot |
-| 00:31.34–00:32.38 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 00:17 | Equipment close-up; replaces the rejected presenter range |
+| 00:31.34–00:32.38 | `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:52 | Clean conversation interface for engineer review and challenge |
 | 00:32.38–00:34.68 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:46 | Approval state |
-| 00:34.68–00:36.97 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:40.5 | Traceable approved movement; removes the repeated UI cut |
+| 00:34.68–00:35.68 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:48.3 | Scenario-specific execution timeline for decision traceability |
+| 00:35.68–00:36.97 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:40.5 | Approved decision moving into physical execution |
 | 00:36.97–00:38.82 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:25 | Faster physical execution without embedded source text |
 | 00:38.82–00:40.67 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 03:05.8 | Stronger measurement evidence |
 | 00:40.67–00:42.52 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:45 | Clear routed path to action without embedded source text |
@@ -55,9 +56,9 @@ This is a fast field-enablement conversation starter that can also run as a shor
 ## Creative system
 
 - The first 5.18 seconds use four full-screen impact shots, rapid push-ins, kinetic typography, and synchronized audio beats.
-- Twenty-two shots use hard editorial cuts, with every visual selection mapped directly to the fixed narration cue above it.
-- The rendered cut was reviewed at every shot midpoint: urgency, signal sources, controlled investigation, computational comparison, conflicting evidence, human review, approval, traceability, outcomes, and the pilot CTA each land on a literal supporting visual.
-- Industrial and precision-system footage occupies approximately 36 seconds. Mistral Studio appears in five concise proof points totaling approximately 12 seconds.
+- Twenty-three shots use hard editorial cuts, with every visual selection mapped directly to the fixed narration cue above it.
+- The rendered cut was reviewed across all 23 shots: urgency, signal sources, controlled investigation, versioned comparison, conflicting evidence, human review, approval, traceability, outcomes, and the pilot CTA each land on a literal supporting visual.
+- Industrial, precision-system, and customer-story footage occupies approximately 31.5 seconds. Mistral Studio appears in eight concise proof points totaling approximately 16 seconds.
 - The physical-world palette spans wafer inspection, EUV light, wafer-stage motion, optics, automated transport, engineer review, and the ASML × Mistral customer-story artwork.
 - Third-party company names are excluded from the visible frame: branded robot and digital-twin shots are removed, while metrology footage is edge-cropped to remove its source watermark.
 - Presenter and talking-head ranges are excluded without exception. Human presence is limited to operators performing cleanroom work, never addressing camera.
