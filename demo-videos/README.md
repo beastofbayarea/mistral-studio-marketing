@@ -22,7 +22,7 @@ Video files are intentionally ignored by Git. The folder structure, scripts, ove
 
 ## Field enablement ad master
 
-The recommended client-facing cut is a 55-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. A four-shot kinetic opening moves quickly into grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses 40 seconds of manufacturing imagery and only 15 seconds of framed Mistral Studio proof points; the only people shown are operators performing cleanroom work. Burned-in source captions are excluded. An expressive nine-cue Ava narration uses sentence-level pace, pitch, emphasis, and pause direction instead of one repeated delivery setting.
+The recommended client-facing cut is a 55-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. A four-shot kinetic opening moves quickly into grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses 40 seconds of manufacturing imagery and only 15 seconds of framed Mistral Studio proof points; the only people shown are operators performing cleanroom work. Burned-in source captions are excluded. An expressive eleven-cue Ava narration opens with three forceful synchronized beats, then uses cue-specific pace, pitch, emphasis, mix gain, and pause direction instead of one repeated delivery setting.
 
 Build it from the repository root:
 

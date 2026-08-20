@@ -15,7 +15,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 | Time | Beat | Message |
 |---:|---|---|
-| 00:00–00:04 | Immediate hook | Every anomaly starts a clock. |
+| 00:00–00:04 | Immediate hook | Anomaly detected. Evidence scattered. Every second counts. |
 | 00:04–00:10 | Establish complexity | Signals can begin across optics, stages, sensors, equipment, and service logs. |
 | 00:10–00:16 | Introduce Mistral | Bring every source into one controlled, traceable investigation. |
 | 00:16–00:28 | Build the brief | Compare prior incidents, surface conflicting signals, and create a concise diagnostic brief. |
@@ -61,9 +61,9 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 ## Voice and sound design
 
-The narration uses the expressive `en-US-AvaNeural` voice. Each of the nine sentences has its own rate, pitch, volume, punctuation, and pause treatment, creating distinct urgent, explanatory, cautionary, and outcome beats instead of one repeated cadence. The voice runs from 0.2 to 54.0 seconds, with a deliberate breath before the CTA.
+The narration uses the expressive `en-US-AvaNeural` voice. Eleven individually directed cues use their own rate, pitch, volume, punctuation, pause treatment, and mix gain. The opening sentence is split into three forceful beats—“Anomaly detected!”, “Evidence scattered.”, and “Every second counts!”—starting at 0.05 seconds and synchronized with the kinetic montage. The remaining cues create distinct explanatory, cautionary, and outcome beats instead of one repeated cadence. The final CTA ends at 54.0 seconds.
 
-A restrained industrial texture and low rhythmic pulse support the faster edit. Four low-frequency impacts synchronize with the opening montage, while short tonal cues mark additional evidence and approved action. Light compression preserves vocal expression, and the measured final encode is −16.01 LUFS with a −1.50 dBTP peak.
+A restrained industrial texture and low rhythmic pulse support the faster edit. Four low-frequency impacts synchronize with the opening montage, while short tonal cues mark additional evidence and approved action. Light compression preserves vocal expression. The first second measures −16.27 dB RMS with a −1.54 dB peak; the complete encode measures −16.02 LUFS with a −1.52 dBTP peak.
 
 ## Rebuild and revision
 

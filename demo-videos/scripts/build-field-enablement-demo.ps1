@@ -78,8 +78,10 @@ $audioFilters = @()
 $narrationLabels = @()
 for ($index = 0; $index -lt $narrationConfig.sentences.Count; $index++) {
     $delay = [int]$narrationConfig.sentences[$index].startMilliseconds
+    $mixGain = if ($narrationConfig.sentences[$index].mixGain) { [double]$narrationConfig.sentences[$index].mixGain } else { 1.0 }
+    $cueVolume = (1.22 * $mixGain).ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
     $label = "n$index"
-    $audioFilters += "[${index}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,adelay=$delay|$delay,volume=1.22[$label]"
+    $audioFilters += "[${index}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,adelay=$delay|$delay,volume=$cueVolume[$label]"
     $narrationLabels += "[$label]"
 }
 

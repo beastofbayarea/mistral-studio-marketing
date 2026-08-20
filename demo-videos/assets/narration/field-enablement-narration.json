@@ -6,11 +6,28 @@
   "durationSeconds": 55,
   "sentences": [
     {
-      "startMilliseconds": 200,
-      "rate": "+4%",
+      "startMilliseconds": 50,
+      "rate": "+15%",
+      "pitch": "-2Hz",
+      "volume": "+12%",
+      "mixGain": 1.18,
+      "text": "Anomaly detected!"
+    },
+    {
+      "startMilliseconds": 1700,
+      "rate": "+12%",
+      "pitch": "+1Hz",
+      "volume": "+10%",
+      "mixGain": 1.12,
+      "text": "Evidence scattered."
+    },
+    {
+      "startMilliseconds": 3300,
+      "rate": "+6%",
       "pitch": "+6Hz",
-      "volume": "+8%",
-      "text": "An anomaly appears. Evidence is scattered. And every minute counts!"
+      "volume": "+12%",
+      "mixGain": 1.12,
+      "text": "Every second counts!"
     },
     {
       "startMilliseconds": 5400,
