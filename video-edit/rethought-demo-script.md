@@ -32,7 +32,8 @@ Let's pilot it on one high-value diagnostic use case.
 
 ## Production principles
 
-- Use one continuous narration track.
+- Generate each narration sentence separately with the `en-GB-RyanNeural` voice, then assemble the lines with controlled pauses.
+- Vary sentence pacing and pitch subtly; do not synthesize the full script as one continuous request.
 - Keep overlays to one decision or outcome per scene.
 - Use a maximum of two lines for presentation-scale scene titles.
 - Treat the incident as representative; do not imply access to confidential ASML operational data.

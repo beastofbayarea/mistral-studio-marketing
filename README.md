@@ -110,6 +110,7 @@ mistral-studio-marketing/
 │
 ├── video-edit/                                      # Version-controlled video edit assets
 │   ├── improved-demo.ass                            # Branded narrative and evidence overlays
+│   ├── neural-voice-requirements.txt                 # Pinned neural narration dependency
 │   ├── rethought-demo.ass                           # Four-act presentation-scale overlay system
 │   ├── rethought-demo-script.md                     # Storyboard, narration, and production principles
 │   └── README.md                                    # Build workflow and output details

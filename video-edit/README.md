@@ -40,10 +40,16 @@ Custom source and output paths are supported:
 
 The from-scratch concept uses a new 48-second structure: Detect, Investigate, Explain, and Approve. It combines selected incident footage with real Mistral Studio workflow and execution-trace visuals, generates a single continuous voiceover locally, and closes with a vertically centered pilot invitation.
 
+Install the pinned neural narration dependency once:
+
+```powershell
+python -m pip install --user --upgrade -r .\video-edit\neural-voice-requirements.txt
+```
+
 Build it with:
 
 ```powershell
 .\scripts\build-rethought-demo.ps1
 ```
 
-The default output is `ASMLxMistral_Rethought_Workflow_1080p.mp4`. The source script is documented in `rethought-demo-script.md`, and the presentation-scale overlay system is defined in `rethought-demo.ass`.
+The default output is `ASMLxMistral_Rethought_Workflow_1080p.mp4`. Narration is produced sentence-by-sentence with the warm British-English `en-GB-RyanNeural` voice, with individually controlled pacing, pitch, and pauses. The source script is documented in `rethought-demo-script.md`, and the presentation-scale overlay system is defined in `rethought-demo.ass`.

@@ -2,7 +2,7 @@
 param(
     [string]$InputPath,
     [string]$OutputPath,
-    [string]$NarrationVoice = 'Microsoft Mark'
+    [string]$NarrationVoice = 'en-GB-RyanNeural'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -46,49 +46,82 @@ else {
     $ffmpegPath = $ffmpegCandidate.FullName
 }
 
-Add-Type -AssemblyName System.Speech
-
-$narrationPath = Join-Path ([System.IO.Path]::GetTempPath()) ('asml-mistral-rethought-{0}.wav' -f [guid]::NewGuid().ToString('N'))
-$synth = New-Object System.Speech.Synthesis.SpeechSynthesizer
-$availableVoices = $synth.GetInstalledVoices() | ForEach-Object { $_.VoiceInfo.Name }
-
-if ($availableVoices -contains $NarrationVoice) {
-    $synth.SelectVoice($NarrationVoice)
-}
-elseif ($availableVoices -contains 'Microsoft David Desktop') {
-    $synth.SelectVoice('Microsoft David Desktop')
+$pythonCommand = Get-Command python -ErrorAction SilentlyContinue
+if (-not $pythonCommand) {
+    throw 'Python was not found. Install Python, then install the neural voice dependency from video-edit\neural-voice-requirements.txt.'
 }
 
-$synth.Rate = -1
-$synth.Volume = 100
-$synth.SetOutputToWaveFile($narrationPath)
+$pythonPath = $pythonCommand.Source
+& $pythonPath -c 'import edge_tts'
+if ($LASTEXITCODE -ne 0) {
+    throw 'The neural voice dependency is missing. Run: python -m pip install --user --upgrade -r video-edit\neural-voice-requirements.txt'
+}
 
-$narrationSsml = @'
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-  <prosody rate="96%">
-    <break time="350ms" />
-    When a production anomaly occurs, the evidence is rarely in one place.
-    <break time="400ms" />
-    Logs, service history, and engineering documentation each hold part of the story.
-    <break time="450ms" />
-    A Mistral Studio workflow brings those sources into one investigation.
-    <break time="350ms" />
-    It retrieves the relevant evidence, compares similar incidents, and builds a concise, source-linked explanation.
-    <break time="450ms" />
-    Engineers can inspect every step, challenge the diagnosis, and approve the next action.
-    <break time="500ms" />
-    The result is a repeatable incident workflow, designed around A S M L's sources, engineering standards, and human control.
-    <break time="450ms" />
-    Let's pilot it on one high-value diagnostic use case.
-  </prosody>
-</speak>
-'@
+$narrationWorkDir = Join-Path ([System.IO.Path]::GetTempPath()) ('asml-mistral-neural-{0}' -f [guid]::NewGuid().ToString('N'))
+[System.IO.Directory]::CreateDirectory($narrationWorkDir) | Out-Null
+$narrationPath = Join-Path $narrationWorkDir 'narration.wav'
+$concatListPath = Join-Path $narrationWorkDir 'narration-concat.txt'
+
+$narrationLines = @(
+    [pscustomobject]@{ Text = 'When a production anomaly occurs, the evidence is rarely in one place.'; Rate = '-6%'; Pitch = '-1Hz'; GapMs = 500 },
+    [pscustomobject]@{ Text = 'Logs, service history, and engineering documentation each hold part of the story.'; Rate = '-4%'; Pitch = '-1Hz'; GapMs = 520 },
+    [pscustomobject]@{ Text = 'A Mistral Studio workflow brings those sources into one investigation.'; Rate = '-3%'; Pitch = '+0Hz'; GapMs = 460 },
+    [pscustomobject]@{ Text = 'It retrieves the relevant evidence, compares similar incidents, and builds a concise, source-linked explanation.'; Rate = '-5%'; Pitch = '-1Hz'; GapMs = 560 },
+    [pscustomobject]@{ Text = 'Engineers can inspect every step, challenge the diagnosis, and approve the next action.'; Rate = '-4%'; Pitch = '-1Hz'; GapMs = 520 },
+    [pscustomobject]@{ Text = 'The result is a repeatable incident workflow, designed around your sources, engineering standards, and human control.'; Rate = '-5%'; Pitch = '-2Hz'; GapMs = 560 },
+    [pscustomobject]@{ Text = "Let's pilot it on one high-value diagnostic use case."; Rate = '-4%'; Pitch = '-1Hz'; GapMs = 900 }
+)
 
 try {
-    $synth.SpeakSsml($narrationSsml)
+    $concatEntries = New-Object System.Collections.Generic.List[string]
+
+    for ($index = 0; $index -lt $narrationLines.Count; $index++) {
+        $line = $narrationLines[$index]
+        $sequence = $index + 1
+        $lineMp3 = Join-Path $narrationWorkDir ('line-{0:D2}.mp3' -f $sequence)
+        $lineWav = Join-Path $narrationWorkDir ('line-{0:D2}.wav' -f $sequence)
+        $silenceWav = Join-Path $narrationWorkDir ('pause-{0:D2}.wav' -f $sequence)
+
+        & $pythonPath -m edge_tts `
+            '--voice' $NarrationVoice `
+            ("--rate={0}" -f $line.Rate) `
+            ("--pitch={0}" -f $line.Pitch) `
+            '--text' $line.Text `
+            '--write-media' $lineMp3
+
+        if ($LASTEXITCODE -ne 0) {
+            throw "Neural narration generation failed for line $sequence."
+        }
+
+        & $ffmpegPath -hide_banner -loglevel error -y -i $lineMp3 -ar 48000 -ac 1 -c:a pcm_s16le $lineWav
+        if ($LASTEXITCODE -ne 0) {
+            throw "Narration conversion failed for line $sequence."
+        }
+
+        $pauseSeconds = [Math]::Round($line.GapMs / 1000, 3)
+        & $ffmpegPath -hide_banner -loglevel error -y -f lavfi -i 'anullsrc=r=48000:cl=mono' -t $pauseSeconds -c:a pcm_s16le $silenceWav
+        if ($LASTEXITCODE -ne 0) {
+            throw "Narration pause generation failed for line $sequence."
+        }
+
+        $lineConcatPath = $lineWav.Replace('\', '/')
+        $silenceConcatPath = $silenceWav.Replace('\', '/')
+        $concatEntries.Add("file '$lineConcatPath'")
+        $concatEntries.Add("file '$silenceConcatPath'")
+    }
+
+    [System.IO.File]::WriteAllLines($concatListPath, $concatEntries, [System.Text.UTF8Encoding]::new($false))
+    & $ffmpegPath -hide_banner -loglevel error -y -f concat -safe 0 -i $concatListPath -ar 48000 -ac 1 -c:a pcm_s16le $narrationPath
+
+    if ($LASTEXITCODE -ne 0) {
+        throw 'The sentence-level neural narration could not be assembled.'
+    }
 }
-finally {
-    $synth.Dispose()
+catch {
+    if (Test-Path -LiteralPath $narrationWorkDir) {
+        [System.IO.Directory]::Delete($narrationWorkDir, $true)
+    }
+    throw
 }
 
 $assFilterPath = $overlayPath.Path.Replace('\', '/').Replace(':', '\:').Replace("'", "\'")
@@ -156,8 +189,8 @@ try {
     }
 }
 finally {
-    if (Test-Path -LiteralPath $narrationPath) {
-        [System.IO.File]::Delete($narrationPath)
+    if (Test-Path -LiteralPath $narrationWorkDir) {
+        [System.IO.Directory]::Delete($narrationWorkDir, $true)
     }
 }
 
