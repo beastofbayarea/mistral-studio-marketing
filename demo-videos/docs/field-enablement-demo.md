@@ -39,7 +39,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 | 00:11.18–00:13.53 | `source-footage\mistral-studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Source connectivity |
 | 00:13.53–00:16.34 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Controlled investigation |
 | 00:16.34–00:18.54 | `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:23 | Save-version interaction for historical comparison |
-| 00:18.54–00:20.64 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:44.8 | Conflicting inspection signals |
+| 00:18.54–00:20.64 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:34.6 | Intended pattern beside its computed result, making conflicting signals visually explicit |
 | 00:20.64–00:22.78 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Diagnostic brief |
 | 00:22.78–00:25.08 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Low-confidence state |
 | 00:25.08–00:27.34 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 02:44 | Additional metrology evidence |
@@ -59,7 +59,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 - Twenty-three shots use hard editorial cuts, with every visual selection mapped directly to the fixed narration cue above it.
 - The rendered cut was reviewed across all 23 shots: urgency, signal sources, controlled investigation, versioned comparison, conflicting evidence, human review, approval, traceability, outcomes, and the pilot CTA each land on a literal supporting visual.
 - Industrial, precision-system, and customer-story footage occupies approximately 31.5 seconds. Mistral Studio appears in eight concise proof points totaling approximately 16 seconds.
-- The physical-world palette spans wafer inspection, EUV light, wafer-stage motion, optics, automated transport, engineer review, and the ASML × Mistral customer-story artwork.
+- The physical-world palette spans wafer inspection, EUV light, wafer-stage motion, computational lithography, optics, automated transport, engineer review, and the ASML × Mistral customer-story artwork.
 - Third-party company names are excluded from the visible frame: branded robot and digital-twin shots are removed, while metrology footage is edge-cropped to remove its source watermark.
 - Presenter and talking-head ranges are excluded without exception. Human presence is limited to operators performing cleanroom work, never addressing camera.
 - Burned-in source subtitles are excluded through subtitle-free ranges and top-safe product crops.
@@ -69,7 +69,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 ## Voice and sound design
 
-The narration uses the expressive `en-US-AvaNeural` voice. Eleven individually directed cues use their own rate, pitch, volume, punctuation, pause treatment, and mix gain. The opening sentence is split into three forceful beats—“Anomaly detected!”, “Evidence scattered.”, and “Every second counts!”—starting at 0.05 seconds and synchronized with the kinetic montage. The narration wording and recorded cue files are unchanged in this cut; only cue placement and the matching visual edit were tightened. The final CTA begins at 42.52 seconds.
+The narration uses the expressive `en-US-AvaNeural` voice. Eleven individually directed cues use strongly differentiated rate, pitch, volume, punctuation, pause treatment, and mix gain for maximum intelligible enthusiasm. The opening sentence is split into three forceful beats—“Anomaly detected!”, “Evidence scattered.”, and “Every second counts!”—starting at 0.05 seconds and synchronized with the kinetic montage. Presence shaping around the consonant range and lighter compression keep the delivery clear while preserving wider vocal dynamics. The final CTA begins at 42.52 seconds.
 
 A restrained industrial texture and low rhythmic pulse support the faster edit. Low-frequency impacts synchronize with the opening montage, while short tonal cues mark additional evidence and approved action. The support bed runs from the first frame through the last; the delivery master contains no silence interval longer than 50 milliseconds at a −45 dB threshold.
 

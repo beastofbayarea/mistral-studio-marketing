@@ -83,7 +83,7 @@ $narrationLabels = @()
 for ($index = 0; $index -lt $narrationConfig.sentences.Count; $index++) {
     $delay = [int]$narrationConfig.sentences[$index].startMilliseconds
     $mixGain = if ($narrationConfig.sentences[$index].mixGain) { [double]$narrationConfig.sentences[$index].mixGain } else { 1.0 }
-    $cueVolume = (1.22 * $mixGain).ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
+    $cueVolume = (1.28 * $mixGain).ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
     $label = "n$index"
     $audioFilters += "[${index}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,adelay=$delay|$delay,volume=$cueVolume[$label]"
     $narrationLabels += "[$label]"
@@ -92,7 +92,7 @@ for ($index = 0; $index -lt $narrationConfig.sentences.Count; $index++) {
 $duration = [double]$narrationConfig.durationSeconds
 $durationText = $duration.ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
 $audioFilters += (($narrationLabels -join '') + "amix=inputs=$($narrationLabels.Count):duration=longest:normalize=0[narrationRaw]")
-$audioFilters += '[narrationRaw]highpass=f=75,lowpass=f=11500,acompressor=threshold=0.07:ratio=1.8:attack=8:release=90:makeup=1.25[voice]'
+$audioFilters += '[narrationRaw]highpass=f=85,lowpass=f=13000,equalizer=f=2800:width_type=o:width=1.4:g=2.2,equalizer=f=6200:width_type=o:width=1.1:g=1.5,acompressor=threshold=0.075:ratio=1.55:attack=5:release=75:makeup=1.22[voice]'
 $audioFilters += "aevalsrc='0.013*sin(2*PI*55*t)+0.004*sin(2*PI*110*t)':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=650[drone]"
 $audioFilters += "anoisesrc=color=pink:amplitude=0.007:d=${durationText}:r=48000,aformat=channel_layouts=stereo,highpass=f=100,lowpass=f=850,volume=0.18[texture]"
 $audioFilters += "aevalsrc='0.014*sin(2*PI*64*t)*exp(-18*mod(t\,0.5))':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=180[pulse]"
@@ -163,7 +163,7 @@ $filterGraph = @"
 [7:v]trim=duration=2.35,setpts=PTS-STARTPTS,crop=1030:580:125:55,scale=1480:832:flags=lanczos,unsharp=5:5:0.28:5:5:0,pad=1920:1080:400:124:color=0x151524,drawbox=x=380:y=104:w=1520:h=872:color=0xB7E3FF@0.32:t=2,fps=30,setsar=1,format=yuv420p[s7];
 [8:v]trim=duration=2.81,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s8];
 [9:v]trim=duration=2.2,setpts=PTS-STARTPTS,crop=1180:620:50:25,scale=1480:778:flags=lanczos,eq=contrast=1.05:saturation=0.92,pad=1920:1080:400:151:color=0x151524,drawbox=x=380:y=131:w=1520:h=818:color=0xB7E3FF@0.38:t=2,fps=30,setsar=1,format=yuv420p[s9];
-[10:v]trim=duration=2.1,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s10];
+[10:v]trim=duration=2.1,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,zoompan=z='min(zoom+0.0012,1.04)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps=30,eq=contrast=1.16:saturation=0.92:brightness=-0.03,drawbox=x=960:y=235:w=570:h=600:color=0xFF7000@0.55:t=3:enable='between(t,0.45,2.1)',drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,setsar=1,format=yuv420p[s10];
 [11:v]trim=duration=2.14,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s11];
 [12:v]trim=duration=2.3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xFFB000@0.50:t=3,fps=30,setsar=1,format=yuv420p[s12];
 [13:v]trim=duration=2.26,setpts=PTS-STARTPTS,crop=1080:608:40:56,scale=1920:1080,eq=contrast=1.10:saturation=0.90:brightness=-0.05,drawgrid=w=240:h=180:t=1:c=0xFFB000@0.14,fps=30,setsar=1,format=yuv420p[s13];
@@ -197,7 +197,7 @@ $videoArguments = @(
     '-ss', '43', '-t', '2.35', '-i', $connectorVideo.Path,
     '-ss', '145', '-t', '2.81', '-i', $workflowVideo.Path,
     '-ss', '23', '-t', '2.2', '-i', $versionedSkillVideo.Path,
-    '-ss', '44.8', '-t', '2.1', '-i', $metrologyVideo.Path,
+    '-ss', '94.6', '-t', '2.1', '-i', $computationalVideo.Path,
     '-ss', '152', '-t', '2.14', '-i', $workflowVideo.Path,
     '-ss', '164', '-t', '2.3', '-i', $workflowVideo.Path,
     '-ss', '164', '-t', '2.26', '-i', $metrologyVideo.Path,
@@ -215,6 +215,9 @@ $videoArguments = @(
     '-filter_complex', $filterGraph,
     '-map', '[v]',
     '-map', '[a]',
+    '-map_metadata', '-1',
+    '-metadata', 'title=ASML x Mistral Field Enablement Ad',
+    '-metadata', 'artist=Mistral AI',
     '-c:v', 'libx264',
     '-preset', 'medium',
     '-crf', '18',

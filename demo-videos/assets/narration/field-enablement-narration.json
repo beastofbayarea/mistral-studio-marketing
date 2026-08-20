@@ -1,83 +1,96 @@
 {
   "voice": "en-US-AvaNeural",
-  "rate": "+8%",
-  "pitch": "+3Hz",
-  "volume": "+6%",
+  "rate": "+16%",
+  "pitch": "+9Hz",
+  "volume": "+14%",
   "durationSeconds": 47.7,
   "sentences": [
     {
       "startMilliseconds": 50,
-      "rate": "+15%",
-      "pitch": "-2Hz",
-      "volume": "+12%",
-      "mixGain": 1.18,
+      "rate": "+26%",
+      "pitch": "-8Hz",
+      "volume": "+22%",
+      "mixGain": 1.24,
       "text": "Anomaly detected!"
     },
     {
       "startMilliseconds": 1700,
       "rate": "+12%",
-      "pitch": "+1Hz",
-      "volume": "+10%",
-      "mixGain": 1.12,
+      "pitch": "+5Hz",
+      "volume": "+18%",
+      "mixGain": 1.18,
       "text": "Evidence scattered."
     },
     {
       "startMilliseconds": 3300,
-      "rate": "+6%",
-      "pitch": "+6Hz",
-      "volume": "+12%",
-      "mixGain": 1.12,
+      "rate": "+18%",
+      "pitch": "+18Hz",
+      "volume": "+22%",
+      "mixGain": 1.22,
       "text": "Every second counts!"
     },
     {
       "startMilliseconds": 5180,
-      "rate": "+12%",
-      "pitch": "+3Hz",
+      "rate": "+22%",
+      "pitch": "+9Hz",
+      "volume": "+16%",
+      "mixGain": 1.10,
       "text": "The signal could begin anywhere—optics, stages, sensors, equipment, or service logs."
     },
     {
       "startMilliseconds": 11180,
-      "rate": "+7%",
-      "pitch": "+2Hz",
+      "rate": "+16%",
+      "pitch": "+11Hz",
+      "volume": "+17%",
+      "mixGain": 1.12,
       "text": "Mistral Studio brings every source into one controlled, traceable investigation."
     },
     {
       "startMilliseconds": 16340,
-      "rate": "+10%",
-      "pitch": "+4Hz",
+      "rate": "+22%",
+      "pitch": "+13Hz",
+      "volume": "+18%",
+      "mixGain": 1.14,
       "text": "It compares prior incidents, surfaces conflicting signals, and builds a concise diagnostic brief."
     },
     {
       "startMilliseconds": 22780,
-      "rate": "+2%",
-      "pitch": "+7Hz",
-      "volume": "+8%",
+      "rate": "+8%",
+      "pitch": "+16Hz",
+      "volume": "+20%",
+      "mixGain": 1.18,
       "text": "Not enough confidence? It asks for more evidence—and never guesses."
     },
     {
       "startMilliseconds": 27340,
-      "rate": "+8%",
-      "pitch": "+2Hz",
+      "rate": "+16%",
+      "pitch": "+7Hz",
+      "volume": "+16%",
+      "mixGain": 1.10,
       "text": "The engineer reviews the reasoning, challenges it, and adds operational judgment."
     },
     {
       "startMilliseconds": 32380,
-      "rate": "+5%",
-      "pitch": "+3Hz",
+      "rate": "+12%",
+      "pitch": "+2Hz",
+      "volume": "+18%",
+      "mixGain": 1.14,
       "text": "Only an approved action moves forward, with every decision fully traceable."
     },
     {
       "startMilliseconds": 36970,
-      "rate": "+10%",
-      "pitch": "+5Hz",
-      "volume": "+7%",
+      "rate": "+24%",
+      "pitch": "+16Hz",
+      "volume": "+22%",
+      "mixGain": 1.18,
       "text": "The result? Faster investigation, stronger evidence, and a clear path to action."
     },
     {
       "startMilliseconds": 42520,
-      "rate": "+4%",
-      "pitch": "+6Hz",
-      "volume": "+8%",
+      "rate": "+18%",
+      "pitch": "+20Hz",
+      "volume": "+24%",
+      "mixGain": 1.22,
       "text": "Let’s map one high-value ASML workflow—and launch a measurable pilot!"
     }
   ]
