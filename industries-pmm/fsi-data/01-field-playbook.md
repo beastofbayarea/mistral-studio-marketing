@@ -1,3 +1,9 @@
+---
+title: "Mistral AI Financial Services Field Playbook"
+description: "Field messaging, plays, objections, and execution guidance for financial services."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # Mistral AI Financial Services Industry (FSI) Field Playbook
 
 **Owner:** Senior Product Marketing Manager, Industries (Financial Services)  

@@ -1,3 +1,9 @@
+---
+title: "Mistral AI Level 2 Site Summaries"
+description: "Structured summaries of second-level Mistral AI web pages."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # 🌐 Mistral AI Level 2 Web Pages Summary Directory
 
 This document contains structured, concise summaries for all **Level 2** pages discovered during the 2-level BFS crawl of [`https://mistral.ai/`](https://mistral.ai/). Each entry outlines the page purpose, key capabilities/focus, and parent context, generated from scratch.

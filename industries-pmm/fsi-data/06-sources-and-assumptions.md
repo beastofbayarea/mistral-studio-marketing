@@ -1,3 +1,9 @@
+---
+title: "FSI Sources, Evidence Taxonomy, and Assumptions"
+description: "Source registry, evidence controls, and assumptions for the FSI GTM operating system."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # Sources, Evidence Taxonomy, and Assumptions Catalog
 
 **Purpose:** Source registry and control layer for the FSI GTM operating system. Use this file to determine what can be stated as fact, what is inference or recommendation, and what still requires internal validation.

@@ -1,3 +1,9 @@
+---
+title: "FSI Voice of Customer and Product Priorities"
+description: "Financial services use cases, product priorities, and roadmap implications."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # FSI Voice of Customer (VoC) & Product Priorities
 
 ---

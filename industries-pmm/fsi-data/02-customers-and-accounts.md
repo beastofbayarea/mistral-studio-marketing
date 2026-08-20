@@ -1,3 +1,9 @@
+---
+title: "FSI Customers, Priority Accounts, and Evidence Matrix"
+description: "Customer evidence, account priorities, and unresolved proof gaps for financial services."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # FSI Customers, Priority Accounts, and Evidence Matrix
 
 **Purpose:** Single source of truth for customer classification, repeatable proof, target-account priorities and unresolved evidence gaps.

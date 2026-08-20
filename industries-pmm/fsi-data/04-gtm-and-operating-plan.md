@@ -1,3 +1,9 @@
+---
+title: "FSI Go-to-Market Strategy and Operating Plan"
+description: "Six-to-twelve-month go-to-market strategy, field motions, and operating cadence."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # FSI GTM Strategy & Operating Plan (6–12 Months)
 
 ---

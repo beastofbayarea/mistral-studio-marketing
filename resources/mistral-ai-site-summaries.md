@@ -1,3 +1,9 @@
+---
+title: "Mistral AI Root and Level 1 Site Summaries"
+description: "Structured summaries of Mistral AI root and first-level web pages."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # 📚 Mistral AI Web Pages Summary Directory (Root & Level 1)
 
 This document contains structured, concise summaries for all **Root (Level 0)** and **Level 1** pages discovered on [`https://mistral.ai/`](https://mistral.ai/). Each summary has been generated from scratch by analyzing the body text of the respective page.

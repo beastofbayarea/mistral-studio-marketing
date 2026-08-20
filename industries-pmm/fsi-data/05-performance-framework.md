@@ -1,3 +1,9 @@
+---
+title: "FSI Performance Measurement Framework"
+description: "Metrics and measurement principles for financial services go-to-market execution."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # FSI Performance Measurement Framework
 
 ---
