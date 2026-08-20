@@ -87,3 +87,5 @@ All builds share `scripts\video-build-common.ps1` for folder discovery, output p
 ## Creative reference
 
 The current field-enablement storyboard and approved narration are in `docs\field-enablement-demo.md`. The earlier 48-second concept remains documented in `docs\rethought-demo-script.md`.
+
+The reusable, company- and role-neutral production methodology is documented in `docs\account-specific-demo-video-generation-playbook.md`. It covers briefing, workflow selection, role adaptation, scripting, footage, product proof, narration, music, overlays, disclosure, thumbnails, delivery specifications, quality gates, failure modes, and reusable templates.
