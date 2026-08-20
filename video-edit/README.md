@@ -1,15 +1,15 @@
 # Improved ASML × Mistral Demo Edit
 
-This edit turns the existing 70-second concept video into a clearer, faster 56-second narrative while preserving the original source file.
+This edit turns the existing 70-second concept video into a clearer, faster 58-second client-demo narrative while preserving the original source file.
 
 ## What changes
 
-- Introduces the ASML × Mistral AI story immediately.
+- Introduces the ASML × Mistral AI new-workflow demo immediately.
 - Speeds the edit to 80% of its original duration without removing any chapter.
-- Adds a consistent branded header and readable narrative captions.
+- Adds a consistent branded header and larger narrative captions for presentation-room readability.
 - Covers the most distracting generated interface copy with clean evidence-chain and source panels.
 - Makes the human approval step explicit.
-- Replaces the abrupt ending with a clear root-cause and corrective-action conclusion.
+- Replaces the abrupt ending with an ASML-specific invitation to scope a high-value diagnostic workflow pilot.
 - Exports a web-ready 1080p H.264 High Profile file with progressive-download metadata.
 
 ## Build
