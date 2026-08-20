@@ -10,19 +10,19 @@ $demoRoot = Split-Path -Parent $PSScriptRoot
 $repoRoot = Split-Path -Parent $demoRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $demoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
+    $InputPath = Join-Path $demoRoot 'asml-mistral-original-master-4k.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $demoRoot 'ASMLxMistral_Updated_Studio_Workflow_1080p.mp4'
+    $OutputPath = Join-Path $demoRoot 'asml-mistral-studio-workflow-demo-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
 $overlayPath = Resolve-Path -LiteralPath (Join-Path $demoRoot 'edit-assets\rethought-demo.ass') -ErrorAction Stop
-$workflowVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'Build your first Mistral Workflow 720P.mp4') -ErrorAction Stop
-$skillVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'Update a skill with versioning in Studio 720P.mp4') -ErrorAction Stop
+$workflowVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'mistral-studio-build-first-workflow-720p.mp4') -ErrorAction Stop
+$skillVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'mistral-studio-update-versioned-skill-720p.mp4') -ErrorAction Stop
 $logoPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
-$narrationMaster = Resolve-Path -LiteralPath (Join-Path $demoRoot 'ASMLxMistral_Rethought_Workflow_1080p.mp4') -ErrorAction Stop
+$narrationMaster = Resolve-Path -LiteralPath (Join-Path $demoRoot 'asml-mistral-narrated-workflow-master-1080p.mp4') -ErrorAction Stop
 
 $outputDirectory = Split-Path -Parent ([System.IO.Path]::GetFullPath($OutputPath))
 if (-not (Test-Path -LiteralPath $outputDirectory)) {

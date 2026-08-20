@@ -10,11 +10,11 @@ $demoRoot = Split-Path -Parent $PSScriptRoot
 $repoRoot = Split-Path -Parent $demoRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $demoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
+    $InputPath = Join-Path $demoRoot 'asml-mistral-original-master-4k.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $demoRoot 'ASMLxMistral_Improved_Web_1080p.mp4'
+    $OutputPath = Join-Path $demoRoot 'asml-mistral-improved-demo-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
