@@ -74,7 +74,7 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 The narration uses the expressive `en-US-AvaNeural` voice. Eleven individually directed cues use strongly differentiated rate, pitch, volume, punctuation, pause treatment, and mix gain for maximum intelligible enthusiasm. The opening sentence is split into three forceful beats—“Anomaly detected!”, “Evidence scattered.”, and “Every second counts!”—starting at 0.05 seconds and synchronized with the kinetic montage. Presence shaping around the consonant range and lighter compression keep the delivery clear while preserving wider vocal dynamics. The final CTA begins at 42.52 seconds.
 
-A restrained industrial texture and low rhythmic pulse support the faster edit. Low-frequency impacts synchronize with the opening montage, while short tonal cues mark additional evidence and approved action. The support bed runs from the first frame through the last; the delivery master contains no silence interval longer than 50 milliseconds at a −45 dB threshold.
+An original cinematic-electronic score now runs beneath the horizontal master. A four-part D-minor-to-C harmonic progression follows the story from anomaly through investigation, approval, and resolution; a filtered arpeggio and industrial pulse create forward motion; transition tones mark uncertainty and approval; and an added melodic lift supports the final pilot CTA. Narration-triggered sidechain ducking automatically lowers the score under every spoken cue, while the score continues from the first frame through the last.
 
 ## Rebuild and revision
 

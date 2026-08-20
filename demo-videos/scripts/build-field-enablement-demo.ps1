@@ -93,14 +93,26 @@ $duration = [double]$narrationConfig.durationSeconds
 $durationText = $duration.ToString('0.###', [System.Globalization.CultureInfo]::InvariantCulture)
 $audioFilters += (($narrationLabels -join '') + "amix=inputs=$($narrationLabels.Count):duration=longest:normalize=0[narrationRaw]")
 $audioFilters += '[narrationRaw]highpass=f=85,lowpass=f=13000,equalizer=f=2800:width_type=o:width=1.4:g=2.2,equalizer=f=6200:width_type=o:width=1.1:g=1.5,acompressor=threshold=0.075:ratio=1.55:attack=5:release=75:makeup=1.22[voice]'
-$audioFilters += "aevalsrc='0.013*sin(2*PI*55*t)+0.004*sin(2*PI*110*t)':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=650[drone]"
-$audioFilters += "anoisesrc=color=pink:amplitude=0.007:d=${durationText}:r=48000,aformat=channel_layouts=stereo,highpass=f=100,lowpass=f=850,volume=0.18[texture]"
-$audioFilters += "aevalsrc='0.014*sin(2*PI*64*t)*exp(-18*mod(t\,0.5))':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=180[pulse]"
-$audioFilters += '[drone][texture][pulse]amix=inputs=3:duration=longest:normalize=0,volume=0.62[bed]'
+$audioFilters += "aevalsrc='0.020*sin(2*PI*73.42*t)+0.012*sin(2*PI*110*t)+0.009*sin(2*PI*146.83*t)+0.007*sin(2*PI*174.61*t)':s=48000:d=11.8,aformat=channel_layouts=stereo,lowpass=f=920,afade=t=in:st=0:d=0.65,afade=t=out:st=10.9:d=0.9[pad0]"
+$audioFilters += "aevalsrc='0.020*sin(2*PI*58.27*t)+0.012*sin(2*PI*87.31*t)+0.009*sin(2*PI*116.54*t)+0.007*sin(2*PI*146.83*t)':s=48000:d=12.3,aformat=channel_layouts=stereo,lowpass=f=920,afade=t=in:st=0:d=0.65,afade=t=out:st=11.4:d=0.9,adelay=11180|11180[pad1]"
+$audioFilters += "aevalsrc='0.020*sin(2*PI*87.31*t)+0.012*sin(2*PI*130.81*t)+0.009*sin(2*PI*174.61*t)+0.007*sin(2*PI*220*t)':s=48000:d=14.8,aformat=channel_layouts=stereo,lowpass=f=980,afade=t=in:st=0:d=0.65,afade=t=out:st=13.9:d=0.9,adelay=22780|22780[pad2]"
+$audioFilters += "aevalsrc='0.020*sin(2*PI*65.41*t)+0.012*sin(2*PI*98*t)+0.009*sin(2*PI*130.81*t)+0.007*sin(2*PI*164.81*t)':s=48000:d=10.73,aformat=channel_layouts=stereo,lowpass=f=1020,afade=t=in:st=0:d=0.65,afade=t=out:st=9.8:d=0.93,adelay=36970|36970[pad3]"
+$audioFilters += '[pad0][pad1][pad2][pad3]amix=inputs=4:duration=longest:normalize=0,volume=0.70[pad]'
+$audioFilters += "aevalsrc='0.016*sin(2*PI*293.66*t)*exp(-10*mod(t\,2))':s=48000:d=$durationText,aformat=channel_layouts=stereo[arp0]"
+$audioFilters += "aevalsrc='0.016*sin(2*PI*349.23*t)*exp(-10*mod(t\,2))':s=48000:d=47.2,aformat=channel_layouts=stereo,adelay=500|500[arp1]"
+$audioFilters += "aevalsrc='0.016*sin(2*PI*440*t)*exp(-10*mod(t\,2))':s=48000:d=46.7,aformat=channel_layouts=stereo,adelay=1000|1000[arp2]"
+$audioFilters += "aevalsrc='0.014*sin(2*PI*523.25*t)*exp(-10*mod(t\,2))':s=48000:d=46.2,aformat=channel_layouts=stereo,adelay=1500|1500[arp3]"
+$audioFilters += '[arp0][arp1][arp2][arp3]amix=inputs=4:duration=longest:normalize=0,highpass=f=240,lowpass=f=2800,aecho=0.8:0.65:220|440:0.12|0.07,volume=0.72[arp]'
+$audioFilters += "aevalsrc='0.035*sin(2*PI*54*t)*exp(-17*mod(t\,0.5))+0.012*sin(2*PI*108*t)*exp(-21*mod(t\,0.5))':s=48000:d=$durationText,aformat=channel_layouts=stereo,lowpass=f=210,volume=0.78[pulse]"
+$audioFilters += "anoisesrc=color=pink:amplitude=0.006:d=${durationText}:r=48000,aformat=channel_layouts=stereo,highpass=f=3600,lowpass=f=9200,tremolo=f=4:d=0.82,volume=0.05[texture]"
+$audioFilters += "aevalsrc='0.015*sin(2*PI*392*t)*exp(-8*mod(t\,0.5))+0.009*sin(2*PI*659.25*t)*exp(-9*mod(t\,1))':s=48000:d=5.18,aformat=channel_layouts=stereo,highpass=f=300,lowpass=f=3200,afade=t=in:st=0:d=0.35,afade=t=out:st=4.5:d=0.68,adelay=42520|42520[ctaLift]"
+$audioFilters += "[pad][arp][pulse][texture][ctaLift]amix=inputs=5:duration=longest:normalize=0,acompressor=threshold=0.09:ratio=1.5:attack=20:release=250:makeup=1,volume='if(lt(t\,5.18)\,0.92\,if(lt(t\,16.34)\,0.62\,if(lt(t\,32.38)\,0.76\,if(lt(t\,42.52)\,0.90\,1.04))))':eval=frame[scoreRaw]"
+$audioFilters += '[voice]asplit=2[voiceMain][voiceKey]'
+$audioFilters += '[scoreRaw][voiceKey]sidechaincompress=threshold=0.035:ratio=5:attack=10:release=220:makeup=1[scoreDucked]'
 $audioFilters += "aevalsrc='0.034*sin(2*PI*48*t)*exp(-11*mod(t\,1))':s=48000:d=4,aformat=channel_layouts=stereo,lowpass=f=160,volume=0.75[introimpact]"
 $audioFilters += 'sine=frequency=430:sample_rate=48000:duration=0.32,afade=t=out:st=0:d=0.32,adelay=22780|22780,volume=0.07,aformat=channel_layouts=stereo[uncertainty]'
 $audioFilters += 'sine=frequency=820:sample_rate=48000:duration=0.22,afade=t=out:st=0:d=0.22,adelay=32380|32380,volume=0.06,aformat=channel_layouts=stereo[approved]'
-$audioFilters += "[bed][voice][introimpact][uncertainty][approved]amix=inputs=5:duration=longest:normalize=0,alimiter=limit=0.95,apad=pad_dur=0.2,atrim=duration=$durationText[a]"
+$audioFilters += "[scoreDucked][voiceMain][introimpact][uncertainty][approved]amix=inputs=5:duration=longest:normalize=0,alimiter=limit=0.95,apad=pad_dur=0.2,atrim=duration=$durationText[a]"
 
 $audioArguments += @(
     '-filter_complex', ($audioFilters -join ';'),
