@@ -11,7 +11,7 @@ $ErrorActionPreference = 'Stop'
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-field-enablement-ad-48s-1080p.mp4'
+    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-field-enablement-ad-v2-48s-1080p.mp4'
 }
 
 $absoluteOutputPath = Initialize-DemoOutputPath -OutputPath $OutputPath
@@ -20,10 +20,13 @@ $ffprobePath = Join-Path (Split-Path -Parent $ffmpegPath) 'ffprobe.exe'
 
 $computationalVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-computational-lithography-720p.mp4') -ErrorAction Stop
 $lightGenerationVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-high-na-euv-light-generation-720p.mp4') -ErrorAction Stop
-$reticleStageVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-high-na-euv-reticle-stage-720p.mp4') -ErrorAction Stop
-$waferStageVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-high-na-euv-wafer-stage-720p.mp4') -ErrorAction Stop
-$engineerVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-mature-products-and-service-720p.mp4') -ErrorAction Stop
-$unveilingVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-unveiling-high-na-euv-720p.mp4') -ErrorAction Stop
+$engineerVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'fraunhofer-300mm-semiconductor-cleanroom-tour-2024-720p.mp4') -ErrorAction Stop
+$asmlMistralVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-mistral-advanced-lithography-customer-story-720p.mp4') -ErrorAction Stop
+$cleanroomRobotVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'kuka-mobile-cleanroom-robot-720p.mp4') -ErrorAction Stop
+$digitalTwinVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'nvidia-industrial-digital-twin-robot-fleets-720p.mp4') -ErrorAction Stop
+$metrologyVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'physik-instrumente-wafer-inspection-metrology-720p.mp4') -ErrorAction Stop
+$waferTransportVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'rockwell-automated-wafer-transport-720p.mp4') -ErrorAction Stop
+$opticsVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'zeiss-optics-chip-manufacturing-720p.mp4') -ErrorAction Stop
 $workflowVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-introducing-workflows-720p.mp4') -ErrorAction Stop
 $connectorVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-custom-connectors-720p.mp4') -ErrorAction Stop
 $overlayPath = Resolve-Path -LiteralPath (Join-Path $paths.Overlays 'field-enablement-demo.ass') -ErrorAction Stop
@@ -153,7 +156,7 @@ $filterGraph = @"
 [1:v]trim=duration=0.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,zoompan=z='min(zoom+0.003,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps=30,eq=contrast=1.18:saturation=1.08:brightness=-0.08,drawbox=color=0x151524@0.24:t=fill,drawgrid=w=240:h=180:t=1:c=0xFF7000@0.16,setsar=1,format=yuv420p[s1];
 [2:v]trim=duration=1.6,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,zoompan=z='min(zoom+0.002,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps=30,eq=contrast=1.18:saturation=0.78:brightness=-0.08,drawbox=color=0x151524@0.24:t=fill,drawgrid=w=240:h=180:t=1:c=0xFF7000@0.16,setsar=1,format=yuv420p[s2];
 [3:v]trim=duration=1.88,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,zoompan=z='min(zoom+0.0015,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps=30,eq=contrast=1.18:saturation=0.78:brightness=-0.08,drawbox=color=0x151524@0.24:t=fill,drawgrid=w=240:h=180:t=1:c=0xFF7000@0.16,setsar=1,format=yuv420p[s3];
-[4:v]trim=duration=2,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.94:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s4];
+[4:v]trim=duration=2,setpts=PTS-STARTPTS,crop=1280:600:0:0,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.94:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.12,fps=30,setsar=1,format=yuv420p[s4];
 [5:v]trim=duration=2,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.07:saturation=0.90,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.11,fps=30,setsar=1,format=yuv420p[s5];
 [6:v]trim=duration=2,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s6];
 [7:v]trim=duration=2.35,setpts=PTS-STARTPTS,crop=1030:580:125:55,scale=1480:832:flags=lanczos,unsharp=5:5:0.28:5:5:0,pad=1920:1080:400:124:color=0x151524,drawbox=x=380:y=104:w=1520:h=872:color=0xB7E3FF@0.32:t=2,fps=30,setsar=1,format=yuv420p[s7];
@@ -166,7 +169,7 @@ $filterGraph = @"
 [14:v]trim=duration=4,setpts=PTS-STARTPTS,crop=1280:620:0:0,scale=1920:930:flags=lanczos,pad=1920:1080:0:75:color=0x151524,eq=contrast=1.06:saturation=0.90:brightness=-0.02,drawbox=x=28:y=28:w=1864:h=1024:color=0xB7E3FF@0.22:t=1,fps=30,setsar=1,format=yuv420p[s14];
 [15:v]trim=duration=1.04,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.87:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0xB7E3FF@0.13,fps=30,setsar=1,format=yuv420p[s15];
 [16:v]trim=duration=2.3,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0x55D98C@0.52:t=3,fps=30,setsar=1,format=yuv420p[s16];
-[17:v]trim=duration=2.29,setpts=PTS-STARTPTS,crop=995:460:285:0,scale=1480:684:flags=lanczos,eq=contrast=1.10:saturation=0.84,pad=1920:1080:400:198:color=0x151524,drawbox=x=380:y=178:w=1520:h=724:color=0xB7E3FF@0.34:t=2,fps=30,setsar=1,format=yuv420p[s17];
+[17:v]trim=duration=2.29,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.09:saturation=0.84:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s17];
 [18:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.12,fps=30,setsar=1,format=yuv420p[s18];
 [19:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.80:brightness=-0.04,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s19];
 [20:v]trim=duration=1.85,setpts=PTS-STARTPTS,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,eq=contrast=1.08:saturation=0.92:brightness=-0.02,drawgrid=w=240:h=180:t=1:c=0x55D98C@0.14,fps=30,setsar=1,format=yuv420p[s20];
@@ -182,28 +185,28 @@ $filterGraph = $filterGraph -replace "`r?`n", ''
 $videoArguments = @(
     '-hide_banner',
     '-y',
-    '-ss', '116', '-t', '0.85', '-i', $computationalVideo.Path,
+    '-ss', '44', '-t', '0.85', '-i', $metrologyVideo.Path,
     '-ss', '56', '-t', '0.85', '-i', $lightGenerationVideo.Path,
-    '-ss', '57', '-t', '1.6', '-i', $waferStageVideo.Path,
-    '-ss', '8', '-t', '1.88', '-i', $unveilingVideo.Path,
-    '-ss', '57', '-t', '2', '-i', $lightGenerationVideo.Path,
-    '-ss', '58', '-t', '2', '-i', $waferStageVideo.Path,
-    '-ss', '123', '-t', '2', '-i', $reticleStageVideo.Path,
+    '-ss', '99.5', '-t', '1.6', '-i', $digitalTwinVideo.Path,
+    '-ss', '132.5', '-t', '1.88', '-i', $cleanroomRobotVideo.Path,
+    '-ss', '30.8', '-t', '2', '-i', $opticsVideo.Path,
+    '-ss', '78', '-t', '2', '-i', $waferTransportVideo.Path,
+    '-ss', '36.5', '-t', '2', '-i', $metrologyVideo.Path,
     '-ss', '43', '-t', '2.35', '-i', $connectorVideo.Path,
     '-ss', '145', '-t', '2.81', '-i', $workflowVideo.Path,
-    '-ss', '56', '-t', '2.2', '-i', $computationalVideo.Path,
-    '-ss', '127', '-t', '2.1', '-i', $reticleStageVideo.Path,
+    '-ss', '47.5', '-t', '2.2', '-i', $digitalTwinVideo.Path,
+    '-ss', '44.8', '-t', '2.1', '-i', $metrologyVideo.Path,
     '-ss', '152', '-t', '2.14', '-i', $workflowVideo.Path,
     '-ss', '164', '-t', '2.3', '-i', $workflowVideo.Path,
-    '-ss', '111', '-t', '2.26', '-i', $lightGenerationVideo.Path,
-    '-ss', '53', '-t', '4', '-i', $engineerVideo.Path,
+    '-ss', '164', '-t', '2.26', '-i', $metrologyVideo.Path,
+    '-ss', '127', '-t', '4', '-i', $engineerVideo.Path,
     '-ss', '17', '-t', '1.04', '-i', $computationalVideo.Path,
     '-ss', '166', '-t', '2.3', '-i', $workflowVideo.Path,
-    '-ss', '152', '-t', '2.29', '-i', $workflowVideo.Path,
-    '-ss', '12', '-t', '1.85', '-i', $unveilingVideo.Path,
-    '-ss', '56', '-t', '1.85', '-i', $computationalVideo.Path,
-    '-ss', '60', '-t', '1.85', '-i', $computationalVideo.Path,
-    '-ss', '116', '-t', '5.18', '-i', $computationalVideo.Path,
+    '-ss', '160.5', '-t', '2.29', '-i', $waferTransportVideo.Path,
+    '-ss', '132.5', '-t', '1.85', '-i', $cleanroomRobotVideo.Path,
+    '-ss', '185.8', '-t', '1.85', '-i', $metrologyVideo.Path,
+    '-ss', '80.5', '-t', '1.85', '-i', $digitalTwinVideo.Path,
+    '-ss', '94', '-t', '5.18', '-i', $asmlMistralVideo.Path,
     '-loop', '1', '-framerate', '30', '-i', $logoPath.Path,
     '-i', $narrationMixPath,
     '-filter_complex', $filterGraph,
