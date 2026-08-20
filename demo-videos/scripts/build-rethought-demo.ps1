@@ -7,18 +7,19 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$demoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent $demoRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $repoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
+    $InputPath = Join-Path $demoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $repoRoot 'ASMLxMistral_Rethought_Workflow_1080p.mp4'
+    $OutputPath = Join-Path $demoRoot 'ASMLxMistral_Rethought_Workflow_1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
-$overlayPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'video-edit\rethought-demo.ass') -ErrorAction Stop
+$overlayPath = Resolve-Path -LiteralPath (Join-Path $demoRoot 'edit-assets\rethought-demo.ass') -ErrorAction Stop
 $workflowImage = Resolve-Path -LiteralPath (Join-Path $repoRoot 'resources\product-images\mistral-ai-studio-workflows-platform-mockup.png') -ErrorAction Stop
 $traceImage = Resolve-Path -LiteralPath (Join-Path $repoRoot 'official-designs-and-docs\ui-screenshots\multi-turn-workflow-execution-trace.png') -ErrorAction Stop
 $logoPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
@@ -48,13 +49,13 @@ else {
 
 $pythonCommand = Get-Command python -ErrorAction SilentlyContinue
 if (-not $pythonCommand) {
-    throw 'Python was not found. Install Python, then install the neural voice dependency from video-edit\neural-voice-requirements.txt.'
+    throw 'Python was not found. Install Python, then install the neural voice dependency from demo-videos\edit-assets\neural-voice-requirements.txt.'
 }
 
 $pythonPath = $pythonCommand.Source
 & $pythonPath -c 'import edge_tts'
 if ($LASTEXITCODE -ne 0) {
-    throw 'The neural voice dependency is missing. Run: python -m pip install --user --upgrade -r video-edit\neural-voice-requirements.txt'
+    throw 'The neural voice dependency is missing. Run: python -m pip install --user --upgrade -r demo-videos\edit-assets\neural-voice-requirements.txt'
 }
 
 $narrationWorkDir = Join-Path ([System.IO.Path]::GetTempPath()) ('asml-mistral-neural-{0}' -f [guid]::NewGuid().ToString('N'))

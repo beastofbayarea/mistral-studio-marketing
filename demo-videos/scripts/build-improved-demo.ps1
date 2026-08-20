@@ -6,18 +6,19 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$demoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent $demoRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $repoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
+    $InputPath = Join-Path $demoRoot 'ASMLxMistral_Final_Trim_NoCap_4K.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $repoRoot 'ASMLxMistral_Improved_Web_1080p.mp4'
+    $OutputPath = Join-Path $demoRoot 'ASMLxMistral_Improved_Web_1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
-$overlayPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'video-edit\improved-demo.ass') -ErrorAction Stop
+$overlayPath = Resolve-Path -LiteralPath (Join-Path $demoRoot 'edit-assets\improved-demo.ass') -ErrorAction Stop
 $logoPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
 
 $outputDirectory = Split-Path -Parent ([System.IO.Path]::GetFullPath($OutputPath))

@@ -104,16 +104,16 @@ mistral-studio-marketing/
 │   ├── gtm-strategy.pptx                            # Operational GTM launch execution plan
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
-├── scripts/                                         # Reusable artifact build scripts
-│   ├── build-improved-demo.ps1                      # ASML × Mistral demo video edit and web export
-│   └── build-rethought-demo.ps1                     # Four-act client workflow demo with fresh narration
-│
-├── video-edit/                                      # Version-controlled video edit assets
-│   ├── improved-demo.ass                            # Branded narrative and evidence overlays
-│   ├── neural-voice-requirements.txt                 # Pinned neural narration dependency
-│   ├── rethought-demo.ass                           # Four-act presentation-scale overlay system
-│   ├── rethought-demo-script.md                     # Storyboard, narration, and production principles
-│   └── README.md                                    # Build workflow and output details
+├── demo-videos/                                     # ASML × Mistral demo source, product footage, edits, and build workflow
+│   ├── edit-assets/                                 # Overlays, narration dependency, and storyboard
+│   │   ├── improved-demo.ass                        # Branded narrative and evidence overlays
+│   │   ├── neural-voice-requirements.txt            # Pinned neural narration dependency
+│   │   ├── rethought-demo.ass                       # Four-act presentation-scale overlay system
+│   │   └── rethought-demo-script.md                 # Storyboard, narration, and production principles
+│   ├── scripts/                                     # Demo build scripts
+│   │   ├── build-improved-demo.ps1                  # ASML × Mistral demo video edit and web export
+│   │   └── build-rethought-demo.ps1                 # Four-act client workflow demo with fresh narration
+│   └── README.md                                    # Build workflow and local video inventory
 │
 ├── Root Level Files
 │   ├── author-profile.pptx                              # Author profile background & strategy bio presentation
