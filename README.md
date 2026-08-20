@@ -104,16 +104,13 @@ mistral-studio-marketing/
 │   ├── gtm-strategy.pptx                            # Operational GTM launch execution plan
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
-├── demo-videos/                                     # ASML × Mistral demo source, product footage, edits, and build workflow
-│   ├── edit-assets/                                 # Overlays, narration dependency, and storyboard
-│   │   ├── improved-demo.ass                        # Branded narrative and evidence overlays
-│   │   ├── neural-voice-requirements.txt            # Pinned neural narration dependency
-│   │   ├── rethought-demo.ass                       # Four-act presentation-scale overlay system
-│   │   └── rethought-demo-script.md                 # Storyboard, narration, and production principles
-│   ├── scripts/                                     # Demo build scripts
-│   │   ├── build-improved-demo.ps1                  # ASML × Mistral demo video edit and web export
-│   │   └── build-rethought-demo.ps1                 # Four-act client workflow demo with fresh narration
-│   └── README.md                                    # Build workflow and local video inventory
+├── demo-videos/                                     # Self-contained ASML × Mistral video production workspace
+│   ├── assets/overlays/                             # Branded subtitle and graphic overlays
+│   ├── docs/                                        # Storyboard, narration, and production principles
+│   ├── outputs/                                     # Generated review and delivery exports (ignored by Git)
+│   ├── scripts/                                     # Builds, shared helpers, and narration dependency
+│   ├── source-footage/                              # Masters, Mistral product footage, and industry references
+│   └── README.md                                    # Folder structure and build workflow
 │
 ├── Root Level Files
 │   ├── author-profile.pptx                              # Author profile background & strategy bio presentation

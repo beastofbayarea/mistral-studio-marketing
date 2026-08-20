@@ -6,48 +6,28 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$demoRoot = Split-Path -Parent $PSScriptRoot
-$repoRoot = Split-Path -Parent $demoRoot
+. (Join-Path $PSScriptRoot 'video-build-common.ps1')
+
+$paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $demoRoot 'asml-mistral-original-master-4k.mp4'
+    $InputPath = Join-Path $paths.Masters 'asml-mistral-original-master-4k.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $demoRoot 'asml-mistral-studio-workflow-demo-1080p.mp4'
+    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-studio-workflow-demo-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
-$overlayPath = Resolve-Path -LiteralPath (Join-Path $demoRoot 'edit-assets\rethought-demo.ass') -ErrorAction Stop
-$workflowVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'mistral-studio-build-first-workflow-720p.mp4') -ErrorAction Stop
-$skillVideo = Resolve-Path -LiteralPath (Join-Path $demoRoot 'mistral-studio-update-versioned-skill-720p.mp4') -ErrorAction Stop
-$logoPath = Resolve-Path -LiteralPath (Join-Path $repoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
-$narrationMaster = Resolve-Path -LiteralPath (Join-Path $demoRoot 'asml-mistral-narrated-workflow-master-1080p.mp4') -ErrorAction Stop
+$overlayPath = Resolve-Path -LiteralPath (Join-Path $paths.Overlays 'rethought-demo.ass') -ErrorAction Stop
+$workflowVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-build-first-workflow-720p.mp4') -ErrorAction Stop
+$skillVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-update-versioned-skill-720p.mp4') -ErrorAction Stop
+$logoPath = Resolve-Path -LiteralPath (Join-Path $paths.RepoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
+$narrationMaster = Resolve-Path -LiteralPath (Join-Path $paths.Masters 'asml-mistral-narrated-workflow-master-1080p.mp4') -ErrorAction Stop
 
-$outputDirectory = Split-Path -Parent ([System.IO.Path]::GetFullPath($OutputPath))
-if (-not (Test-Path -LiteralPath $outputDirectory)) {
-    New-Item -ItemType Directory -Path $outputDirectory -Force | Out-Null
-}
-
-$ffmpegCommand = Get-Command ffmpeg -ErrorAction SilentlyContinue
-if ($ffmpegCommand) {
-    $ffmpegPath = $ffmpegCommand.Source
-}
-else {
-    $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
-    $ffmpegCandidate = Get-ChildItem -LiteralPath $wingetPackages -Directory -ErrorAction SilentlyContinue |
-        Where-Object Name -Like 'Gyan.FFmpeg*' |
-        ForEach-Object { Get-ChildItem -LiteralPath $_.FullName -Recurse -Filter ffmpeg.exe -ErrorAction SilentlyContinue } |
-        Select-Object -First 1
-
-    if (-not $ffmpegCandidate) {
-        throw 'FFmpeg was not found. Install it with: winget install --id Gyan.FFmpeg --exact'
-    }
-
-    $ffmpegPath = $ffmpegCandidate.FullName
-}
-
-$assFilterPath = $overlayPath.Path.Replace('\', '/').Replace(':', '\:').Replace("'", "\'")
+$absoluteOutputPath = Initialize-DemoOutputPath -OutputPath $OutputPath
+$ffmpegPath = Resolve-FfmpegExecutable
+$assFilterPath = ConvertTo-FfmpegSubtitlePath -Path $overlayPath.Path
 
 $filterGraph = @"
 [0:v]trim=start=3:end=10.35,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=30,format=yuv420p[s0];
@@ -98,7 +78,7 @@ $ffmpegArguments = @(
     '-ar', '48000',
     '-movflags', '+faststart',
     '-t', '48',
-    ([System.IO.Path]::GetFullPath($OutputPath))
+    $absoluteOutputPath
 )
 
 & $ffmpegPath @ffmpegArguments
@@ -107,4 +87,4 @@ if ($LASTEXITCODE -ne 0) {
     throw "FFmpeg exited with code $LASTEXITCODE"
 }
 
-Write-Output ([System.IO.Path]::GetFullPath($OutputPath))
+Write-Output $absoluteOutputPath

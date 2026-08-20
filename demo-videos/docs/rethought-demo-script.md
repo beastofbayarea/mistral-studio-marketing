@@ -9,8 +9,8 @@ Earn agreement to map and pilot one high-value ASML diagnostic workflow. The sto
 | Time | Act | Visual | On-screen message |
 | --- | --- | --- | --- |
 | 0–7s | Detect | Representative production anomaly | A production anomaly. The evidence is rarely in one place. |
-| 7–21s | Investigate | Incident sources converge, followed by a real Mistral Studio workflow run from `mistral-studio-build-first-workflow-720p.mp4` | Bring the relevant evidence into one investigation. |
-| 21–35s | Explain | Causal-chain footage, followed by a real Studio agent tool-review sequence from `mistral-studio-update-versioned-skill-720p.mp4` | Compare similar incidents. Build a source-linked diagnosis. |
+| 7–21s | Investigate | Incident sources converge, followed by a real Mistral Studio workflow run from `source-footage\mistral-studio\mistral-studio-build-first-workflow-720p.mp4` | Bring the relevant evidence into one investigation. |
+| 21–35s | Explain | Causal-chain footage, followed by a real Studio agent tool-review sequence from `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | Compare similar incidents. Build a source-linked diagnosis. |
 | 35–41s | Approve | Engineer review and validation footage | Engineer reviews and approves the next action. |
 | 41–48s | Pilot | Clean Mistral end card | Next: 30-minute workflow mapping session. |
 
