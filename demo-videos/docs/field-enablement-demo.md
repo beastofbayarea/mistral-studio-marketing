@@ -6,7 +6,7 @@
 - Format: 1920 × 1080, 30 fps, H.264 High Profile, AAC stereo
 - Master: `outputs\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`
 - Vertical master: `outputs\asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4`
-- YouTube thumbnail: `assets\thumbnails\asml-mistral-unofficial-concept-thumbnail.png` (1280 × 720)
+- YouTube thumbnail: `assets\thumbnails\asml-mistral-anomaly-to-action-thumbnail.png` (1280 × 720)
 - Build: `scripts\build-field-enablement-demo.ps1`
 - Vertical build: `scripts\build-field-enablement-vertical.ps1`
 - Overlay source: `assets\overlays\field-enablement-demo.ass`
