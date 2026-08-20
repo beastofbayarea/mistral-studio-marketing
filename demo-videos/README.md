@@ -44,8 +44,8 @@ The full edit map, narration, source timecodes, and design rationale are in `doc
 
 The 48-second structure is Detect, Investigate, Explain, Approve, and Pilot. It combines:
 
-- `source-footage\masters\asml-mistral-original-master-4k.mp4`
-- `source-footage\masters\asml-mistral-narrated-workflow-master-1080p.mp4`
+- `source-footage\masters\asml-mistral-original-master-70s-2160p.mp4`
+- `source-footage\masters\asml-mistral-narrated-workflow-master-48s-1080p.mp4`
 - `source-footage\mistral-studio\mistral-studio-build-first-workflow-720p.mp4`
 - `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4`
 - `assets\overlays\rethought-demo.ass`
@@ -56,11 +56,11 @@ Build it from the repository root:
 .\demo-videos\scripts\build-rethought-demo.ps1
 ```
 
-The default export is `outputs\asml-mistral-studio-workflow-demo-1080p.mp4`.
+The default export is `outputs\asml-mistral-studio-workflow-demo-48s-1080p.mp4`.
 
 ## Alternate improved edit
 
-The alternate build condenses the original concept into a faster client-demo narrative while preserving the source master. It uses `assets\overlays\improved-demo.ass` and exports to `outputs\asml-mistral-improved-demo-1080p.mp4`.
+The alternate build condenses the original concept into a faster client-demo narrative while preserving the source master. It uses `assets\overlays\improved-demo.ass` and exports to `outputs\asml-mistral-incident-workflow-demo-50s-1080p.mp4`.
 
 ```powershell
 .\demo-videos\scripts\build-improved-demo.ps1

@@ -4,9 +4,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/beastofbayarea/mistral-studio-marketing?color=orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/beastofbayarea/mistral-studio-marketing?color=orange)
 ![License](https://img.shields.io/github/license/beastofbayarea/mistral-studio-marketing?color=blue)
-![Console](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://mistral.ai/industry/finance/)
+![Console](https://img.shields.io/badge/Console-Mistral%20Studio-orange?logo=mistral&link=https://console.mistral.ai/)
 
-**Official Product Console**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
+**Official Product Console**: [https://console.mistral.ai/](https://console.mistral.ai/)  
+**Official Studio Documentation**: [https://docs.mistral.ai/studio](https://docs.mistral.ai/studio)
 
 ---
 
@@ -27,14 +28,14 @@ This repository serves as the **comprehensive Product Marketing Manager (PMM) to
 ## 🨀 Primary Research Sources
 
 > [!IMPORTANT]
-> **Primary Research Source Directive**: For all research regarding Mistral AI products, platform capabilities, foundation models, industry solutions, customer case studies, and GTM positioning, **[`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) MUST be used as the primary research source.**
+> **Primary Research Source Directive**: For all research regarding Mistral AI products, platform capabilities, foundation models, industry solutions, customer case studies, and GTM positioning, **[`resources/mistral-ai-site-summaries.md`](resources/mistral-ai-site-summaries.md) MUST be used as the primary research source.**
 
 ### Research Documentation
 
 | Level | Document | Coverage | Purpose |
 |-------|----------|----------|---------|
-| **Level 0 & 1** | [`resources/mistral_ai_site_summaries.md`](resources/mistral_ai_site_summaries.md) | 64 core pages | Concise, structured summaries of all core landing pages, products (Studio, Forge, Vibe, Compute), solutions, pricing tiers, and customer case studies |
-| **Level 2** | [`resources/mistral_ai_l2_site_summaries.md`](resources/mistral_ai_l2_site_summaries.md) | 814 pages | Comprehensive index covering API endpoint references, model cards, cookbooks, support articles, and legal disclosures |
+| **Level 0 & 1** | [`resources/mistral-ai-site-summaries.md`](resources/mistral-ai-site-summaries.md) | 64 core pages | Concise, structured summaries of all core landing pages, products (Studio, Forge, Vibe, Compute), solutions, pricing tiers, and customer case studies |
+| **Level 2** | [`resources/mistral-ai-level-2-site-summaries.md`](resources/mistral-ai-level-2-site-summaries.md) | 814 pages | Comprehensive index covering API endpoint references, model cards, cookbooks, support articles, and legal disclosures |
 
 ---
 
@@ -47,12 +48,12 @@ mistral-studio-marketing/
 │
 ├── industries-pmm/                                  # Industry Vertical PMM Playbooks & GTM Strategy
 │   └── fsi-data/                                   # Financial Services Industry (FSI) Solutions GTM
-│       ├── 01_Field_Playbook.md                     # FSI field execution & solution messaging playbook
-│       ├── 02_Customers_Accounts.md                 # Target account profiles & buyer persona mapping
-│       ├── 03_Product_Priorities.md                 # FSI product roadmap priorities & use case mapping
-│       ├── 04_GTM_and_Operating_Plan.md             # Go-to-market launch & operating plan
-│       ├── 05_Performance_Framework.md             # KPIs, metrics & evaluation framework
-│       └── 06_Sources_and_Assumptions.md            # Market research sources & financial assumptions
+│       ├── 01-field-playbook.md                     # FSI field execution & solution messaging playbook
+│       ├── 02-customers-and-accounts.md             # Target account profiles & buyer persona mapping
+│       ├── 03-product-priorities.md                 # FSI product roadmap priorities & use case mapping
+│       ├── 04-gtm-and-operating-plan.md             # Go-to-market launch & operating plan
+│       ├── 05-performance-framework.md              # KPIs, metrics & evaluation framework
+│       └── 06-sources-and-assumptions.md            # Market research sources & financial assumptions
 │
 ├── official-designs-and-docs/                        # Official Brand Identity & Assets
 │   ├── bank-icons/                                  # Customer & partner financial institution logos (12 banks)
@@ -66,8 +67,8 @@ mistral-studio-marketing/
 │   └── mistral-logo-guidelines.pdf                  # Official Mistral logo & brand design guidelines
 │
 ├── resources/                                       # Shared Assets, Reports & Site Summaries
-│   ├── mistral_ai_site_summaries.md                 # ✨ PRIMARY RESEARCH SOURCE: Root & Level 1 Page Summaries
-│   ├── mistral_ai_l2_site_summaries.md              # Level 2 Web Crawl Summaries Directory (814 pages)
+│   ├── mistral-ai-site-summaries.md                 # ✨ PRIMARY RESEARCH SOURCE: Root & Level 1 Page Summaries
+│   ├── mistral-ai-level-2-site-summaries.md         # Level 2 Web Crawl Summaries Directory (814 pages)
 │   ├── case-studies-and-reports/                    # Market research & customer case studies
 │   │   ├── german-tax-ai-market-radar-2026.png
 │   │   ├── ki-radar-steuerberatung-de-2026-07-29-report.pdf
@@ -116,7 +117,6 @@ mistral-studio-marketing/
 ├── Root Level Files
 │   ├── author-profile.pptx                              # Author profile background & strategy bio presentation
 │   ├── eu-policy-company-thesis.pptx                    # European AI policy & company thesis presentation
-│   ├── fsi-solutions-gtm.pptx                           # Financial Services Industry (FSI) GTM strategy deck
 │   ├── gtm-and-launch-strategy-framework.pptx           # Outside-in GTM MECE launch framework presentation
 │   ├── product-marketing-strategy.pptx                  # Core Product Marketing Strategy presentation deck
 │   ├── sales-enterprise-architecture-one-pager.pdf     # Enterprise architecture one-pager PDF
@@ -160,12 +160,12 @@ The official **Mistral Logo Guidelines** are available in [`official-designs-and
 The FSI solutions provide specialized solution marketing and field playbooks for banking, insurance, and asset management.
 
 ### FSI Directory Structure
-- **Field Execution Playbook**: [`industries-pmm/fsi-data/01_Field_Playbook.md`](industries-pmm/fsi-data/01_Field_Playbook.md) \u2014 FSI buyer messaging, objection handling, and enterprise sales motions.
-- **Target Customer Accounts**: [`industries-pmm/fsi-data/02_Customers_Accounts.md`](industries-pmm/fsi-data/02_Customers_Accounts.md) \u2014 Tier-1 bank profiles, regulatory requirements, and decision-maker personas.
-- **Product Roadmap Priorities**: [`industries-pmm/fsi-data/03_Product_Priorities.md`](industries-pmm/fsi-data/03_Product_Priorities.md) \u2014 FSI-specific platform requirements (on-prem, sovereignty, audit trails).
-- **GTM Operating Plan**: [`industries-pmm/fsi-data/04_GTM_and_Operating_Plan.md`](industries-pmm/fsi-data/04_GTM_and_Operating_Plan.md) \u2014 Co-selling strategy, SI partners, and launch cadence.
-- **Performance Framework**: [`industries-pmm/fsi-data/05_Performance_Framework.md`](industries-pmm/fsi-data/05_Performance_Framework.md) \u2014 Pipeline metrics, ACV targets, and win-rate tracking.
-- **Research Sources & Assumptions**: [`industries-pmm/fsi-data/06_Sources_and_Assumptions.md`](industries-pmm/fsi-data/06_Sources_and_Assumptions.md) \u2014 Empirical financial market research base.
+- **Field Execution Playbook**: [`industries-pmm/fsi-data/01-field-playbook.md`](industries-pmm/fsi-data/01-field-playbook.md) \u2014 FSI buyer messaging, objection handling, and enterprise sales motions.
+- **Target Customer Accounts**: [`industries-pmm/fsi-data/02-customers-and-accounts.md`](industries-pmm/fsi-data/02-customers-and-accounts.md) \u2014 Tier-1 bank profiles, regulatory requirements, and decision-maker personas.
+- **Product Roadmap Priorities**: [`industries-pmm/fsi-data/03-product-priorities.md`](industries-pmm/fsi-data/03-product-priorities.md) \u2014 FSI-specific platform requirements (on-prem, sovereignty, audit trails).
+- **GTM Operating Plan**: [`industries-pmm/fsi-data/04-gtm-and-operating-plan.md`](industries-pmm/fsi-data/04-gtm-and-operating-plan.md) \u2014 Co-selling strategy, SI partners, and launch cadence.
+- **Performance Framework**: [`industries-pmm/fsi-data/05-performance-framework.md`](industries-pmm/fsi-data/05-performance-framework.md) \u2014 Pipeline metrics, ACV targets, and win-rate tracking.
+- **Research Sources & Assumptions**: [`industries-pmm/fsi-data/06-sources-and-assumptions.md`](industries-pmm/fsi-data/06-sources-and-assumptions.md) \u2014 Empirical financial market research base.
 
 ### FSI Positioning Thesis
 > **"Controlled AI for Financial Intelligence and Regulated Workflows."**
@@ -219,7 +219,6 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 | **GTM Strategy** | Operational GTM launch execution plan | [`gtm-strategy.pptx`](studio-pmm/gtm-strategy.pptx) |
 | **Product Marketing Strategy** | Core PMM strategy presentation | [`product-marketing-strategy.pptx`](product-marketing-strategy.pptx) |
 | **GTM and Launch Strategy Framework** | Outside-in GTM MECE launch framework | [`gtm-and-launch-strategy-framework.pptx`](gtm-and-launch-strategy-framework.pptx) |
-| **FSI Solutions GTM** | Financial Services Industry GTM strategy | [`fsi-solutions-gtm.pptx`](fsi-solutions-gtm.pptx) |
 | **EU Policy & Company Thesis** | European AI policy & company thesis | [`eu-policy-company-thesis.pptx`](eu-policy-company-thesis.pptx) |
 | **Author Profile** | Author background & strategy bio | [`author-profile.pptx`](author-profile.pptx) |
 
@@ -276,10 +275,10 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 
 ## 🌐 Quick Links
 
-- \u2705 **Official Product Console**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
-- \u2705 **Mistral AI Website**: [https://mistral.ai/industry/finance/](https://mistral.ai/industry/finance/)
-- \u2705 **Primary Research Source**: [resources/mistral_ai_site_summaries.md](resources/mistral_ai_site_summaries.md)
-- \u2705 **FSI Field Playbook**: [industries-pmm/fsi-data/01_Field_Playbook.md](industries-pmm/fsi-data/01_Field_Playbook.md)
+- \u2705 **Official Product Console**: [https://console.mistral.ai/](https://console.mistral.ai/)
+- \u2705 **Mistral Studio Documentation**: [https://docs.mistral.ai/studio](https://docs.mistral.ai/studio)
+- \u2705 **Primary Research Source**: [resources/mistral-ai-site-summaries.md](resources/mistral-ai-site-summaries.md)
+- \u2705 **FSI Field Playbook**: [industries-pmm/fsi-data/01-field-playbook.md](industries-pmm/fsi-data/01-field-playbook.md)
 - \u2705 **Brand Guidelines**: [official-designs-and-docs/mistral-logo-guidelines.pdf](official-designs-and-docs/mistral-logo-guidelines.pdf)
 
 ---
@@ -287,10 +286,10 @@ The [`studio-pmm/sales-battlecards/`](studio-pmm/sales-battlecards/) directory a
 ## 🌑 Repository Statistics
 
 - **Total Files**: 100+ assets across all directories
-- **Presentation Decks**: 10+ PowerPoint presentations
-- **Markdown Documents**: 8+ strategy and research documents
-- **PDF Documents**: 8+ whitepapers, guidelines, and reports
-- **Image Assets**: 50+ banners, logos, screenshots, and diagrams
+- **Presentation Decks**: 9 PowerPoint presentations
+- **Markdown Documents**: 15 strategy, research, and repository documents
+- **PDF Documents**: 8 whitepapers, guidelines, and reports
+- **Image Assets**: 74 banners, logos, screenshots, diagrams, and thumbnails
 - **Excel Databases**: 4+ master data frameworks
 - **Font Assets**: 2 font families (Silkscreen, Tiny5)
 

@@ -1,3 +1,9 @@
+---
+title: "ASML x Mistral Evidence-Backed Incident Workflow"
+description: "Storyboard and narrative principles for the incident workflow demo."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # ASML × Mistral: Evidence-Backed Incident Workflow
 
 ## Creative objective

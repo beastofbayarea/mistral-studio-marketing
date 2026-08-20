@@ -11,11 +11,11 @@ $ErrorActionPreference = 'Stop'
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $paths.Masters 'asml-mistral-original-master-4k.mp4'
+    $InputPath = Join-Path $paths.Masters 'asml-mistral-original-master-70s-2160p.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-improved-demo-1080p.mp4'
+    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-incident-workflow-demo-50s-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
@@ -61,6 +61,10 @@ $ffmpegArguments = @(
     '-filter_complex', $filterGraph,
     '-map', '[v]',
     '-map', '[a]',
+    '-map_metadata', '-1',
+    '-metadata', 'title=ASML x Mistral Incident Workflow Demo',
+    '-metadata', 'artist=Shiv, Prospective PMM, Mistral Studio',
+    '-metadata', 'comment=Unofficial portfolio concept for field enablement.',
     '-c:v', 'libx264',
     '-preset', 'medium',
     '-crf', '19',

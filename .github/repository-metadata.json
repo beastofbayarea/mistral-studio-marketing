@@ -4,13 +4,13 @@
   "owner": "beastofbayarea",
   "displayName": "Mistral Studio Marketing & Product Marketing Strategy",
   "description": "Mistral Studio Product Marketing Strategy, Category Narrative, Positioning & Messaging Framework, Prosumer-to-Enterprise Segmentation, Sales Battlecards, Brand Assets & Market Analysis.",
-  "homepage": "https://mistral.ai/industry/finance/",
-  "repositoryUrl": "https://mistral.ai/industry/finance/",
+  "homepage": "https://docs.mistral.ai/studio",
+  "repositoryUrl": "https://github.com/beastofbayarea/mistral-studio-marketing",
   "license": "MIT",
   "version": "1.0.0",
   "category": "marketing-strategy",
   "type": "documentation-and-assets",
-  "author": "Shiv, Prospective PMM, Mistral Studio; Vibe Code, AI Engineering Agent",
+  "author": "Shiv, Prospective PMM, Mistral Studio",
   "keywords": [
     "mistral-ai",
     "mistral-studio",
@@ -44,12 +44,7 @@
     {
       "name": "Shiv, Prospective PMM, Mistral Studio",
       "url": "https://github.com/beastofbayarea"
-    },
-    {
-      "name": "Vibe Code",
-      "url": "https://github.com/mistralai/vibe-code",
-      "role": "AI Engineering Agent"
     }
   ],
-  "metadataVersion": "2026-08-17"
+  "metadataVersion": "2026-08-20"
 }

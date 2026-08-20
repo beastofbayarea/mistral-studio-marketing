@@ -1,3 +1,9 @@
+---
+title: "ASML x Mistral Field Enablement Ad"
+description: "Delivery specifications, evidence rules, and build guidance for the field enablement ad."
+author: "Shiv, Prospective PMM, Mistral Studio"
+---
+
 # ASML × Mistral Field Enablement Ad
 
 ## Delivery

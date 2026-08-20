@@ -6,6 +6,7 @@ Desktop.ini
 # Temporary office lock files
 ~$*
 *.tmp
+.codex-tmp/
 
 # IDE / Editor files
 .vscode/
@@ -18,4 +19,3 @@ Desktop.ini
 *.avi
 *.webm
 *.mkv
-

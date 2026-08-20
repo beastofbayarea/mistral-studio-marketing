@@ -11,11 +11,11 @@ $ErrorActionPreference = 'Stop'
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
 if (-not $InputPath) {
-    $InputPath = Join-Path $paths.Masters 'asml-mistral-original-master-4k.mp4'
+    $InputPath = Join-Path $paths.Masters 'asml-mistral-original-master-70s-2160p.mp4'
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-studio-workflow-demo-1080p.mp4'
+    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-studio-workflow-demo-48s-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop
@@ -23,7 +23,7 @@ $overlayPath = Resolve-Path -LiteralPath (Join-Path $paths.Overlays 'rethought-d
 $workflowVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-build-first-workflow-720p.mp4') -ErrorAction Stop
 $skillVideo = Resolve-Path -LiteralPath (Join-Path $paths.ProductFootage 'mistral-studio-update-versioned-skill-720p.mp4') -ErrorAction Stop
 $logoPath = Resolve-Path -LiteralPath (Join-Path $paths.RepoRoot 'official-designs-and-docs\logos\icon-monogram-m-orange-on-dark.png') -ErrorAction Stop
-$narrationMaster = Resolve-Path -LiteralPath (Join-Path $paths.Masters 'asml-mistral-narrated-workflow-master-1080p.mp4') -ErrorAction Stop
+$narrationMaster = Resolve-Path -LiteralPath (Join-Path $paths.Masters 'asml-mistral-narrated-workflow-master-48s-1080p.mp4') -ErrorAction Stop
 
 $absoluteOutputPath = Initialize-DemoOutputPath -OutputPath $OutputPath
 $ffmpegPath = Resolve-FfmpegExecutable
@@ -65,6 +65,10 @@ $ffmpegArguments = @(
     '-filter_complex', $filterGraph,
     '-map', '[v]',
     '-map', '[a]',
+    '-map_metadata', '-1',
+    '-metadata', 'title=ASML x Mistral Studio Workflow Demo',
+    '-metadata', 'artist=Shiv, Prospective PMM, Mistral Studio',
+    '-metadata', 'comment=Unofficial portfolio concept for field enablement.',
     '-c:v', 'libx264',
     '-preset', 'medium',
     '-crf', '18',
