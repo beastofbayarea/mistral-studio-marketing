@@ -3,7 +3,7 @@
   "rate": "+8%",
   "pitch": "+3Hz",
   "volume": "+6%",
-  "durationSeconds": 55,
+  "durationSeconds": 47.7,
   "sentences": [
     {
       "startMilliseconds": 50,
@@ -30,51 +30,51 @@
       "text": "Every second counts!"
     },
     {
-      "startMilliseconds": 5400,
+      "startMilliseconds": 5180,
       "rate": "+12%",
       "pitch": "+3Hz",
       "text": "The signal could begin anywhere—optics, stages, sensors, equipment, or service logs."
     },
     {
-      "startMilliseconds": 11450,
+      "startMilliseconds": 11180,
       "rate": "+7%",
       "pitch": "+2Hz",
       "text": "Mistral Studio brings every source into one controlled, traceable investigation."
     },
     {
-      "startMilliseconds": 16650,
+      "startMilliseconds": 16340,
       "rate": "+10%",
       "pitch": "+4Hz",
       "text": "It compares prior incidents, surfaces conflicting signals, and builds a concise diagnostic brief."
     },
     {
-      "startMilliseconds": 24000,
+      "startMilliseconds": 22780,
       "rate": "+2%",
       "pitch": "+7Hz",
       "volume": "+8%",
       "text": "Not enough confidence? It asks for more evidence—and never guesses."
     },
     {
-      "startMilliseconds": 29800,
+      "startMilliseconds": 27340,
       "rate": "+8%",
       "pitch": "+2Hz",
       "text": "The engineer reviews the reasoning, challenges it, and adds operational judgment."
     },
     {
-      "startMilliseconds": 35900,
+      "startMilliseconds": 32380,
       "rate": "+5%",
       "pitch": "+3Hz",
       "text": "Only an approved action moves forward, with every decision fully traceable."
     },
     {
-      "startMilliseconds": 41700,
+      "startMilliseconds": 36970,
       "rate": "+10%",
       "pitch": "+5Hz",
       "volume": "+7%",
       "text": "The result? Faster investigation, stronger evidence, and a clear path to action."
     },
     {
-      "startMilliseconds": 49300,
+      "startMilliseconds": 42520,
       "rate": "+4%",
       "pitch": "+6Hz",
       "volume": "+8%",

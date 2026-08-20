@@ -22,7 +22,7 @@ Video files are intentionally ignored by Git. The folder structure, scripts, ove
 
 ## Field enablement ad master
 
-The recommended client-facing cut is a 55-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. A four-shot kinetic opening moves quickly into grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses 40 seconds of manufacturing imagery and only 15 seconds of framed Mistral Studio proof points; the only people shown are operators performing cleanroom work. Burned-in source captions are excluded. An expressive eleven-cue Ava narration opens with three forceful synchronized beats, then uses cue-specific pace, pitch, emphasis, mix gain, and pause direction instead of one repeated delivery setting.
+The recommended client-facing cut is a 47.7-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. A four-shot kinetic opening moves quickly into grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses approximately 34 seconds of manufacturing imagery and 14 seconds of framed Mistral Studio proof points; the only people shown are operators performing cleanroom work. Burned-in source captions are excluded. An expressive eleven-cue Ava narration opens with three forceful synchronized beats, then uses cue-specific pace, pitch, emphasis, mix gain, and pause direction instead of one repeated delivery setting.
 
 Build it from the repository root:
 
@@ -30,7 +30,7 @@ Build it from the repository root:
 .\demo-videos\scripts\build-field-enablement-demo.ps1
 ```
 
-The default export is `outputs\asml-mistral-field-enablement-ad-55s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
+The default export is `outputs\asml-mistral-field-enablement-ad-48s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
 
 ```powershell
 .\demo-videos\scripts\build-field-enablement-demo.ps1 -RegenerateNarration

@@ -23,27 +23,29 @@ Style: Pixel,Arial,20,&H000070FF,&H000070FF,&H00000000,&H00000000,0,0,0,0,100,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.05,0:00:03.92,Pixel,,0,0,0,,{\an7\pos(58,58)\p1\fad(60,100)}m 0 0 l 18 0 l 18 18 l 0 18
-Dialogue: 1,0:00:00.07,0:00:03.92,Eyebrow,,0,0,0,,{\an7\pos(92,50)\fad(60,100)}ASML × MISTRAL
-Dialogue: 1,0:00:00.08,0:00:00.95,Impact,,0,0,0,,{\an5\pos(960,540)\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}ANOMALY
-Dialogue: 1,0:00:01.00,0:00:01.92,Impact,,0,0,0,,{\an5\pos(960,540)\1c&H000070FF&\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}DETECTED
-Dialogue: 1,0:00:02.00,0:00:02.92,Impact,,0,0,0,,{\an5\pos(960,540)\fs132\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}EVIDENCE SCATTERED
-Dialogue: 1,0:00:03.00,0:00:03.94,Impact,,0,0,0,,{\an5\pos(960,540)\fs136\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,90)}EVERY SECOND COUNTS.
-Dialogue: 1,0:00:00.12,0:00:03.92,Micro,,0,0,0,,{\an7\pos(58,995)\1c&H00E8E8EB&\fad(80,100)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
+Dialogue: 0,0:00:00.05,0:00:05.10,Pixel,,0,0,0,,{\an7\pos(58,58)\p1\fad(60,100)}m 0 0 l 18 0 l 18 18 l 0 18
+Dialogue: 1,0:00:00.07,0:00:05.10,Eyebrow,,0,0,0,,{\an7\pos(92,50)\fad(60,100)}ASML × MISTRAL
+Dialogue: 1,0:00:00.08,0:00:00.80,Impact,,0,0,0,,{\an5\pos(960,540)\fscx88\fscy88\t(0,140,\fscx100\fscy100)\fad(30,55)}ANOMALY
+Dialogue: 1,0:00:00.85,0:00:01.65,Impact,,0,0,0,,{\an5\pos(960,540)\1c&H000070FF&\fscx88\fscy88\t(0,140,\fscx100\fscy100)\fad(30,55)}DETECTED
+Dialogue: 1,0:00:01.70,0:00:03.25,Impact,,0,0,0,,{\an5\pos(960,540)\fs132\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,70)}EVIDENCE SCATTERED
+Dialogue: 1,0:00:03.30,0:00:05.08,Impact,,0,0,0,,{\an5\pos(960,540)\fs136\fscx88\fscy88\t(0,160,\fscx100\fscy100)\fad(35,90)}EVERY SECOND COUNTS.
+Dialogue: 1,0:00:00.12,0:00:05.10,Micro,,0,0,0,,{\an7\pos(58,995)\1c&H00E8E8EB&\fad(80,100)}REPRESENTATIVE SCENARIO  ·  SYNTHETIC DATA
 
-Dialogue: 1,0:00:04.05,0:00:09.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}THE CLOCK IS RUNNING
-Dialogue: 1,0:00:10.05,0:00:15.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}ONE CONTROLLED INVESTIGATION
-Dialogue: 1,0:00:16.05,0:00:23.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}SOURCE-GROUNDED EVIDENCE
-Dialogue: 1,0:00:24.05,0:00:27.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(120,150)}COMPARE AND EXPLAIN
-Dialogue: 1,0:00:28.05,0:00:30.85,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H0000B0FF&\fad(100,130)}ADDITIONAL EVIDENCE REQUIRED
-Dialogue: 1,0:00:31.05,0:00:34.85,Step,,0,0,0,,{\an7\pos(86,106)\fad(100,130)}ENGINEER IN CONTROL
-Dialogue: 1,0:00:35.05,0:00:41.85,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H008CD955&\fad(100,140)}ACTION APPROVED
-Dialogue: 1,0:00:42.05,0:00:48.75,Step,,0,0,0,,{\an7\pos(86,106)\fad(110,160)}VISIBLE AND TRACEABLE
+Dialogue: 1,0:00:05.23,0:00:11.08,Step,,0,0,0,,{\an7\pos(86,106)\fad(90,120)}SIGNALS ACROSS THE SYSTEM
+Dialogue: 1,0:00:11.23,0:00:16.24,Step,,0,0,0,,{\an7\pos(86,106)\fad(90,120)}ONE CONTROLLED INVESTIGATION
+Dialogue: 1,0:00:16.39,0:00:22.68,Step,,0,0,0,,{\an7\pos(86,106)\fad(90,120)}COMPARE  ·  CONFLICTS  ·  BRIEF
+Dialogue: 1,0:00:22.83,0:00:27.24,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H0000B0FF&\fad(90,120)}MORE EVIDENCE  ·  NEVER GUESS
+Dialogue: 1,0:00:27.39,0:00:32.28,Step,,0,0,0,,{\an7\pos(86,106)\fad(90,120)}ENGINEER IN CONTROL
+Dialogue: 1,0:00:32.43,0:00:34.63,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H008CD955&\fad(80,100)}ACTION APPROVED
+Dialogue: 1,0:00:34.73,0:00:36.87,Step,,0,0,0,,{\an7\pos(86,106)\fad(80,100)}FULLY TRACEABLE
+Dialogue: 1,0:00:37.02,0:00:38.72,Step,,0,0,0,,{\an7\pos(86,106)\fad(80,100)}FASTER INVESTIGATION
+Dialogue: 1,0:00:38.87,0:00:40.57,Step,,0,0,0,,{\an7\pos(86,106)\fad(80,100)}STRONGER EVIDENCE
+Dialogue: 1,0:00:40.72,0:00:42.42,Signal,,0,0,0,,{\an7\pos(86,106)\1c&H008CD955&\fad(80,100)}CLEAR PATH TO ACTION
 
-Dialogue: 0,0:00:49.00,0:00:55.00,Pixel,,0,0,0,,{\an7\pos(96,245)\p1\fad(160,350)}m 0 0 l 20 0 l 20 20 l 0 20
-Dialogue: 1,0:00:49.02,0:00:55.00,CTALabel,,0,0,0,,{\an7\pos(132,238)\fad(160,350)}ASML × MISTRAL  ·  NEXT STEP
-Dialogue: 1,0:00:49.08,0:00:55.00,CTAMain,,0,0,0,,{\an7\pos(96,338)\fs60\fad(180,350)}Turn one critical workflow\Ninto a measurable pilot.
-Dialogue: 1,0:00:49.20,0:00:55.00,CTASub,,0,0,0,,{\an7\pos(96,540)\fad(190,350)}Focused working session
-Dialogue: 1,0:00:49.30,0:00:55.00,Micro,,0,0,0,,{\an7\pos(96,605)\1c&H00E8E8EB&\fad(200,350)}SOURCES  ·  DECISIONS  ·  APPROVALS  ·  SUCCESS MEASURES
-Dialogue: 0,0:00:49.40,0:00:55.00,Pixel,,0,0,0,,{\an7\pos(96,690)\1c&H00F4F4F4&\p1\fad(220,350)}m 0 0 l 390 0 l 390 78 l 0 78
-Dialogue: 2,0:00:49.45,0:00:55.00,CTAButton,,0,0,0,,{\an5\pos(291,729)\fad(230,350)}DEFINE THE PILOT  →
+Dialogue: 0,0:00:42.52,0:00:47.70,Pixel,,0,0,0,,{\an7\pos(96,245)\p1\fad(130,300)}m 0 0 l 20 0 l 20 20 l 0 20
+Dialogue: 1,0:00:42.54,0:00:47.70,CTALabel,,0,0,0,,{\an7\pos(132,238)\fad(130,300)}ASML × MISTRAL  ·  NEXT STEP
+Dialogue: 1,0:00:42.60,0:00:47.70,CTAMain,,0,0,0,,{\an7\pos(96,338)\fs60\fad(150,300)}Turn one critical workflow\Ninto a measurable pilot.
+Dialogue: 1,0:00:42.72,0:00:47.70,CTASub,,0,0,0,,{\an7\pos(96,540)\fad(160,300)}Focused working session
+Dialogue: 1,0:00:42.82,0:00:47.70,Micro,,0,0,0,,{\an7\pos(96,605)\1c&H00E8E8EB&\fad(170,300)}SOURCES  ·  DECISIONS  ·  APPROVALS  ·  SUCCESS MEASURES
+Dialogue: 0,0:00:42.92,0:00:47.70,Pixel,,0,0,0,,{\an7\pos(96,690)\1c&H00F4F4F4&\p1\fad(180,300)}m 0 0 l 390 0 l 390 78 l 0 78
+Dialogue: 2,0:00:42.97,0:00:47.70,CTAButton,,0,0,0,,{\an5\pos(291,729)\fad(190,300)}DEFINE THE PILOT  →
