@@ -6,7 +6,7 @@ This edit turns the existing 70-second concept video into a clearer, faster 58-s
 
 - Introduces the ASML × Mistral AI new-workflow demo immediately.
 - Speeds the edit to 80% of its original duration without removing any chapter.
-- Adds a consistent branded header and larger narrative captions for presentation-room readability.
+- Adds presentation-scale typography, deliberate two-line wrapping, and enlarged narrative panels for readability from across a meeting room.
 - Covers the most distracting generated interface copy with clean evidence-chain and source panels.
 - Makes the human approval step explicit.
 - Replaces the abrupt ending with an ASML-specific invitation to scope a high-value diagnostic workflow pilot.

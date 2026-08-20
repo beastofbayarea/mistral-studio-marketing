@@ -51,16 +51,16 @@ setpts=PTS/1.25,
 scale=1920:1080:flags=lanczos,
 eq=contrast=1.03:saturation=0.94:brightness=-0.015,
 fade=t=in:st=0:d=0.45,
-drawbox=x=0:y=0:w=iw:h=120:color=0x11121C@0.95:t=fill,
-drawbox=x=0:y=840:w=iw:h=240:color=0x11121C@0.95:t=fill,
-drawbox=x=0:y=120:w=iw:h=720:color=black@0.42:t=fill:enable='between(t,0,3.7)',
-drawbox=x=0:y=120:w=940:h=720:color=0x11121C@0.82:t=fill:enable='between(t,32,40)',
-drawbox=x=960:y=120:w=960:h=720:color=0x11121C@0.86:t=fill:enable='between(t,40,48)',
-drawbox=x=0:y=120:w=iw:h=720:color=0x11121C@0.94:t=fill:enable='between(t,52,58)',
+drawbox=x=0:y=0:w=iw:h=150:color=0x11121C@0.97:t=fill,
+drawbox=x=0:y=770:w=iw:h=310:color=0x11121C@0.97:t=fill,
+drawbox=x=0:y=150:w=iw:h=620:color=black@0.46:t=fill:enable='between(t,0,3.7)',
+drawbox=x=0:y=150:w=940:h=620:color=0x11121C@0.88:t=fill:enable='between(t,32,40)',
+drawbox=x=940:y=150:w=980:h=620:color=0x11121C@0.90:t=fill:enable='between(t,40,48)',
+drawbox=x=0:y=150:w=iw:h=620:color=0x11121C@0.96:t=fill:enable='between(t,52,58)',
 subtitles=filename='$assFilterPath'
 [story];
-[1:v]scale=64:64:flags=lanczos,format=rgba[brandmark];
-[story][brandmark]overlay=30:28:format=auto,tpad=stop_mode=clone:stop_duration=2,fade=t=out:st=57.4:d=0.6[v];
+[1:v]scale=82:82:flags=lanczos,format=rgba[brandmark];
+[story][brandmark]overlay=30:34:format=auto,tpad=stop_mode=clone:stop_duration=2,fade=t=out:st=57.4:d=0.6[v];
 [0:a]atempo=1.25,afade=t=in:st=0:d=0.25,afade=t=out:st=54.8:d=1.2,apad=pad_dur=2[a]
 "@
 

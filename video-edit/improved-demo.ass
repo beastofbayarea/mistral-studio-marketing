@@ -9,45 +9,45 @@ YCbCr Matrix: TV.709
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: TopBar,Segoe UI Semibold,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,4,0,0,0,1
-Style: Hero,Segoe UI Semibold,82,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,-1,0,1,0,0,5,0,0,0,1
-Style: HeroSub,Segoe UI,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
-Style: Kicker,Segoe UI Semibold,30,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,4,0,0,0,1
-Style: Chapter,Segoe UI Semibold,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,4,0,0,0,1
-Style: PanelTitle,Segoe UI Semibold,42,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,7,0,0,0,1
-Style: PanelText,Segoe UI Semibold,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
-Style: PanelDetail,Segoe UI,32,&H00D8D8DF,&H00D8D8DF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
-Style: Final,Segoe UI Semibold,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
-Style: FinalSub,Segoe UI,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
-Style: CTA,Segoe UI Semibold,36,&H00FFFFFF,&H00FFFFFF,&H00004FFF,&H00004FFF,-1,0,0,0,100,100,1,0,3,18,0,5,0,0,0,1
+Style: TopBar,Segoe UI Semibold,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,4,0,0,0,1
+Style: Hero,Segoe UI Semibold,98,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,-1,0,1,0,0,5,0,0,0,1
+Style: HeroSub,Segoe UI,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Kicker,Segoe UI Semibold,40,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,7,0,0,0,1
+Style: Chapter,Segoe UI Semibold,62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: PanelTitle,Segoe UI Semibold,50,&H00004FFF,&H00004FFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,0,0,7,0,0,0,1
+Style: PanelText,Segoe UI Semibold,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: PanelDetail,Segoe UI,38,&H00D8D8DF,&H00D8D8DF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Final,Segoe UI Semibold,88,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: FinalSub,Segoe UI,52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: CTA,Segoe UI Semibold,46,&H00FFFFFF,&H00FFFFFF,&H00004FFF,&H00004FFF,-1,0,0,0,100,100,1,0,3,22,0,5,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:58.00,TopBar,,0,0,0,,{\an4\pos(125,60)}ASML × MISTRAL AI  |  NEW WORKFLOW DEMO
-Dialogue: 0,0:00:00.35,0:00:03.65,Hero,,0,0,0,,{\fad(350,350)\an5\pos(960,394)}ASML × MISTRAL AI
-Dialogue: 0,0:00:00.72,0:00:03.65,HeroSub,,0,0,0,,{\fad(350,350)\an5\pos(960,500)}New workflow: evidence-backed engineering intelligence
+Dialogue: 0,0:00:00.00,0:00:58.00,TopBar,,0,0,0,,{\an4\pos(145,75)}ASML × MISTRAL AI  |  NEW WORKFLOW DEMO
+Dialogue: 0,0:00:00.35,0:00:03.65,Hero,,0,0,0,,{\fad(350,350)\an5\pos(960,350)}ASML × MISTRAL AI
+Dialogue: 0,0:00:00.72,0:00:03.65,HeroSub,,0,0,0,,{\fad(350,350)\an5\pos(960,475)}New workflow: evidence-backed engineering intelligence
 
-Dialogue: 0,0:00:00.15,0:00:07.90,Kicker,,0,0,0,,{\fad(200,220)\an4\pos(104,895)}01  •  DETECT
-Dialogue: 0,0:00:00.15,0:00:07.90,Chapter,,0,0,0,,{\fad(200,220)\an4\pos(104,992)}A subsystem anomaly interrupts production
-Dialogue: 0,0:00:08.00,0:00:15.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,895)}02  •  GATHER
-Dialogue: 0,0:00:08.00,0:00:15.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,992)}Logs • service history • engineering documentation
-Dialogue: 0,0:00:16.00,0:00:23.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,895)}03  •  CORRELATE
-Dialogue: 0,0:00:16.00,0:00:23.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,992)}Mistral retrieves, compares, and ranks evidence
-Dialogue: 0,0:00:24.00,0:00:31.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,895)}04  •  EXPLAIN
-Dialogue: 0,0:00:24.00,0:00:31.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,992)}A traceable causal chain connects change to impact
-Dialogue: 0,0:00:32.00,0:00:39.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,895)}05  •  IDENTIFY
-Dialogue: 0,0:00:32.00,0:00:39.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,992)}The evidence converges on a likely root cause
+Dialogue: 0,0:00:00.15,0:00:07.90,Kicker,,0,0,0,,{\fad(200,220)\an7\pos(104,798)}01  •  DETECT
+Dialogue: 0,0:00:00.15,0:00:07.90,Chapter,,0,0,0,,{\fad(200,220)\an7\pos(104,858)}A subsystem anomaly\Ninterrupts production
+Dialogue: 0,0:00:08.00,0:00:15.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}02  •  GATHER
+Dialogue: 0,0:00:08.00,0:00:15.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Logs • service history\Nengineering documentation
+Dialogue: 0,0:00:16.00,0:00:23.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}03  •  CORRELATE
+Dialogue: 0,0:00:16.00,0:00:23.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Mistral retrieves, compares,\Nand ranks evidence
+Dialogue: 0,0:00:24.00,0:00:31.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}04  •  EXPLAIN
+Dialogue: 0,0:00:24.00,0:00:31.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}A traceable causal chain\Nconnects change to impact
+Dialogue: 0,0:00:32.00,0:00:39.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}05  •  IDENTIFY
+Dialogue: 0,0:00:32.00,0:00:39.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Evidence converges\Non a likely root cause
 Dialogue: 0,0:00:32.20,0:00:39.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(88,205)}EVIDENCE CHAIN
 Dialogue: 0,0:00:32.45,0:00:39.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(88,282)}Software update\N↓\NConfiguration change\N↓\NCommunication retries\N↓\NSubsystem anomaly
-Dialogue: 0,0:00:40.00,0:00:47.90,Kicker,,0,0,0,,{\fad(180,220)\an4\pos(104,895)}06  •  VERIFY
-Dialogue: 0,0:00:40.00,0:00:47.90,Chapter,,0,0,0,,{\fad(180,220)\an4\pos(104,992)}Every claim remains linked to its source evidence
+Dialogue: 0,0:00:40.00,0:00:47.90,Kicker,,0,0,0,,{\fad(180,220)\an7\pos(104,798)}06  •  VERIFY
+Dialogue: 0,0:00:40.00,0:00:47.90,Chapter,,0,0,0,,{\fad(180,220)\an7\pos(104,858)}Every claim remains linked\Nto its source evidence
 Dialogue: 0,0:00:40.20,0:00:47.75,PanelTitle,,0,0,0,,{\fad(180,220)\an7\pos(1045,205)}TRACEABLE EVIDENCE
 Dialogue: 0,0:00:40.45,0:00:47.75,PanelText,,0,0,0,,{\fad(180,220)\an7\pos(1045,282)}Service history\NEngineering guide\NPast incidents
 Dialogue: 0,0:00:40.65,0:00:47.75,PanelDetail,,0,0,0,,{\fad(180,220)\an7\pos(1045,485)}Sources preserved for engineering review
-Dialogue: 0,0:00:48.00,0:00:52.10,Kicker,,0,0,0,,{\fad(180,180)\an4\pos(104,895)}07  •  APPROVE
-Dialogue: 0,0:00:48.00,0:00:52.10,Chapter,,0,0,0,,{\fad(180,180)\an4\pos(104,992)}The engineer retains control of corrective action
+Dialogue: 0,0:00:48.00,0:00:52.10,Kicker,,0,0,0,,{\fad(180,180)\an7\pos(104,798)}07  •  APPROVE
+Dialogue: 0,0:00:48.00,0:00:52.10,Chapter,,0,0,0,,{\fad(180,180)\an7\pos(104,858)}Engineer retains control\Nof corrective action
 
-Dialogue: 0,0:00:52.20,0:00:57.65,Final,,0,0,0,,{\fad(280,420)\an5\pos(960,350)}NEXT STEP: PILOT THIS WORKFLOW
-Dialogue: 0,0:00:52.50,0:00:57.65,FinalSub,,0,0,0,,{\fad(280,420)\an5\pos(960,470)}Start with one high-value ASML diagnostic use case
-Dialogue: 0,0:00:52.85,0:00:57.65,CTA,,0,0,0,,{\fad(280,420)\an5\pos(960,590)}SCOPE THE PILOT
-Dialogue: 0,0:00:53.10,0:00:57.65,PanelDetail,,0,0,0,,{\fad(280,420)\an5\pos(960,710)}Align sources • success criteria • human approval gates
+Dialogue: 0,0:00:52.20,0:00:57.65,Final,,0,0,0,,{\fad(280,420)\an5\pos(960,300)}NEXT STEP: PILOT THIS WORKFLOW
+Dialogue: 0,0:00:52.50,0:00:57.65,FinalSub,,0,0,0,,{\fad(280,420)\an5\pos(960,430)}Start with one high-value ASML diagnostic use case
+Dialogue: 0,0:00:52.85,0:00:57.65,CTA,,0,0,0,,{\fad(280,420)\an5\pos(960,560)}SCOPE THE PILOT
+Dialogue: 0,0:00:53.10,0:00:57.65,PanelDetail,,0,0,0,,{\fad(280,420)\an5\pos(960,675)}Align sources • success criteria • human approval gates
