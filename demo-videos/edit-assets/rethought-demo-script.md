@@ -35,6 +35,7 @@ Let's pilot it on one high-value diagnostic use case.
 - Preserve the approved sentence-level narration and ambient bed from the 48-second rethought master.
 - Keep overlays to one decision or outcome per scene.
 - Use a maximum of two lines for presentation-scale scene titles.
+- Use a compact 300-pixel lower-third so the text remains readable without obscuring unnecessary visual space.
 - Crop the downloaded product captures to the browser viewport so their decorative video borders never compete with the Studio interface.
 - Discard the downloaded clips' audio; the client narrative and music bed remain the only soundtrack.
 - Treat the incident as representative; do not imply access to confidential ASML operational data.

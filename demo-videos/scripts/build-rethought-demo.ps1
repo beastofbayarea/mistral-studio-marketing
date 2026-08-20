@@ -65,7 +65,7 @@ color=c=0x11121C:s=1920x1080:r=30:d=7[s6];
 [x5][s6]xfade=transition=fade:duration=0.35:offset=41,
 eq=contrast=1.04:saturation=0.92:brightness=-0.02,
 drawbox=x=0:y=0:w=iw:h=120:color=0x11121C@0.97:t=fill,
-drawbox=x=0:y=710:w=iw:h=370:color=0x11121C@0.91:t=fill:enable='between(t,0,41)',
+drawbox=x=0:y=780:w=iw:h=300:color=0x11121C@0.91:t=fill:enable='between(t,0,41)',
 subtitles=filename='$assFilterPath'[story];
 [3:v]scale=68:68:flags=lanczos,format=rgba[brandmark];
 [story][brandmark]overlay=30:26:format=auto,fade=t=in:st=0:d=0.35,fade=t=out:st=47.5:d=0.5[v];
