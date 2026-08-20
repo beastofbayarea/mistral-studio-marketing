@@ -13,8 +13,10 @@ demo-videos/
 ├── outputs/                       # Generated review and delivery exports
 ├── scripts/                       # Build scripts and shared PowerShell helpers
 └── source-footage/
+    ├── duplicates/                # Preserved duplicate or alternate-encoding downloads
     ├── industry/                  # ASML, semiconductor, and industrial reference clips
     ├── masters/                   # Original and narrated ASML × Mistral masters
+    ├── mistral-products/          # Mistral product, platform, and customer-story footage
     └── mistral-studio/            # Mistral Studio product demonstrations
 ```
 
