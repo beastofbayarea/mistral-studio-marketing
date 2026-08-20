@@ -1,78 +1,51 @@
-# ASML × Mistral Demo Videos
+# Demo Video Production
 
-This is the self-contained production workspace for the ASML client demo. Source footage, reusable edit assets, build tooling, creative documentation, and generated exports are separated so each file has one clear role.
+This workspace separates reusable footage from client-specific edits, shared tooling, and retired material.
 
 ## Structure
 
 ```text
 demo-videos/
-├── assets/
-│   ├── narration/                 # Voice, timing, and approved narration configuration
-│   └── overlays/                  # Version-controlled subtitle and graphic overlays
-├── docs/                          # Storyboard, narration, and production guidance
-├── outputs/                       # Generated review and delivery exports
-├── scripts/                       # Build scripts and shared PowerShell helpers
-└── source-footage/
-    ├── duplicates/                # Preserved duplicate or alternate-encoding downloads
-    ├── industry/                  # ASML, semiconductor, and industrial reference clips
-    ├── masters/                   # Original and narrated ASML × Mistral masters
-    ├── mistral-products/          # Mistral product, platform, and customer-story footage
-    └── mistral-studio/            # Mistral Studio product demonstrations
+├── archive/                         # Duplicate or retired source material
+├── library/footage/
+│   ├── asml/                        # Client-specific ASML footage
+│   ├── industrial/                  # Reusable manufacturing and technology footage
+│   └── mistral/
+│       ├── products/                # Mistral product footage
+│       └── studio/                  # Mistral Studio demonstrations
+├── projects/
+│   └── asml-field-enablement/
+│       ├── assets/                  # Narration, overlays, and thumbnails
+│       ├── docs/                    # Storyboard and production notes
+│       ├── exports/
+│       │   ├── final/               # Current approved render
+│       │   ├── archive/             # Superseded concepts
+│       │   └── rejected/            # Cuts excluded from delivery
+│       ├── scripts/                 # Project build scripts
+│       └── source/masters/          # Original project masters
+├── tooling/                         # Shared build helpers and dependencies
+└── tmp/                             # Disposable working files
 ```
 
-Video files are intentionally ignored by Git. The folder structure, scripts, overlays, and documentation remain version controlled.
+Video files are ignored by Git. Scripts, edit assets, documentation, and placeholder files remain version controlled.
 
-## Field enablement ad master
+## Current ASML build
 
-The recommended client-facing cut is a 47.7-second ASML diagnostic-workflow story designed to work as both field enablement and a short-form account ad. A four-shot kinetic opening moves quickly into grounded evidence, uncertainty handling, engineer approval, traceability, and a measurable-pilot invitation. The presenter-free timeline uses approximately 36 seconds of industrial and precision-system imagery and 12 seconds of framed Mistral Studio proof points; human presence is limited to operator hands performing cleanroom work. Burned-in source captions are excluded. An expressive eleven-cue Ava narration opens with three forceful synchronized beats, then uses cue-specific pace, pitch, emphasis, mix gain, and pause direction instead of one repeated delivery setting.
-
-Build it from the repository root:
+From the repository root:
 
 ```powershell
-.\demo-videos\scripts\build-field-enablement-demo.ps1
+.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1
 ```
 
-The default export is `outputs\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`. Use `-RegenerateNarration` after changing the script or voice settings:
+The current master is written to:
 
-```powershell
-.\demo-videos\scripts\build-field-enablement-demo.ps1 -RegenerateNarration
+```text
+projects\asml-field-enablement\exports\final\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4
 ```
 
-The full edit map, narration, source timecodes, and design rationale are in `docs\field-enablement-demo.md`.
+Use `-RegenerateNarration` after changing copy or voice direction. The full edit map is in `projects\asml-field-enablement\docs\field-enablement-demo.md`.
 
-## Earlier workflow demo
-
-The 48-second structure is Detect, Investigate, Explain, Approve, and Pilot. It combines:
-
-- `source-footage\masters\asml-mistral-original-master-70s-2160p.mp4`
-- `source-footage\masters\asml-mistral-narrated-workflow-master-48s-1080p.mp4`
-- `source-footage\mistral-studio\mistral-studio-build-first-workflow-720p.mp4`
-- `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4`
-- `assets\overlays\rethought-demo.ass`
-
-Build it from the repository root:
-
-```powershell
-.\demo-videos\scripts\build-rethought-demo.ps1
-```
-
-The default export is `outputs\asml-mistral-studio-workflow-demo-48s-1080p.mp4`.
-
-## Alternate improved edit
-
-The alternate build condenses the original concept into a faster client-demo narrative while preserving the source master. It uses `assets\overlays\improved-demo.ass` and exports to `outputs\asml-mistral-incident-workflow-demo-50s-1080p.mp4`.
-
-```powershell
-.\demo-videos\scripts\build-improved-demo.ps1
-```
-
-Both scripts accept custom source and output paths:
-
-```powershell
-.\demo-videos\scripts\build-improved-demo.ps1 `
-    -InputPath 'C:\path\source.mp4' `
-    -OutputPath 'C:\path\improved.mp4'
-```
+Earlier horizontal concepts remain reproducible through the other project scripts and write to `exports\archive`. The discarded vertical experiment writes to `exports\rejected`.
 
 ## Tooling
 
@@ -82,10 +55,4 @@ Install FFmpeg once:
 winget install --id Gyan.FFmpeg --exact
 ```
 
-All builds share `scripts\video-build-common.ps1` for folder discovery, output preparation, FFmpeg discovery, and subtitle-path conversion. The field-enablement build uses the pinned neural-voice dependency in `scripts\neural-voice-requirements.txt` and generates each narration sentence separately for controlled pacing.
-
-## Creative reference
-
-The current field-enablement storyboard and approved narration are in `docs\field-enablement-demo.md`. The earlier 48-second concept remains documented in `docs\rethought-demo-script.md`.
-
-The reusable, company- and role-neutral production methodology is documented in `docs\account-specific-demo-video-generation-playbook.md`. It covers briefing, workflow selection, role adaptation, scripting, footage, product proof, narration, music, overlays, disclosure, thumbnails, delivery specifications, quality gates, failure modes, and reusable templates.
+Shared folder discovery and FFmpeg helpers live in `tooling\video-build-common.ps1`. Narration dependencies are pinned in `tooling\neural-voice-requirements.txt`.

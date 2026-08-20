@@ -6,7 +6,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-. (Join-Path $PSScriptRoot 'video-build-common.ps1')
+. (Join-Path $PSScriptRoot '..\..\..\tooling\video-build-common.ps1')
 
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
@@ -15,7 +15,7 @@ if (-not $InputPath) {
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-studio-workflow-demo-48s-1080p.mp4'
+    $OutputPath = Join-Path $paths.ArchivedOutputs 'asml-mistral-studio-workflow-demo-48s-1080p.mp4'
 }
 
 $resolvedInput = Resolve-Path -LiteralPath $InputPath -ErrorAction Stop

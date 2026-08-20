@@ -6,7 +6,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-. (Join-Path $PSScriptRoot 'video-build-common.ps1')
+. (Join-Path $PSScriptRoot '..\..\..\tooling\video-build-common.ps1')
 
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
@@ -18,12 +18,12 @@ $absoluteOutputPath = Initialize-DemoOutputPath -OutputPath $OutputPath
 $ffmpegPath = Resolve-FfmpegExecutable
 $ffprobePath = Join-Path (Split-Path -Parent $ffmpegPath) 'ffprobe.exe'
 
-$computationalVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-computational-lithography-720p.mp4') -ErrorAction Stop
-$lightGenerationVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-high-na-euv-light-generation-720p.mp4') -ErrorAction Stop
-$unveilingVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-unveiling-high-na-euv-720p.mp4') -ErrorAction Stop
-$waferStageVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-high-na-euv-wafer-stage-720p.mp4') -ErrorAction Stop
+$computationalVideo = Resolve-Path -LiteralPath (Join-Path $paths.AsmlFootage 'asml-computational-lithography-720p.mp4') -ErrorAction Stop
+$lightGenerationVideo = Resolve-Path -LiteralPath (Join-Path $paths.AsmlFootage 'asml-high-na-euv-light-generation-720p.mp4') -ErrorAction Stop
+$unveilingVideo = Resolve-Path -LiteralPath (Join-Path $paths.AsmlFootage 'asml-unveiling-high-na-euv-720p.mp4') -ErrorAction Stop
+$waferStageVideo = Resolve-Path -LiteralPath (Join-Path $paths.AsmlFootage 'asml-high-na-euv-wafer-stage-720p.mp4') -ErrorAction Stop
 $engineerVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'fraunhofer-300mm-semiconductor-cleanroom-tour-2024-720p.mp4') -ErrorAction Stop
-$asmlMistralVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'asml-mistral-advanced-lithography-customer-story-720p.mp4') -ErrorAction Stop
+$asmlMistralVideo = Resolve-Path -LiteralPath (Join-Path $paths.AsmlFootage 'asml-mistral-advanced-lithography-customer-story-720p.mp4') -ErrorAction Stop
 $metrologyVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'physik-instrumente-wafer-inspection-metrology-720p.mp4') -ErrorAction Stop
 $waferTransportVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'rockwell-automated-wafer-transport-720p.mp4') -ErrorAction Stop
 $opticsVideo = Resolve-Path -LiteralPath (Join-Path $paths.IndustryFootage 'zeiss-optics-chip-manufacturing-720p.mp4') -ErrorAction Stop
@@ -64,7 +64,7 @@ for ($index = 0; $index -lt $narrationConfig.sentences.Count; $index++) {
             --write-media $sentencePath
 
         if ($LASTEXITCODE -ne 0) {
-            throw "Narration generation failed for sentence $($index + 1). Install dependencies from scripts\neural-voice-requirements.txt."
+            throw "Narration generation failed for sentence $($index + 1). Install dependencies from demo-videos\tooling\neural-voice-requirements.txt."
         }
     }
 

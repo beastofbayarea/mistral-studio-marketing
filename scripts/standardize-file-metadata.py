@@ -180,11 +180,11 @@ PDF_METADATA = {
 
 
 MARKDOWN_METADATA = {
-    "demo-videos/docs/field-enablement-demo.md": (
+    "demo-videos/projects/asml-field-enablement/docs/field-enablement-demo.md": (
         "ASML x Mistral Field Enablement Ad",
         "Delivery specifications, evidence rules, and build guidance for the field enablement ad.",
     ),
-    "demo-videos/docs/rethought-demo-script.md": (
+    "demo-videos/projects/asml-field-enablement/docs/rethought-demo-script.md": (
         "ASML x Mistral Evidence-Backed Incident Workflow",
         "Storyboard and narrative principles for the incident workflow demo.",
     ),
@@ -224,8 +224,8 @@ MARKDOWN_METADATA = {
 
 
 PNG_TITLE_OVERRIDES = {
-    "demo-videos/assets/thumbnails/asml-mistral-anomaly-to-action-thumbnail.png": "ASML x Mistral - Anomaly to Action Thumbnail",
-    "demo-videos/assets/thumbnails/asml-mistral-unofficial-concept-thumbnail.png": "ASML x Mistral - Unofficial Concept Thumbnail",
+    "demo-videos/projects/asml-field-enablement/assets/thumbnails/asml-mistral-anomaly-to-action-thumbnail.png": "ASML x Mistral - Anomaly to Action Thumbnail",
+    "demo-videos/projects/asml-field-enablement/assets/thumbnails/asml-mistral-unofficial-concept-thumbnail.png": "ASML x Mistral - Unofficial Concept Thumbnail",
     "resources/cover-images/european-ai-sovereignty-and-governance-shield-cover.png": "European AI Sovereignty and Governance Shield",
     "resources/cover-images/european-sovereign-ai-network-security-cover.png": "European Sovereign AI Network Security",
     "resources/cover-images/hybrid-cloud-to-private-ai-infrastructure-cover.png": "Hybrid Cloud to Private AI Infrastructure",
@@ -247,15 +247,15 @@ ACRONYMS = {
 
 VIDEO_METADATA = {
     "asml-mistral-field-enablement-ad-48s-1080p.mp4": ("ASML x Mistral Field Enablement Ad", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-field-enablement-ad-48s-1080p.mp4": ("ASML x Mistral Field Enablement Ad", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-field-enablement-ad-v2-48s-1080p.mp4": ("ASML x Mistral Field Enablement Ad - Version 2", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-field-enablement-demo-75s-1080p.mp4": ("ASML x Mistral Field Enablement Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4": ("ASML x Mistral Field Enablement Vertical Ad", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-incident-workflow-demo-50s-1080p.mp4": ("ASML x Mistral Incident Workflow Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/asml-mistral-studio-workflow-demo-48s-1080p.mp4": ("ASML x Mistral Studio Workflow Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/outputs/rejected/rejected-asml-mistral-presenter-intermediate-48s-1080p.mp4": ("Rejected ASML x Mistral Presenter Intermediate", PORTFOLIO_AUTHOR, "Rejected intermediate retained for production reference."),
-    "demo-videos/source-footage/masters/asml-mistral-narrated-workflow-master-48s-1080p.mp4": ("ASML x Mistral Narrated Workflow Master", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
-    "demo-videos/source-footage/masters/asml-mistral-original-master-70s-2160p.mp4": ("ASML x Mistral Original Master", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/archive/asml-mistral-field-enablement-ad-48s-1080p.mp4": ("ASML x Mistral Field Enablement Ad", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/final/asml-mistral-field-enablement-ad-v2-48s-1080p.mp4": ("ASML x Mistral Field Enablement Ad - Version 2", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/archive/asml-mistral-field-enablement-demo-75s-1080p.mp4": ("ASML x Mistral Field Enablement Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/rejected/asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4": ("ASML x Mistral Field Enablement Vertical Ad", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/archive/asml-mistral-incident-workflow-demo-50s-1080p.mp4": ("ASML x Mistral Incident Workflow Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/archive/asml-mistral-studio-workflow-demo-48s-1080p.mp4": ("ASML x Mistral Studio Workflow Demo", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/exports/rejected/rejected-asml-mistral-presenter-intermediate-48s-1080p.mp4": ("Rejected ASML x Mistral Presenter Intermediate", PORTFOLIO_AUTHOR, "Rejected intermediate retained for production reference."),
+    "demo-videos/projects/asml-field-enablement/source/masters/asml-mistral-narrated-workflow-master-48s-1080p.mp4": ("ASML x Mistral Narrated Workflow Master", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
+    "demo-videos/projects/asml-field-enablement/source/masters/asml-mistral-original-master-70s-2160p.mp4": ("ASML x Mistral Original Master", PORTFOLIO_AUTHOR, PORTFOLIO_COMMENT),
 }
 
 
@@ -371,7 +371,7 @@ def png_metadata(path: Path) -> dict[str, str]:
         description = f"Official Mistral AI visual asset: {title}."
         author = "Mistral AI"
         copyright_text = "Mistral AI"
-    elif relative.startswith("demo-videos/assets/thumbnails/"):
+    elif relative.startswith("demo-videos/projects/asml-field-enablement/assets/thumbnails/"):
         description = f"YouTube thumbnail for the unofficial portfolio concept: {title}."
         author = PORTFOLIO_AUTHOR
         copyright_text = ""
@@ -414,16 +414,22 @@ def inferred_video_metadata(path: Path, ffprobe: Path) -> tuple[str, str, str] |
     relative = rel(path)
     if relative in VIDEO_METADATA:
         return VIDEO_METADATA[relative]
-    if not relative.startswith("demo-videos/source-footage/"):
+    source_prefixes = (
+        "demo-videos/library/footage/",
+        "demo-videos/projects/asml-field-enablement/source/masters/",
+    )
+    if not relative.startswith(source_prefixes):
         return None
     tags = {key.lower(): value for key, value in video_tags(ffprobe, path).items()}
     if tags.get("title"):
         return None
     title = human_title(path.stem)
     artist = ""
-    if "/mistral-products/" in f"/{relative}" or "/mistral-studio/" in f"/{relative}":
+    if "/mistral/products/" in f"/{relative}" or "/mistral/studio/" in f"/{relative}":
         artist = "Mistral AI"
-    elif "/industry/" in f"/{relative}":
+    elif "/asml/" in f"/{relative}":
+        artist = "ASML"
+    elif "/industrial/" in f"/{relative}":
         prefix_artists = {
             "asml-": "ASML", "cern-": "CERN", "fraunhofer-": "Fraunhofer",
             "nasa-": "NASA", "skf-": "SKF",

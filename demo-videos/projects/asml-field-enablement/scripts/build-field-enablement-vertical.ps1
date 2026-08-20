@@ -6,7 +6,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-. (Join-Path $PSScriptRoot 'video-build-common.ps1')
+. (Join-Path $PSScriptRoot '..\..\..\tooling\video-build-common.ps1')
 
 $paths = Get-DemoVideoPaths -ScriptsRoot $PSScriptRoot
 
@@ -15,7 +15,7 @@ if (-not $InputPath) {
 }
 
 if (-not $OutputPath) {
-    $OutputPath = Join-Path $paths.Outputs 'asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4'
+    $OutputPath = Join-Path $paths.RejectedOutputs 'asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4'
 }
 
 $absoluteInputPath = (Resolve-Path -LiteralPath $InputPath -ErrorAction Stop).Path

@@ -10,14 +10,12 @@ author: "Shiv, Prospective PMM, Mistral Studio"
 
 - Runtime: 47.7 seconds
 - Format: 1920 × 1080, 30 fps, H.264 High Profile, AAC stereo
-- Master: `outputs\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`
-- Vertical master: `outputs\asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4`
-- YouTube thumbnail: `assets\thumbnails\asml-mistral-anomaly-to-action-thumbnail.png` (1280 × 720)
-- Build: `scripts\build-field-enablement-demo.ps1`
-- Vertical build: `scripts\build-field-enablement-vertical.ps1`
-- Overlay source: `assets\overlays\field-enablement-demo.ass`
-- Vertical overlay source: `assets\overlays\field-enablement-vertical.ass`
-- Narration source: `assets\narration\field-enablement-narration.json`
+- Master: `projects\asml-field-enablement\exports\final\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`
+- Rejected vertical experiment: `projects\asml-field-enablement\exports\rejected\asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4`
+- YouTube thumbnail: `projects\asml-field-enablement\assets\thumbnails\asml-mistral-anomaly-to-action-thumbnail.png` (1280 × 720)
+- Build: `projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1`
+- Overlay source: `projects\asml-field-enablement\assets\overlays\field-enablement-demo.ass`
+- Narration source: `projects\asml-field-enablement\assets\narration\field-enablement-narration.json`
 
 This is a fast field-enablement conversation starter that can also run as a short-form account ad. It presents a representative synthetic-data scenario, not a claim that the depicted workflow is currently deployed at ASML.
 
@@ -39,29 +37,29 @@ This is a fast field-enablement conversation starter that can also run as a shor
 
 | Edit time | Source file | Source in | Purpose |
 |---:|---|---:|---|
-| 00:00–00:00.85 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:44 | Inspection anomaly impact shot |
-| 00:00.85–00:01.70 | `source-footage\industry\asml-high-na-euv-light-generation-720p.mp4` | 00:56 | Detection impact shot |
-| 00:01.70–00:03.30 | `source-footage\industry\asml-high-na-euv-wafer-stage-720p.mp4` | 00:57 | Scattered equipment evidence |
-| 00:03.30–00:05.18 | `source-footage\industry\asml-unveiling-high-na-euv-720p.mp4` | 00:08 | Dramatic High-NA reveal for the every-second-counts beat |
-| 00:05.18–00:07.18 | `source-footage\industry\zeiss-optics-chip-manufacturing-720p.mp4` | 00:30.8 | Optical exposure signal |
-| 00:07.18–00:09.18 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 01:18 | Automated wafer-transport signal |
-| 00:09.18–00:11.18 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:36.5 | Metrology signal source |
-| 00:11.18–00:13.53 | `source-footage\mistral-studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Source connectivity |
-| 00:13.53–00:16.34 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Controlled investigation |
-| 00:16.34–00:18.54 | `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:23 | Save-version interaction for historical comparison |
-| 00:18.54–00:20.64 | `source-footage\industry\asml-computational-lithography-720p.mp4` | 01:34.6 | Intended pattern beside its computed result, making conflicting signals visually explicit |
-| 00:20.64–00:22.78 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Diagnostic brief |
-| 00:22.78–00:25.08 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Low-confidence state |
-| 00:25.08–00:27.34 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 02:44 | Additional metrology evidence |
-| 00:27.34–00:31.34 | `source-footage\industry\fraunhofer-300mm-semiconductor-cleanroom-tour-2024-720p.mp4` | 02:07 | Hands-on process review without a presenter shot |
-| 00:31.34–00:32.38 | `source-footage\mistral-studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:52 | Clean conversation interface for engineer review and challenge |
-| 00:32.38–00:34.68 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:46 | Approval state |
-| 00:34.68–00:35.68 | `source-footage\mistral-studio\mistral-studio-introducing-workflows-720p.mp4` | 02:48.3 | Scenario-specific execution timeline for decision traceability |
-| 00:35.68–00:36.97 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:40.5 | Approved decision moving into physical execution |
-| 00:36.97–00:38.82 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:25 | Faster physical execution without embedded source text |
-| 00:38.82–00:40.67 | `source-footage\industry\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 03:05.8 | Stronger measurement evidence |
-| 00:40.67–00:42.52 | `source-footage\industry\rockwell-automated-wafer-transport-720p.mp4` | 02:45 | Clear routed path to action without embedded source text |
-| 00:42.52–00:47.70 | `source-footage\industry\asml-mistral-advanced-lithography-customer-story-720p.mp4` | 01:36.5 | Frozen, fully contained ASML × Mistral artwork behind the pilot CTA |
+| 00:00–00:00.85 | `library\footage\industrial\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:44 | Inspection anomaly impact shot |
+| 00:00.85–00:01.70 | `library\footage\asml\asml-high-na-euv-light-generation-720p.mp4` | 00:56 | Detection impact shot |
+| 00:01.70–00:03.30 | `library\footage\asml\asml-high-na-euv-wafer-stage-720p.mp4` | 00:57 | Scattered equipment evidence |
+| 00:03.30–00:05.18 | `library\footage\asml\asml-unveiling-high-na-euv-720p.mp4` | 00:08 | Dramatic High-NA reveal for the every-second-counts beat |
+| 00:05.18–00:07.18 | `library\footage\industrial\zeiss-optics-chip-manufacturing-720p.mp4` | 00:30.8 | Optical exposure signal |
+| 00:07.18–00:09.18 | `library\footage\industrial\rockwell-automated-wafer-transport-720p.mp4` | 01:18 | Automated wafer-transport signal |
+| 00:09.18–00:11.18 | `library\footage\industrial\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 00:36.5 | Metrology signal source |
+| 00:11.18–00:13.53 | `library\footage\mistral\studio\mistral-studio-custom-connectors-720p.mp4` | 00:43 | Source connectivity |
+| 00:13.53–00:16.34 | `library\footage\mistral\studio\mistral-studio-introducing-workflows-720p.mp4` | 02:25 | Controlled investigation |
+| 00:16.34–00:18.54 | `library\footage\mistral\studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:23 | Save-version interaction for historical comparison |
+| 00:18.54–00:20.64 | `library\footage\asml\asml-computational-lithography-720p.mp4` | 01:34.6 | Intended pattern beside its computed result, making conflicting signals visually explicit |
+| 00:20.64–00:22.78 | `library\footage\mistral\studio\mistral-studio-introducing-workflows-720p.mp4` | 02:32 | Diagnostic brief |
+| 00:22.78–00:25.08 | `library\footage\mistral\studio\mistral-studio-introducing-workflows-720p.mp4` | 02:44 | Low-confidence state |
+| 00:25.08–00:27.34 | `library\footage\industrial\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 02:44 | Additional metrology evidence |
+| 00:27.34–00:31.34 | `library\footage\industrial\fraunhofer-300mm-semiconductor-cleanroom-tour-2024-720p.mp4` | 02:07 | Hands-on process review without a presenter shot |
+| 00:31.34–00:32.38 | `library\footage\mistral\studio\mistral-studio-update-versioned-skill-720p.mp4` | 00:52 | Clean conversation interface for engineer review and challenge |
+| 00:32.38–00:34.68 | `library\footage\mistral\studio\mistral-studio-introducing-workflows-720p.mp4` | 02:46 | Approval state |
+| 00:34.68–00:35.68 | `library\footage\mistral\studio\mistral-studio-introducing-workflows-720p.mp4` | 02:48.3 | Scenario-specific execution timeline for decision traceability |
+| 00:35.68–00:36.97 | `library\footage\industrial\rockwell-automated-wafer-transport-720p.mp4` | 02:40.5 | Approved decision moving into physical execution |
+| 00:36.97–00:38.82 | `library\footage\industrial\rockwell-automated-wafer-transport-720p.mp4` | 02:25 | Faster physical execution without embedded source text |
+| 00:38.82–00:40.67 | `library\footage\industrial\physik-instrumente-wafer-inspection-metrology-720p.mp4` | 03:05.8 | Stronger measurement evidence |
+| 00:40.67–00:42.52 | `library\footage\industrial\rockwell-automated-wafer-transport-720p.mp4` | 02:45 | Clear routed path to action without embedded source text |
+| 00:42.52–00:47.70 | `library\footage\asml\asml-mistral-advanced-lithography-customer-story-720p.mp4` | 01:36.5 | Frozen, fully contained ASML × Mistral artwork behind the pilot CTA |
 
 ## Creative system
 
@@ -87,22 +85,22 @@ An original cinematic-electronic score now runs beneath the horizontal master. A
 
 ```powershell
 # Standard rebuild; reuses generated sentence audio when available
-.\demo-videos\scripts\build-field-enablement-demo.ps1
+.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1
 
 # Recreate the full performance after changing voice, delivery, copy, or timing
-.\demo-videos\scripts\build-field-enablement-demo.ps1 -RegenerateNarration
+.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1 -RegenerateNarration
 
 # Write a review variant to another location
-.\demo-videos\scripts\build-field-enablement-demo.ps1 `
+.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1 `
     -OutputPath 'C:\path\asml-mistral-field-enablement-review.mp4'
 ```
 
 Generated video and sentence-audio caches are not committed. The build definition, timing, narration, overlays, fonts, and documentation are version controlled.
 
-## Vertical social cut
+## Rejected vertical experiment
 
-The 1080 × 1920 adaptation preserves the 47.7-second narration and edit timing. The first 5.18 seconds use a full-bleed center crop for immediate mobile impact. From 5.18–42.52, the complete widescreen composition is retained in a bordered central panel over a darkened motion background, keeping detailed manufacturing and product-interface footage legible without letterboxing. Large mobile-safe headlines occupy the upper safe area, the right interaction rail remains clear, and the final 5.18 seconds use a dedicated vertically centered pilot CTA.
+The 1080 × 1920 experiment is retained only as a rejected production reference. It is not part of the current delivery set. Its build script writes to `exports\rejected` by default.
 
 ```powershell
-.\demo-videos\scripts\build-field-enablement-vertical.ps1
+.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-vertical.ps1
 ```

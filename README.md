@@ -105,14 +105,13 @@ mistral-studio-marketing/
 │   ├── gtm-strategy.pptx                            # Operational GTM launch execution plan
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
-├── demo-videos/                                     # Self-contained ASML × Mistral video production workspace
-│   ├── assets/narration/                            # Approved voice script and sentence timing
-│   ├── assets/overlays/                             # Branded subtitle and graphic overlays
-│   ├── docs/                                        # Storyboard, narration, and production principles
-│   ├── outputs/                                     # Generated review and delivery exports (ignored by Git)
-│   ├── scripts/                                     # Builds, shared helpers, and narration dependency
-│   ├── source-footage/                              # Masters, Mistral product footage, and industry references
-│   └── README.md                                    # Folder structure and build workflow
+├── demo-videos/                                     # Video production workspace
+│   ├── archive/                                     # Retired and duplicate source material
+│   ├── library/footage/                             # Reusable ASML, industrial, and Mistral footage
+│   ├── projects/asml-field-enablement/              # Project assets, scripts, masters, and exports
+│   ├── tooling/                                     # Shared build helpers and dependencies
+│   ├── tmp/                                         # Disposable working files
+│   └── README.md                                    # Structure and build workflow
 │
 ├── Root Level Files
 │   ├── author-profile.pptx                              # Author profile background & strategy bio presentation
