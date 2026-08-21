@@ -410,6 +410,8 @@ def inferred_video_metadata(path: Path, ffprobe: Path) -> tuple[str, str, str] |
     artist = ""
     if "/mistral/products/" in f"/{relative}" or "/mistral/studio/" in f"/{relative}":
         artist = "Mistral AI"
+    elif "/freshworks/" in f"/{relative}":
+        artist = "Freshworks"
     elif "/asml/" in f"/{relative}":
         artist = "ASML"
     elif "/industrial/" in f"/{relative}":

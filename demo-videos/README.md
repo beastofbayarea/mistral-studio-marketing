@@ -8,6 +8,7 @@ This workspace separates reusable footage, the active client edit, and shared to
 demo-videos/
 ├── library/footage/
 │   ├── asml/                        # Client-specific ASML footage
+│   ├── freshworks/                  # Curated Freshworks product and workflow footage
 │   ├── industrial/                  # Reusable manufacturing and technology footage
 │   └── mistral/
 │       ├── products/                # Mistral product footage
@@ -22,6 +23,8 @@ demo-videos/
 ```
 
 Video files are ignored by Git. Scripts, edit assets, documentation, and placeholder files remain version controlled.
+
+The Freshworks source manifest is in `library/footage/freshworks/SOURCES.md`.
 
 ## Current ASML build
 
