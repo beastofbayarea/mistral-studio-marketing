@@ -1,12 +1,11 @@
 # Demo Video Production
 
-This workspace separates reusable footage from client-specific edits, shared tooling, and retired material.
+This workspace separates reusable footage, the active client edit, and shared tooling.
 
 ## Structure
 
 ```text
 demo-videos/
-├── archive/                         # Duplicate or retired source material
 ├── library/footage/
 │   ├── asml/                        # Client-specific ASML footage
 │   ├── industrial/                  # Reusable manufacturing and technology footage
@@ -17,14 +16,9 @@ demo-videos/
 │   └── asml-field-enablement/
 │       ├── assets/                  # Narration, overlays, and thumbnails
 │       ├── docs/                    # Storyboard and production notes
-│       ├── exports/
-│       │   ├── final/               # Current approved render
-│       │   ├── archive/             # Superseded concepts
-│       │   └── rejected/            # Cuts excluded from delivery
-│       ├── scripts/                 # Project build scripts
-│       └── source/masters/          # Original project masters
-├── tooling/                         # Shared build helpers and dependencies
-└── tmp/                             # Disposable working files
+│       ├── exports/final/            # Current approved render
+│       └── scripts/                  # Active project build
+└── tooling/                          # Shared build helpers and dependencies
 ```
 
 Video files are ignored by Git. Scripts, edit assets, documentation, and placeholder files remain version controlled.
@@ -44,8 +38,6 @@ projects\asml-field-enablement\exports\final\asml-mistral-field-enablement-ad-v2
 ```
 
 Use `-RegenerateNarration` after changing copy or voice direction. The full edit map is in `projects\asml-field-enablement\docs\field-enablement-demo.md`.
-
-Earlier horizontal concepts remain reproducible through the other project scripts and write to `exports\archive`. The discarded vertical experiment writes to `exports\rejected`.
 
 ## Tooling
 

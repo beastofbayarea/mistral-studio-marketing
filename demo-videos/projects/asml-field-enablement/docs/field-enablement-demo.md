@@ -11,7 +11,6 @@ author: "Shiv, Prospective PMM, Mistral Studio"
 - Runtime: 47.7 seconds
 - Format: 1920 × 1080, 30 fps, H.264 High Profile, AAC stereo
 - Master: `projects\asml-field-enablement\exports\final\asml-mistral-field-enablement-ad-v2-48s-1080p.mp4`
-- Rejected vertical experiment: `projects\asml-field-enablement\exports\rejected\asml-mistral-field-enablement-tiktok-48s-1080x1920.mp4`
 - YouTube thumbnail: `projects\asml-field-enablement\assets\thumbnails\asml-mistral-anomaly-to-action-thumbnail.png` (1280 × 720)
 - Build: `projects\asml-field-enablement\scripts\build-field-enablement-demo.ps1`
 - Overlay source: `projects\asml-field-enablement\assets\overlays\field-enablement-demo.ass`
@@ -96,11 +95,3 @@ An original cinematic-electronic score now runs beneath the horizontal master. A
 ```
 
 Generated video and sentence-audio caches are not committed. The build definition, timing, narration, overlays, fonts, and documentation are version controlled.
-
-## Rejected vertical experiment
-
-The 1080 × 1920 experiment is retained only as a rejected production reference. It is not part of the current delivery set. Its build script writes to `exports\rejected` by default.
-
-```powershell
-.\demo-videos\projects\asml-field-enablement\scripts\build-field-enablement-vertical.ps1
-```

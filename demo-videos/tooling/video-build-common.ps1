@@ -17,12 +17,9 @@ function Get-DemoVideoPaths {
         ProjectRoot     = $projectRoot
         AsmlFootage     = Join-Path $footageRoot 'asml'
         IndustryFootage = Join-Path $footageRoot 'industrial'
-        Masters         = Join-Path $projectRoot 'source\masters'
         Narration       = Join-Path $projectRoot 'assets\narration'
         ProductFootage  = Join-Path $footageRoot 'mistral\studio'
         Outputs         = Join-Path $exportsRoot 'final'
-        ArchivedOutputs = Join-Path $exportsRoot 'archive'
-        RejectedOutputs = Join-Path $exportsRoot 'rejected'
         Overlays        = Join-Path $projectRoot 'assets\overlays'
     }
 }

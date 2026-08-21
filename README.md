@@ -106,11 +106,9 @@ mistral-studio-marketing/
 │   └── product-journey-roadmap.png                  # Product onboarding journey roadmap
 │
 ├── demo-videos/                                     # Video production workspace
-│   ├── archive/                                     # Retired and duplicate source material
 │   ├── library/footage/                             # Reusable ASML, industrial, and Mistral footage
-│   ├── projects/asml-field-enablement/              # Project assets, scripts, masters, and exports
+│   ├── projects/asml-field-enablement/              # Active project assets, script, and final export
 │   ├── tooling/                                     # Shared build helpers and dependencies
-│   ├── tmp/                                         # Disposable working files
 │   └── README.md                                    # Structure and build workflow
 │
 ├── Root Level Files
